@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 300ab585a29dd9044ac9e2dc4b1e6a3f, type: 3}
+  m_Name: AudioLibrary
+  m_EditorClassIdentifier: 
+  clips:
+  - key: bgm
+    channel: 0
+    clip: {fileID: 8300000, guid: 7c60174e911d6d542b821891affbd75c, type: 3}
+    volume: 0.3
+    loop: 1
+  - key: good
+    channel: 1
+    clip: {fileID: 8300000, guid: eef3bee5475e2ca419488960ec1bc8cd, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: great
+    channel: 1
+    clip: {fileID: 8300000, guid: ffea087392d02354f9a8c5ca7848976a, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: excellent
+    channel: 1
+    clip: {fileID: 8300000, guid: e948dfd1e4241fc4bae57d4b1d8b53a2, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: swap
+    channel: 1
+    clip: {fileID: 8300000, guid: 25b20971440b01f42a10f41719bb9ebf, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: pop1
+    channel: 1
+    clip: {fileID: 8300000, guid: 1c485edcad2aaf04f9824c93e57edef5, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: pop2
+    channel: 1
+    clip: {fileID: 8300000, guid: f40985f0fb68ab94aa8ee5cc992dc376, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: appear
+    channel: 1
+    clip: {fileID: 8300000, guid: 9303052bd5edad7418c63d2c0f682cea, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: dynamiteFuse
+    channel: 1
+    clip: {fileID: 8300000, guid: 5935f3be0f424d44ba4f8657856e9534, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: explode
+    channel: 1
+    clip: {fileID: 8300000, guid: 0ee4c144f72488e4086d32859d9a1d6a, type: 3}
+    volume: 0.75
+    loop: 0

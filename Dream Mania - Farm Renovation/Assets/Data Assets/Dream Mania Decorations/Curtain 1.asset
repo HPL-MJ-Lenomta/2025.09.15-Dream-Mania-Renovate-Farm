@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb8303abce271c41b94d80ed0b1d3bb, type: 3}
+  m_Name: Curtain 1
+  m_EditorClassIdentifier: 
+  itemName: curtain1
+  itemIcon: {fileID: 21300000, guid: bfa7b49b9b04baf4c993c4f01c6f21d1, type: 3}
+  ItemCount: 15
+  collectItemSprite: {fileID: 21300000, guid: c05f3a9bb5ac0e84cbbb05a6f7c832c8, type: 3}
+  color: yellow
+  DecorationSprite: {fileID: 21300000, guid: b3a7fbcc0ff11b247800fbd65a232c00, type: 3}

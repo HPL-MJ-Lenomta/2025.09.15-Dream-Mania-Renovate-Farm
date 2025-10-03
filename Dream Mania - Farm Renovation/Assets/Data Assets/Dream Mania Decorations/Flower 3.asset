@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb8303abce271c41b94d80ed0b1d3bb, type: 3}
+  m_Name: Flower 3
+  m_EditorClassIdentifier: 
+  itemName: curtain3
+  itemIcon: {fileID: 21300000, guid: 3eaeff8334d0dcc4885c0b1636bf86bf, type: 3}
+  ItemCount: 15
+  collectItemSprite: {fileID: 21300000, guid: 32e74fb0305c7c6449dbeaadef7282ae, type: 3}
+  color: purple
+  DecorationSprite: {fileID: 21300000, guid: 5756a96b6863fd94388fe227c09d1345, type: 3}

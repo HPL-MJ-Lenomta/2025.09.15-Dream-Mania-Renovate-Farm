@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb8303abce271c41b94d80ed0b1d3bb, type: 3}
+  m_Name: Carpet 4
+  m_EditorClassIdentifier: 
+  itemName: curtain3
+  itemIcon: {fileID: 21300000, guid: e6a6149b4062e4e48b5adcd4f2fceda2, type: 3}
+  ItemCount: 15
+  collectItemSprite: {fileID: 21300000, guid: e42d39a127c39d1499478fd8a0c0386f, type: 3}
+  color: yellow
+  DecorationSprite: {fileID: 21300000, guid: 6dd9fdcb74508be4eaa74e51e5746745, type: 3}
