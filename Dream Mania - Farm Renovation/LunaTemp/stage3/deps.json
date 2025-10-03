@@ -27,7 +27,7 @@
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/MatchHintChecker.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/TileCell.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/MatchGroupUtils.cs",
-      "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/Tile Data Scripts/DynamitePowerup.cs",
+      "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/SpecialTileManager.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/TileData.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/AnimatedTile.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/AnimatedTileSpawner.cs",
@@ -41,6 +41,7 @@
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/BounceSquashUI.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/AppearAnimation.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/BasicFade.cs",
+      "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/Tile Data Scripts/DynamitePowerup.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/Tile.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/UI Utils/UIComponentChecker.cs",
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Core/Services/IAudioService.cs",
@@ -199,6 +200,9 @@
     ],
     [
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/ListCellHelper.cs"
+    ],
+    [
+      "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Scripts/Tile Scripts/Tile Data Scripts/BreakableTileData.cs"
     ],
     [
       "E:/Playable Ads/Repository/2025.09.15-Dream-Mania-Renovate-Farm/Dream Mania - Farm Renovation/LunaTemp/stage3/processed-scripts/Assets/Spine/Runtime/spine-csharp/Animation.cs",

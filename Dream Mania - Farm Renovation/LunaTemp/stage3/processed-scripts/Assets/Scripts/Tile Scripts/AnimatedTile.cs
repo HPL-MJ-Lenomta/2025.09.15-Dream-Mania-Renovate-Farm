@@ -10,6 +10,8 @@ public class AnimatedTile : MonoBehaviour
     [SerializeField] private float Duration = 0.5f;
     [SerializeField] private TileData tileData;
     [SerializeField] private List<Vector3> targetPos;
+    [SerializeField] private List<Vector3> targetPosPortrait;
+    [SerializeField] private List<Vector3> targetPosLandscape;
     [SerializeField] private List<string> targets = new List<string>();
     [SerializeField] private Image image;
     private RectTransform rectTransform;
@@ -50,6 +52,13 @@ public class AnimatedTile : MonoBehaviour
         var trailMain = StarTrailVFXPrefab.main;
         trailMain.startColor = Color.black;*/
     }
+    private void CheckOrientation()
+    {
+        //var checkedOrientation = Screen.width < Screen.height ? GameOrientation.Portrait : GameOrientation.Landscape;
+        var checkedOrientation = Screen.width < Screen.height ? targetPosPortrait : targetPosLandscape;
+
+        targetPos = checkedOrientation;
+    }
 
     public void MoveToTarget(TileData data, [Bridge.Ref] Vector3 position, float delay)
     {
@@ -70,6 +79,8 @@ public class AnimatedTile : MonoBehaviour
         trailRenderer.startColor = keyValuePairs[data.tileName];
 
         AudioManager.Instance.PlaySFX("pop1");
+
+        CheckOrientation();
 
         Vector3 target = index >= 0 && index < targetPos.Count ? targetPos[index] : new Vector3(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y, 0f);
         var duration = index >= 0 && index < targetPos.Count ? delay : 0.25f;
@@ -104,6 +115,8 @@ public class AnimatedTile : MonoBehaviour
         trailRenderer.startColor = keyValuePairs[data.tileName];
 
         AudioManager.Instance.PlaySFX("pop1");
+
+        CheckOrientation();
 
         Vector3 target = index >= 0 && index < targetPos.Count ? targetPos[index] : new Vector3(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y, 0f);
         var duration = index >= 0 && index < targetPos.Count ? delay : 0.25f;

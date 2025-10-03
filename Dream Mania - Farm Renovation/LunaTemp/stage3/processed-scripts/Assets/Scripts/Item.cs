@@ -15,6 +15,8 @@ public class Item : MonoBehaviour
     [SerializeField] private ItemData data;
     [SerializeField] private UIMoveTo UIMovement;
     [SerializeField] private Image FurnitureImage;
+
+    [SerializeField] private Vector2 portraitLocation, landscapeLocation;
     private void OnValidate()
     {
         if (itemImage == null || collectItemImage == null || itemCountText == null || data == null)
@@ -69,7 +71,8 @@ public class Item : MonoBehaviour
 
     public void StartMoving()
     {
-        UIMovement.MoveWithAnticipationAndOvershoot(Vector3.zero);
+        var targetPos = Screen.width < Screen.height ? portraitLocation : landscapeLocation;
+        UIMovement.MoveWithAnticipationAndOvershoot(targetPos);
     }
 
     public void MovementComplete()

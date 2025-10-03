@@ -8,6 +8,9 @@ public class TileData : ScriptableObject
     public string tileName;
     public Sprite tileSprite;
     public bool isPowerup;
+    public bool isBreakable;
+    public bool isSwappable = true;
+    public bool isSpecialBreakable = false;
 
     public virtual List<TileCell> GetAffectedCells(TileManager tileManager, [Bridge.Ref] Vector2 center)
     {

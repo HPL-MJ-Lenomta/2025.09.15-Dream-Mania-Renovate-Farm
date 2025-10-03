@@ -4,8 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Tilemaps;
-using UnityEngine.WSA;
 using Random = UnityEngine.Random;
 
 public class TileManager : MonoBehaviour
@@ -31,21 +29,21 @@ public class TileManager : MonoBehaviour
     [SerializeField] private DynamiteEffect dynamitePowerup;
     private void OnValidate()
     {
-        char[] colors = levelColorValues.ToCharArray();
-        for(int i = 0; i<colors.Length; i++)
+        /*char[] colors = levelColorValues.ToCharArray();
+        for(int i = 0; i<colors.Length; i++) // remove 1 later
         {
             int colorIndex = (colors[i] - '0') - 1;
             if (colorIndex >= 0 && colorIndex < tileDataPool.Count && i < cells.Count)
             {
                 cells[i].GetTile().SetData(tileDataPool[colorIndex]);
             }
-        }
+        }*/
     }
 
     void Start()
     {
         InitializeGridCell();
-        char[] colors = levelColorValues.ToCharArray();
+        /*char[] colors = levelColorValues.ToCharArray();
         for (int i = 0; i < colors.Length; i++)
         {
             int colorIndex = (colors[i] - '0') - 1;
@@ -53,7 +51,7 @@ public class TileManager : MonoBehaviour
             {
                 cells[i].GetTile().SetData(tileDataPool[colorIndex]);
             }
-        }
+        }*/
     }
 
     private void Update()
@@ -82,6 +80,8 @@ public class TileManager : MonoBehaviour
 
     public void SwapTiles(TileCell cell1, TileCell cell2)
     {
+        if (!cell1.GetTile().GetTileData().isSwappable || !cell2.GetTile().GetTileData().isSwappable) return;
+
         Vector2 dir1 = (cell2.coordinate - cell1.coordinate);
         Vector2 dir2 = (cell1.coordinate - cell2.coordinate);
 
@@ -298,6 +298,8 @@ public class TileManager : MonoBehaviour
             var middleCell = cell[cell.Count / 2];
             foreach (var c in cell)
             {
+                if (!c.GetTile().GetTileData()) continue;
+                if (c.GetTile().GetTileData().isBreakable == false) continue;
                 if (delay == .75f)
                 {
                     AnimatedTileSpawner.Instance.Spawn(c.GetTile().GetTileData(), c.transform.localPosition, delay, cell.Count);
@@ -306,6 +308,7 @@ public class TileManager : MonoBehaviour
                     {
                         //powerup?
                         c.GetTile().SetData(powerupDataPool[Random.Range(0, powerupDataPool.Count)]);
+                        c.OnTileBreak.Invoke(c);
                     }
                     /*else if(!anyPowerup)
                     {
@@ -314,6 +317,7 @@ public class TileManager : MonoBehaviour
                     }*/
                     else
                     {
+                        c.OnTileBreak.Invoke(c);
                         c.GetTile().Break();
                     }
                 }
@@ -322,10 +326,12 @@ public class TileManager : MonoBehaviour
                     if(!anyPowerup)
                     {
                         var dir = (cell[0].coordinate - c.coordinate);
+                        c.OnTileBreak.Invoke(c);
                         c.GetTile().Break(dir);
                     }
                     else
                     {
+                        c.OnTileBreak.Invoke(c);
                         c.GetTile().Break();
                     }
                     //c.GetTile().GetTileData().GetAffectedCells(this, c.coordinate);
@@ -393,7 +399,7 @@ public class TileManager : MonoBehaviour
             for (int y = 0; y < cellHeight; y++)
             {
                 var tileData = tileGrid[x, y].GetTile().GetTileData();
-                if (tileData == null || tileData.isPowerup) continue; // Skip empty cells
+                if (tileData == null || tileData.isPowerup || !tileData.isBreakable) continue; // Skip empty cells
 
                 var match = GetMatchesAt(new Vector2Int(x, -y));
                 if (match != null && match.Count >= 3)
@@ -486,7 +492,7 @@ public class TileManager : MonoBehaviour
 
         return result;
     }
-    private List<TileCell> GetNeighbors(TileCell cell)
+    public List<TileCell> GetNeighbors(TileCell cell)
     {
         var neighbors = new List<TileCell>();
         var coord = cell.coordinate * new Vector2Int(1, -1); // Reverse the movement because the y coordinates are positive
@@ -516,5 +522,16 @@ public class TileManager : MonoBehaviour
             }
         }
         return result;
+    }
+
+    public TileCell GetCellBelow(TileCell cell)
+    {
+        var lowerCell = new TileCell();
+        var coord = cell.coordinate * new Vector2Int(1, -1); // Reverse the movement because the y coordinates are positive
+
+        if (coord.y < cellHeight - 1)
+            lowerCell = (tileGrid[coord.x, coord.y + 1]);
+
+        return lowerCell;
     }
 }

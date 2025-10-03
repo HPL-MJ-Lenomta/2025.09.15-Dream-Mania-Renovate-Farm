@@ -104,9 +104,9 @@ MonoBehaviour:
   - {x: 400, y: -1061, z: 0}
   - {x: 708, y: -1061, z: 0}
   targetPosLandscape:
-  - {x: 1134, y: -47, z: 0}
-  - {x: 1134, y: -358, z: 0}
-  - {x: 1134, y: -659, z: 0}
+  - {x: 1023, y: -124, z: 0}
+  - {x: 1023, y: -374, z: 0}
+  - {x: 1023, y: -624, z: 0}
   targets:
   - yellow
   - blue

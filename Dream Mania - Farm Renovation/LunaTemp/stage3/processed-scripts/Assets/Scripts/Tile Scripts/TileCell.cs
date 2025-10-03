@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UIUtils;
@@ -11,6 +12,8 @@ public class TileCell : MonoBehaviour, IDragHandler, IPointerClickHandler
     [SerializeField] private Tile tile;
     public Vector2Int coordinate;
     private TileManager tileManager;
+
+    public Action<TileCell> OnTileBreak;
 
     public void Initialize(TileManager manager)
     {
@@ -40,7 +43,9 @@ public class TileCell : MonoBehaviour, IDragHandler, IPointerClickHandler
 
         if (UIComponentChecker.CheckForComponent(out TileCell otherCell, true))
         {
-            if (otherCell != this && otherCell.tileData != null && tileData != null)
+            if (!otherCell.GetTile().GetTileData().isSwappable || !GetTile().GetTileData().isSwappable) return;
+
+            if (otherCell != this && otherCell.GetTile().GetTileData() != null && GetTile().GetTileData() != null)
             {
                 tileManager.SwapTiles(this, otherCell);
             }

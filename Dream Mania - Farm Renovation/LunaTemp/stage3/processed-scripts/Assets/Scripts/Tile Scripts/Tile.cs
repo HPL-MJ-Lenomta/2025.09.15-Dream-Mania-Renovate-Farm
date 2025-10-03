@@ -75,12 +75,15 @@ public class Tile : MonoBehaviour
 
     public void Break()
     {
+        if (!tileData.isBreakable) return;
         rectTransform.DOScale(0, MovementDuration).SetEase(Ease.OutBack);
         tileData = null;
     }
 
     public void Break([Bridge.Ref] Vector2 direction)
     {
+        if (!tileData.isBreakable) return;
+
         rectTransform.DOBlendableLocalMoveBy(direction * MovementMagnitude, MovementDuration)
             .SetEase(Ease.OutBack)
             .OnComplete(() =>
@@ -89,6 +92,12 @@ public class Tile : MonoBehaviour
                 rectTransform.anchoredPosition = initialPosition;
                 tileData = null;
             });
+    }
+
+    public void SpecialBreak()
+    {
+        rectTransform.DOScale(0, MovementDuration).SetEase(Ease.OutBack);
+        tileData = null;
     }
 
     public void ClearData()
