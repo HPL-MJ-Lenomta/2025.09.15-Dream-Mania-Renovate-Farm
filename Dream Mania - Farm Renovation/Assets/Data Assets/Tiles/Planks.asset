@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Planks
   m_EditorClassIdentifier: 
   tileName: p2
-  tileSprite: {fileID: 21300000, guid: 19606dd3560187046b6d92b63df7c043, type: 3}
+  tileSprite: {fileID: 3916455074444410700, guid: 14d769698fb9fa447a4c20c6f9080074, type: 3}
   isPowerup: 0
   isBreakable: 0
   isSwappable: 0

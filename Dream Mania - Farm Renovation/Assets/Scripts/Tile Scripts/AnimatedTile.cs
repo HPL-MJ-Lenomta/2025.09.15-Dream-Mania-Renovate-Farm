@@ -80,7 +80,7 @@ public class AnimatedTile : MonoBehaviour
 
         AudioManager.Instance.PlaySFX("pop1");
 
-        CheckOrientation();
+        //CheckOrientation();
 
         Vector3 target = index >= 0 && index < targetPos.Count ? targetPos[index] : new Vector3(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y, 0f);
         var duration = index >= 0 && index < targetPos.Count ? delay : 0.25f;
@@ -116,8 +116,9 @@ public class AnimatedTile : MonoBehaviour
 
         AudioManager.Instance.PlaySFX("pop1");
 
-        CheckOrientation();
+        //CheckOrientation();
 
+        //Vector3 target = targetPos[index];
         Vector3 target = index >= 0 && index < targetPos.Count ? targetPos[index] : new Vector3(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y, 0f);
         var duration = index >= 0 && index < targetPos.Count ? delay : 0.25f;
 

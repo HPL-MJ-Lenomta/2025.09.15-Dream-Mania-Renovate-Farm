@@ -184,5 +184,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemImage: {fileID: 8504244053401749474}
   tileData: {fileID: 11400000, guid: a36c60c6dbde63c41a3ada8d000fef82, type: 2}
-  MovementMagnitude: 130
+  MovementMagnitude: 150.969
   MovementDuration: 0.25

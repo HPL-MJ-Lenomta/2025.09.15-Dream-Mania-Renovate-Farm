@@ -2,7 +2,7 @@
     "version": "6.3.0",
     "projectId": "bab41f24a77b7a944b71277894eff5d3",
     "applicationID": 32752,
-    "creativeName": "Renovation",
+    "creativeName": "Farm-Renovation",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -42711,6 +42711,26 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/Sprites/Dream Mania Renovate Farm/background.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "crush",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania Renovate Farm/chicken_export_file/"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "crush",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania Renovate Farm/pig_export_file/"
                     }
                 ]
             },

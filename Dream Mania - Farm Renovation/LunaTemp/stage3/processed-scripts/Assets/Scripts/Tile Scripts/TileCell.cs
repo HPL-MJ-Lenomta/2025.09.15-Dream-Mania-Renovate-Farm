@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UIUtils;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class TileCell : MonoBehaviour, IDragHandler, IPointerClickHandler
@@ -14,6 +15,7 @@ public class TileCell : MonoBehaviour, IDragHandler, IPointerClickHandler
     private TileManager tileManager;
 
     public Action<TileCell> OnTileBreak;
+    public UnityEvent TileBreakEvent;
 
     public void Initialize(TileManager manager)
     {
