@@ -1,3146 +1,3127 @@
 var Deserializers = {}
 Deserializers["UnityEngine.JointSpring"] = function (request, data, root) {
-  var i766 = root || request.c( 'UnityEngine.JointSpring' )
-  var i767 = data
-  i766.spring = i767[0]
-  i766.damper = i767[1]
-  i766.targetPosition = i767[2]
-  return i766
+  var i2280 = root || request.c( 'UnityEngine.JointSpring' )
+  var i2281 = data
+  i2280.spring = i2281[0]
+  i2280.damper = i2281[1]
+  i2280.targetPosition = i2281[2]
+  return i2280
 }
 
 Deserializers["UnityEngine.JointMotor"] = function (request, data, root) {
-  var i768 = root || request.c( 'UnityEngine.JointMotor' )
-  var i769 = data
-  i768.m_TargetVelocity = i769[0]
-  i768.m_Force = i769[1]
-  i768.m_FreeSpin = i769[2]
-  return i768
+  var i2282 = root || request.c( 'UnityEngine.JointMotor' )
+  var i2283 = data
+  i2282.m_TargetVelocity = i2283[0]
+  i2282.m_Force = i2283[1]
+  i2282.m_FreeSpin = i2283[2]
+  return i2282
 }
 
 Deserializers["UnityEngine.JointLimits"] = function (request, data, root) {
-  var i770 = root || request.c( 'UnityEngine.JointLimits' )
-  var i771 = data
-  i770.m_Min = i771[0]
-  i770.m_Max = i771[1]
-  i770.m_Bounciness = i771[2]
-  i770.m_BounceMinVelocity = i771[3]
-  i770.m_ContactDistance = i771[4]
-  i770.minBounce = i771[5]
-  i770.maxBounce = i771[6]
-  return i770
+  var i2284 = root || request.c( 'UnityEngine.JointLimits' )
+  var i2285 = data
+  i2284.m_Min = i2285[0]
+  i2284.m_Max = i2285[1]
+  i2284.m_Bounciness = i2285[2]
+  i2284.m_BounceMinVelocity = i2285[3]
+  i2284.m_ContactDistance = i2285[4]
+  i2284.minBounce = i2285[5]
+  i2284.maxBounce = i2285[6]
+  return i2284
 }
 
 Deserializers["UnityEngine.JointDrive"] = function (request, data, root) {
-  var i772 = root || request.c( 'UnityEngine.JointDrive' )
-  var i773 = data
-  i772.m_PositionSpring = i773[0]
-  i772.m_PositionDamper = i773[1]
-  i772.m_MaximumForce = i773[2]
-  i772.m_UseAcceleration = i773[3]
-  return i772
+  var i2286 = root || request.c( 'UnityEngine.JointDrive' )
+  var i2287 = data
+  i2286.m_PositionSpring = i2287[0]
+  i2286.m_PositionDamper = i2287[1]
+  i2286.m_MaximumForce = i2287[2]
+  i2286.m_UseAcceleration = i2287[3]
+  return i2286
 }
 
 Deserializers["UnityEngine.SoftJointLimitSpring"] = function (request, data, root) {
-  var i774 = root || request.c( 'UnityEngine.SoftJointLimitSpring' )
-  var i775 = data
-  i774.m_Spring = i775[0]
-  i774.m_Damper = i775[1]
-  return i774
+  var i2288 = root || request.c( 'UnityEngine.SoftJointLimitSpring' )
+  var i2289 = data
+  i2288.m_Spring = i2289[0]
+  i2288.m_Damper = i2289[1]
+  return i2288
 }
 
 Deserializers["UnityEngine.SoftJointLimit"] = function (request, data, root) {
-  var i776 = root || request.c( 'UnityEngine.SoftJointLimit' )
-  var i777 = data
-  i776.m_Limit = i777[0]
-  i776.m_Bounciness = i777[1]
-  i776.m_ContactDistance = i777[2]
-  return i776
+  var i2290 = root || request.c( 'UnityEngine.SoftJointLimit' )
+  var i2291 = data
+  i2290.m_Limit = i2291[0]
+  i2290.m_Bounciness = i2291[1]
+  i2290.m_ContactDistance = i2291[2]
+  return i2290
 }
 
 Deserializers["UnityEngine.WheelFrictionCurve"] = function (request, data, root) {
-  var i778 = root || request.c( 'UnityEngine.WheelFrictionCurve' )
-  var i779 = data
-  i778.m_ExtremumSlip = i779[0]
-  i778.m_ExtremumValue = i779[1]
-  i778.m_AsymptoteSlip = i779[2]
-  i778.m_AsymptoteValue = i779[3]
-  i778.m_Stiffness = i779[4]
-  return i778
+  var i2292 = root || request.c( 'UnityEngine.WheelFrictionCurve' )
+  var i2293 = data
+  i2292.m_ExtremumSlip = i2293[0]
+  i2292.m_ExtremumValue = i2293[1]
+  i2292.m_AsymptoteSlip = i2293[2]
+  i2292.m_AsymptoteValue = i2293[3]
+  i2292.m_Stiffness = i2293[4]
+  return i2292
 }
 
 Deserializers["UnityEngine.JointAngleLimits2D"] = function (request, data, root) {
-  var i780 = root || request.c( 'UnityEngine.JointAngleLimits2D' )
-  var i781 = data
-  i780.m_LowerAngle = i781[0]
-  i780.m_UpperAngle = i781[1]
-  return i780
+  var i2294 = root || request.c( 'UnityEngine.JointAngleLimits2D' )
+  var i2295 = data
+  i2294.m_LowerAngle = i2295[0]
+  i2294.m_UpperAngle = i2295[1]
+  return i2294
 }
 
 Deserializers["UnityEngine.JointMotor2D"] = function (request, data, root) {
-  var i782 = root || request.c( 'UnityEngine.JointMotor2D' )
-  var i783 = data
-  i782.m_MotorSpeed = i783[0]
-  i782.m_MaximumMotorTorque = i783[1]
-  return i782
+  var i2296 = root || request.c( 'UnityEngine.JointMotor2D' )
+  var i2297 = data
+  i2296.m_MotorSpeed = i2297[0]
+  i2296.m_MaximumMotorTorque = i2297[1]
+  return i2296
 }
 
 Deserializers["UnityEngine.JointSuspension2D"] = function (request, data, root) {
-  var i784 = root || request.c( 'UnityEngine.JointSuspension2D' )
-  var i785 = data
-  i784.m_DampingRatio = i785[0]
-  i784.m_Frequency = i785[1]
-  i784.m_Angle = i785[2]
-  return i784
+  var i2298 = root || request.c( 'UnityEngine.JointSuspension2D' )
+  var i2299 = data
+  i2298.m_DampingRatio = i2299[0]
+  i2298.m_Frequency = i2299[1]
+  i2298.m_Angle = i2299[2]
+  return i2298
 }
 
 Deserializers["UnityEngine.JointTranslationLimits2D"] = function (request, data, root) {
-  var i786 = root || request.c( 'UnityEngine.JointTranslationLimits2D' )
-  var i787 = data
-  i786.m_LowerTranslation = i787[0]
-  i786.m_UpperTranslation = i787[1]
-  return i786
+  var i2300 = root || request.c( 'UnityEngine.JointTranslationLimits2D' )
+  var i2301 = data
+  i2300.m_LowerTranslation = i2301[0]
+  i2300.m_UpperTranslation = i2301[1]
+  return i2300
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Textures.Texture2D"] = function (request, data, root) {
-  var i788 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Textures.Texture2D' )
-  var i789 = data
-  i788.name = i789[0]
-  i788.width = i789[1]
-  i788.height = i789[2]
-  i788.mipmapCount = i789[3]
-  i788.anisoLevel = i789[4]
-  i788.filterMode = i789[5]
-  i788.hdr = !!i789[6]
-  i788.format = i789[7]
-  i788.wrapMode = i789[8]
-  i788.alphaIsTransparency = !!i789[9]
-  i788.alphaSource = i789[10]
-  i788.graphicsFormat = i789[11]
-  i788.sRGBTexture = !!i789[12]
-  i788.desiredColorSpace = i789[13]
-  i788.wrapU = i789[14]
-  i788.wrapV = i789[15]
-  return i788
+  var i2302 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Textures.Texture2D' )
+  var i2303 = data
+  i2302.name = i2303[0]
+  i2302.width = i2303[1]
+  i2302.height = i2303[2]
+  i2302.mipmapCount = i2303[3]
+  i2302.anisoLevel = i2303[4]
+  i2302.filterMode = i2303[5]
+  i2302.hdr = !!i2303[6]
+  i2302.format = i2303[7]
+  i2302.wrapMode = i2303[8]
+  i2302.alphaIsTransparency = !!i2303[9]
+  i2302.alphaSource = i2303[10]
+  i2302.graphicsFormat = i2303[11]
+  i2302.sRGBTexture = !!i2303[12]
+  i2302.desiredColorSpace = i2303[13]
+  i2302.wrapU = i2303[14]
+  i2302.wrapV = i2303[15]
+  return i2302
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.RectTransform"] = function (request, data, root) {
-  var i790 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.RectTransform' )
-  var i791 = data
-  i790.pivot = new pc.Vec2( i791[0], i791[1] )
-  i790.anchorMin = new pc.Vec2( i791[2], i791[3] )
-  i790.anchorMax = new pc.Vec2( i791[4], i791[5] )
-  i790.sizeDelta = new pc.Vec2( i791[6], i791[7] )
-  i790.anchoredPosition3D = new pc.Vec3( i791[8], i791[9], i791[10] )
-  i790.rotation = new pc.Quat(i791[11], i791[12], i791[13], i791[14])
-  i790.scale = new pc.Vec3( i791[15], i791[16], i791[17] )
-  return i790
+  var i2304 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.RectTransform' )
+  var i2305 = data
+  i2304.pivot = new pc.Vec2( i2305[0], i2305[1] )
+  i2304.anchorMin = new pc.Vec2( i2305[2], i2305[3] )
+  i2304.anchorMax = new pc.Vec2( i2305[4], i2305[5] )
+  i2304.sizeDelta = new pc.Vec2( i2305[6], i2305[7] )
+  i2304.anchoredPosition3D = new pc.Vec3( i2305[8], i2305[9], i2305[10] )
+  i2304.rotation = new pc.Quat(i2305[11], i2305[12], i2305[13], i2305[14])
+  i2304.scale = new pc.Vec3( i2305[15], i2305[16], i2305[17] )
+  return i2304
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.CanvasRenderer"] = function (request, data, root) {
-  var i792 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.CanvasRenderer' )
-  var i793 = data
-  i792.cullTransparentMesh = !!i793[0]
-  return i792
+  var i2306 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.CanvasRenderer' )
+  var i2307 = data
+  i2306.cullTransparentMesh = !!i2307[0]
+  return i2306
 }
 
 Deserializers["Item"] = function (request, data, root) {
-  var i794 = root || request.c( 'Item' )
-  var i795 = data
-  request.r(i795[0], i795[1], 0, i794, 'itemImage')
-  request.r(i795[2], i795[3], 0, i794, 'collectItemImage')
-  request.r(i795[4], i795[5], 0, i794, 'itemCountText')
-  i794.ItemCount = i795[6]
-  request.r(i795[7], i795[8], 0, i794, 'completeSprite')
-  request.r(i795[9], i795[10], 0, i794, 'data')
-  request.r(i795[11], i795[12], 0, i794, 'UIMovement')
-  request.r(i795[13], i795[14], 0, i794, 'FurnitureImage')
-  i794.portraitLocation = new pc.Vec2( i795[15], i795[16] )
-  i794.landscapeLocation = new pc.Vec2( i795[17], i795[18] )
-  return i794
+  var i2308 = root || request.c( 'Item' )
+  var i2309 = data
+  request.r(i2309[0], i2309[1], 0, i2308, 'itemImage')
+  request.r(i2309[2], i2309[3], 0, i2308, 'collectItemImage')
+  request.r(i2309[4], i2309[5], 0, i2308, 'itemCountText')
+  i2308.ItemCount = i2309[6]
+  request.r(i2309[7], i2309[8], 0, i2308, 'completeSprite')
+  request.r(i2309[9], i2309[10], 0, i2308, 'data')
+  request.r(i2309[11], i2309[12], 0, i2308, 'UIMovement')
+  request.r(i2309[13], i2309[14], 0, i2308, 'FurnitureImage')
+  i2308.portraitLocation = new pc.Vec2( i2309[15], i2309[16] )
+  i2308.landscapeLocation = new pc.Vec2( i2309[17], i2309[18] )
+  return i2308
 }
 
 Deserializers["UnityEngine.UI.Image"] = function (request, data, root) {
-  var i796 = root || request.c( 'UnityEngine.UI.Image' )
-  var i797 = data
-  request.r(i797[0], i797[1], 0, i796, 'm_Sprite')
-  i796.m_Type = i797[2]
-  i796.m_PreserveAspect = !!i797[3]
-  i796.m_FillCenter = !!i797[4]
-  i796.m_FillMethod = i797[5]
-  i796.m_FillAmount = i797[6]
-  i796.m_FillClockwise = !!i797[7]
-  i796.m_FillOrigin = i797[8]
-  i796.m_UseSpriteMesh = !!i797[9]
-  i796.m_PixelsPerUnitMultiplier = i797[10]
-  request.r(i797[11], i797[12], 0, i796, 'm_Material')
-  i796.m_Maskable = !!i797[13]
-  i796.m_Color = new pc.Color(i797[14], i797[15], i797[16], i797[17])
-  i796.m_RaycastTarget = !!i797[18]
-  i796.m_RaycastPadding = new pc.Vec4( i797[19], i797[20], i797[21], i797[22] )
-  return i796
+  var i2310 = root || request.c( 'UnityEngine.UI.Image' )
+  var i2311 = data
+  request.r(i2311[0], i2311[1], 0, i2310, 'm_Sprite')
+  i2310.m_Type = i2311[2]
+  i2310.m_PreserveAspect = !!i2311[3]
+  i2310.m_FillCenter = !!i2311[4]
+  i2310.m_FillMethod = i2311[5]
+  i2310.m_FillAmount = i2311[6]
+  i2310.m_FillClockwise = !!i2311[7]
+  i2310.m_FillOrigin = i2311[8]
+  i2310.m_UseSpriteMesh = !!i2311[9]
+  i2310.m_PixelsPerUnitMultiplier = i2311[10]
+  request.r(i2311[11], i2311[12], 0, i2310, 'm_Material')
+  i2310.m_Maskable = !!i2311[13]
+  i2310.m_Color = new pc.Color(i2311[14], i2311[15], i2311[16], i2311[17])
+  i2310.m_RaycastTarget = !!i2311[18]
+  i2310.m_RaycastPadding = new pc.Vec4( i2311[19], i2311[20], i2311[21], i2311[22] )
+  return i2310
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Scene.GameObject"] = function (request, data, root) {
-  var i798 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Scene.GameObject' )
-  var i799 = data
-  i798.name = i799[0]
-  i798.tagId = i799[1]
-  i798.enabled = !!i799[2]
-  i798.isStatic = !!i799[3]
-  i798.layer = i799[4]
-  return i798
+  var i2312 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Scene.GameObject' )
+  var i2313 = data
+  i2312.name = i2313[0]
+  i2312.tagId = i2313[1]
+  i2312.enabled = !!i2313[2]
+  i2312.isStatic = !!i2313[3]
+  i2312.layer = i2313[4]
+  return i2312
 }
 
 Deserializers["TMPro.TextMeshProUGUI"] = function (request, data, root) {
-  var i800 = root || request.c( 'TMPro.TextMeshProUGUI' )
-  var i801 = data
-  i800.m_hasFontAssetChanged = !!i801[0]
-  request.r(i801[1], i801[2], 0, i800, 'm_baseMaterial')
-  i800.m_maskOffset = new pc.Vec4( i801[3], i801[4], i801[5], i801[6] )
-  i800.m_text = i801[7]
-  i800.m_isRightToLeft = !!i801[8]
-  request.r(i801[9], i801[10], 0, i800, 'm_fontAsset')
-  request.r(i801[11], i801[12], 0, i800, 'm_sharedMaterial')
-  var i803 = i801[13]
-  var i802 = []
-  for(var i = 0; i < i803.length; i += 2) {
-  request.r(i803[i + 0], i803[i + 1], 2, i802, '')
+  var i2314 = root || request.c( 'TMPro.TextMeshProUGUI' )
+  var i2315 = data
+  i2314.m_hasFontAssetChanged = !!i2315[0]
+  request.r(i2315[1], i2315[2], 0, i2314, 'm_baseMaterial')
+  i2314.m_maskOffset = new pc.Vec4( i2315[3], i2315[4], i2315[5], i2315[6] )
+  i2314.m_text = i2315[7]
+  i2314.m_isRightToLeft = !!i2315[8]
+  request.r(i2315[9], i2315[10], 0, i2314, 'm_fontAsset')
+  request.r(i2315[11], i2315[12], 0, i2314, 'm_sharedMaterial')
+  var i2317 = i2315[13]
+  var i2316 = []
+  for(var i = 0; i < i2317.length; i += 2) {
+  request.r(i2317[i + 0], i2317[i + 1], 2, i2316, '')
   }
-  i800.m_fontSharedMaterials = i802
-  request.r(i801[14], i801[15], 0, i800, 'm_fontMaterial')
-  var i805 = i801[16]
-  var i804 = []
-  for(var i = 0; i < i805.length; i += 2) {
-  request.r(i805[i + 0], i805[i + 1], 2, i804, '')
+  i2314.m_fontSharedMaterials = i2316
+  request.r(i2315[14], i2315[15], 0, i2314, 'm_fontMaterial')
+  var i2319 = i2315[16]
+  var i2318 = []
+  for(var i = 0; i < i2319.length; i += 2) {
+  request.r(i2319[i + 0], i2319[i + 1], 2, i2318, '')
   }
-  i800.m_fontMaterials = i804
-  i800.m_fontColor32 = UnityEngine.Color32.ConstructColor(i801[17], i801[18], i801[19], i801[20])
-  i800.m_fontColor = new pc.Color(i801[21], i801[22], i801[23], i801[24])
-  i800.m_enableVertexGradient = !!i801[25]
-  i800.m_colorMode = i801[26]
-  i800.m_fontColorGradient = request.d('TMPro.VertexGradient', i801[27], i800.m_fontColorGradient)
-  request.r(i801[28], i801[29], 0, i800, 'm_fontColorGradientPreset')
-  request.r(i801[30], i801[31], 0, i800, 'm_spriteAsset')
-  i800.m_tintAllSprites = !!i801[32]
-  request.r(i801[33], i801[34], 0, i800, 'm_StyleSheet')
-  i800.m_TextStyleHashCode = i801[35]
-  i800.m_overrideHtmlColors = !!i801[36]
-  i800.m_faceColor = UnityEngine.Color32.ConstructColor(i801[37], i801[38], i801[39], i801[40])
-  i800.m_fontSize = i801[41]
-  i800.m_fontSizeBase = i801[42]
-  i800.m_fontWeight = i801[43]
-  i800.m_enableAutoSizing = !!i801[44]
-  i800.m_fontSizeMin = i801[45]
-  i800.m_fontSizeMax = i801[46]
-  i800.m_fontStyle = i801[47]
-  i800.m_HorizontalAlignment = i801[48]
-  i800.m_VerticalAlignment = i801[49]
-  i800.m_textAlignment = i801[50]
-  i800.m_characterSpacing = i801[51]
-  i800.m_wordSpacing = i801[52]
-  i800.m_lineSpacing = i801[53]
-  i800.m_lineSpacingMax = i801[54]
-  i800.m_paragraphSpacing = i801[55]
-  i800.m_charWidthMaxAdj = i801[56]
-  i800.m_enableWordWrapping = !!i801[57]
-  i800.m_wordWrappingRatios = i801[58]
-  i800.m_overflowMode = i801[59]
-  request.r(i801[60], i801[61], 0, i800, 'm_linkedTextComponent')
-  request.r(i801[62], i801[63], 0, i800, 'parentLinkedComponent')
-  i800.m_enableKerning = !!i801[64]
-  i800.m_enableExtraPadding = !!i801[65]
-  i800.checkPaddingRequired = !!i801[66]
-  i800.m_isRichText = !!i801[67]
-  i800.m_parseCtrlCharacters = !!i801[68]
-  i800.m_isOrthographic = !!i801[69]
-  i800.m_isCullingEnabled = !!i801[70]
-  i800.m_horizontalMapping = i801[71]
-  i800.m_verticalMapping = i801[72]
-  i800.m_uvLineOffset = i801[73]
-  i800.m_geometrySortingOrder = i801[74]
-  i800.m_IsTextObjectScaleStatic = !!i801[75]
-  i800.m_VertexBufferAutoSizeReduction = !!i801[76]
-  i800.m_useMaxVisibleDescender = !!i801[77]
-  i800.m_pageToDisplay = i801[78]
-  i800.m_margin = new pc.Vec4( i801[79], i801[80], i801[81], i801[82] )
-  i800.m_isUsingLegacyAnimationComponent = !!i801[83]
-  i800.m_isVolumetricText = !!i801[84]
-  request.r(i801[85], i801[86], 0, i800, 'm_Material')
-  i800.m_Maskable = !!i801[87]
-  i800.m_Color = new pc.Color(i801[88], i801[89], i801[90], i801[91])
-  i800.m_RaycastTarget = !!i801[92]
-  i800.m_RaycastPadding = new pc.Vec4( i801[93], i801[94], i801[95], i801[96] )
-  return i800
+  i2314.m_fontMaterials = i2318
+  i2314.m_fontColor32 = UnityEngine.Color32.ConstructColor(i2315[17], i2315[18], i2315[19], i2315[20])
+  i2314.m_fontColor = new pc.Color(i2315[21], i2315[22], i2315[23], i2315[24])
+  i2314.m_enableVertexGradient = !!i2315[25]
+  i2314.m_colorMode = i2315[26]
+  i2314.m_fontColorGradient = request.d('TMPro.VertexGradient', i2315[27], i2314.m_fontColorGradient)
+  request.r(i2315[28], i2315[29], 0, i2314, 'm_fontColorGradientPreset')
+  request.r(i2315[30], i2315[31], 0, i2314, 'm_spriteAsset')
+  i2314.m_tintAllSprites = !!i2315[32]
+  request.r(i2315[33], i2315[34], 0, i2314, 'm_StyleSheet')
+  i2314.m_TextStyleHashCode = i2315[35]
+  i2314.m_overrideHtmlColors = !!i2315[36]
+  i2314.m_faceColor = UnityEngine.Color32.ConstructColor(i2315[37], i2315[38], i2315[39], i2315[40])
+  i2314.m_fontSize = i2315[41]
+  i2314.m_fontSizeBase = i2315[42]
+  i2314.m_fontWeight = i2315[43]
+  i2314.m_enableAutoSizing = !!i2315[44]
+  i2314.m_fontSizeMin = i2315[45]
+  i2314.m_fontSizeMax = i2315[46]
+  i2314.m_fontStyle = i2315[47]
+  i2314.m_HorizontalAlignment = i2315[48]
+  i2314.m_VerticalAlignment = i2315[49]
+  i2314.m_textAlignment = i2315[50]
+  i2314.m_characterSpacing = i2315[51]
+  i2314.m_wordSpacing = i2315[52]
+  i2314.m_lineSpacing = i2315[53]
+  i2314.m_lineSpacingMax = i2315[54]
+  i2314.m_paragraphSpacing = i2315[55]
+  i2314.m_charWidthMaxAdj = i2315[56]
+  i2314.m_enableWordWrapping = !!i2315[57]
+  i2314.m_wordWrappingRatios = i2315[58]
+  i2314.m_overflowMode = i2315[59]
+  request.r(i2315[60], i2315[61], 0, i2314, 'm_linkedTextComponent')
+  request.r(i2315[62], i2315[63], 0, i2314, 'parentLinkedComponent')
+  i2314.m_enableKerning = !!i2315[64]
+  i2314.m_enableExtraPadding = !!i2315[65]
+  i2314.checkPaddingRequired = !!i2315[66]
+  i2314.m_isRichText = !!i2315[67]
+  i2314.m_parseCtrlCharacters = !!i2315[68]
+  i2314.m_isOrthographic = !!i2315[69]
+  i2314.m_isCullingEnabled = !!i2315[70]
+  i2314.m_horizontalMapping = i2315[71]
+  i2314.m_verticalMapping = i2315[72]
+  i2314.m_uvLineOffset = i2315[73]
+  i2314.m_geometrySortingOrder = i2315[74]
+  i2314.m_IsTextObjectScaleStatic = !!i2315[75]
+  i2314.m_VertexBufferAutoSizeReduction = !!i2315[76]
+  i2314.m_useMaxVisibleDescender = !!i2315[77]
+  i2314.m_pageToDisplay = i2315[78]
+  i2314.m_margin = new pc.Vec4( i2315[79], i2315[80], i2315[81], i2315[82] )
+  i2314.m_isUsingLegacyAnimationComponent = !!i2315[83]
+  i2314.m_isVolumetricText = !!i2315[84]
+  request.r(i2315[85], i2315[86], 0, i2314, 'm_Material')
+  i2314.m_Maskable = !!i2315[87]
+  i2314.m_Color = new pc.Color(i2315[88], i2315[89], i2315[90], i2315[91])
+  i2314.m_RaycastTarget = !!i2315[92]
+  i2314.m_RaycastPadding = new pc.Vec4( i2315[93], i2315[94], i2315[95], i2315[96] )
+  return i2314
 }
 
 Deserializers["TMPro.VertexGradient"] = function (request, data, root) {
-  var i808 = root || request.c( 'TMPro.VertexGradient' )
-  var i809 = data
-  i808.topLeft = new pc.Color(i809[0], i809[1], i809[2], i809[3])
-  i808.topRight = new pc.Color(i809[4], i809[5], i809[6], i809[7])
-  i808.bottomLeft = new pc.Color(i809[8], i809[9], i809[10], i809[11])
-  i808.bottomRight = new pc.Color(i809[12], i809[13], i809[14], i809[15])
-  return i808
+  var i2322 = root || request.c( 'TMPro.VertexGradient' )
+  var i2323 = data
+  i2322.topLeft = new pc.Color(i2323[0], i2323[1], i2323[2], i2323[3])
+  i2322.topRight = new pc.Color(i2323[4], i2323[5], i2323[6], i2323[7])
+  i2322.bottomLeft = new pc.Color(i2323[8], i2323[9], i2323[10], i2323[11])
+  i2322.bottomRight = new pc.Color(i2323[12], i2323[13], i2323[14], i2323[15])
+  return i2322
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Material"] = function (request, data, root) {
-  var i810 = root || new pc.UnityMaterial()
-  var i811 = data
-  i810.name = i811[0]
-  request.r(i811[1], i811[2], 0, i810, 'shader')
-  i810.renderQueue = i811[3]
-  i810.enableInstancing = !!i811[4]
-  var i813 = i811[5]
-  var i812 = []
-  for(var i = 0; i < i813.length; i += 1) {
-    i812.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+FloatParameter', i813[i + 0]) );
+  var i2324 = root || new pc.UnityMaterial()
+  var i2325 = data
+  i2324.name = i2325[0]
+  request.r(i2325[1], i2325[2], 0, i2324, 'shader')
+  i2324.renderQueue = i2325[3]
+  i2324.enableInstancing = !!i2325[4]
+  var i2327 = i2325[5]
+  var i2326 = []
+  for(var i = 0; i < i2327.length; i += 1) {
+    i2326.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+FloatParameter', i2327[i + 0]) );
   }
-  i810.floatParameters = i812
-  var i815 = i811[6]
-  var i814 = []
-  for(var i = 0; i < i815.length; i += 1) {
-    i814.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+ColorParameter', i815[i + 0]) );
+  i2324.floatParameters = i2326
+  var i2329 = i2325[6]
+  var i2328 = []
+  for(var i = 0; i < i2329.length; i += 1) {
+    i2328.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+ColorParameter', i2329[i + 0]) );
   }
-  i810.colorParameters = i814
-  var i817 = i811[7]
-  var i816 = []
-  for(var i = 0; i < i817.length; i += 1) {
-    i816.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+VectorParameter', i817[i + 0]) );
+  i2324.colorParameters = i2328
+  var i2331 = i2325[7]
+  var i2330 = []
+  for(var i = 0; i < i2331.length; i += 1) {
+    i2330.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+VectorParameter', i2331[i + 0]) );
   }
-  i810.vectorParameters = i816
-  var i819 = i811[8]
-  var i818 = []
-  for(var i = 0; i < i819.length; i += 1) {
-    i818.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+TextureParameter', i819[i + 0]) );
+  i2324.vectorParameters = i2330
+  var i2333 = i2325[8]
+  var i2332 = []
+  for(var i = 0; i < i2333.length; i += 1) {
+    i2332.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+TextureParameter', i2333[i + 0]) );
   }
-  i810.textureParameters = i818
-  var i821 = i811[9]
-  var i820 = []
-  for(var i = 0; i < i821.length; i += 1) {
-    i820.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+MaterialFlag', i821[i + 0]) );
+  i2324.textureParameters = i2332
+  var i2335 = i2325[9]
+  var i2334 = []
+  for(var i = 0; i < i2335.length; i += 1) {
+    i2334.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Material+MaterialFlag', i2335[i + 0]) );
   }
-  i810.materialFlags = i820
-  return i810
+  i2324.materialFlags = i2334
+  return i2324
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Material+FloatParameter"] = function (request, data, root) {
-  var i824 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+FloatParameter' )
-  var i825 = data
-  i824.name = i825[0]
-  i824.value = i825[1]
-  return i824
+  var i2338 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+FloatParameter' )
+  var i2339 = data
+  i2338.name = i2339[0]
+  i2338.value = i2339[1]
+  return i2338
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Material+ColorParameter"] = function (request, data, root) {
-  var i828 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+ColorParameter' )
-  var i829 = data
-  i828.name = i829[0]
-  i828.value = new pc.Color(i829[1], i829[2], i829[3], i829[4])
-  return i828
+  var i2342 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+ColorParameter' )
+  var i2343 = data
+  i2342.name = i2343[0]
+  i2342.value = new pc.Color(i2343[1], i2343[2], i2343[3], i2343[4])
+  return i2342
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Material+VectorParameter"] = function (request, data, root) {
-  var i832 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+VectorParameter' )
-  var i833 = data
-  i832.name = i833[0]
-  i832.value = new pc.Vec4( i833[1], i833[2], i833[3], i833[4] )
-  return i832
+  var i2346 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+VectorParameter' )
+  var i2347 = data
+  i2346.name = i2347[0]
+  i2346.value = new pc.Vec4( i2347[1], i2347[2], i2347[3], i2347[4] )
+  return i2346
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Material+TextureParameter"] = function (request, data, root) {
-  var i836 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+TextureParameter' )
-  var i837 = data
-  i836.name = i837[0]
-  request.r(i837[1], i837[2], 0, i836, 'value')
-  return i836
+  var i2350 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+TextureParameter' )
+  var i2351 = data
+  i2350.name = i2351[0]
+  request.r(i2351[1], i2351[2], 0, i2350, 'value')
+  return i2350
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Material+MaterialFlag"] = function (request, data, root) {
-  var i840 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+MaterialFlag' )
-  var i841 = data
-  i840.name = i841[0]
-  i840.enabled = !!i841[1]
-  return i840
+  var i2354 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Material+MaterialFlag' )
+  var i2355 = data
+  i2354.name = i2355[0]
+  i2354.enabled = !!i2355[1]
+  return i2354
 }
 
 Deserializers["TileCell"] = function (request, data, root) {
-  var i842 = root || request.c( 'TileCell' )
-  var i843 = data
-  i842.coordinate = new pc.Vec2( i843[0], i843[1] )
-  i842.TileBreakEvent = request.d('UnityEngine.Events.UnityEvent', i843[2], i842.TileBreakEvent)
-  request.r(i843[3], i843[4], 0, i842, 'tileData')
-  request.r(i843[5], i843[6], 0, i842, 'tile')
-  return i842
+  var i2356 = root || request.c( 'TileCell' )
+  var i2357 = data
+  i2356.coordinate = new pc.Vec2( i2357[0], i2357[1] )
+  i2356.TileBreakEvent = request.d('UnityEngine.Events.UnityEvent', i2357[2], i2356.TileBreakEvent)
+  request.r(i2357[3], i2357[4], 0, i2356, 'tileData')
+  request.r(i2357[5], i2357[6], 0, i2356, 'tile')
+  return i2356
 }
 
 Deserializers["UnityEngine.Events.UnityEvent"] = function (request, data, root) {
-  var i844 = root || request.c( 'UnityEngine.Events.UnityEvent' )
-  var i845 = data
-  i844.m_PersistentCalls = request.d('UnityEngine.Events.PersistentCallGroup', i845[0], i844.m_PersistentCalls)
-  return i844
+  var i2358 = root || request.c( 'UnityEngine.Events.UnityEvent' )
+  var i2359 = data
+  i2358.m_PersistentCalls = request.d('UnityEngine.Events.PersistentCallGroup', i2359[0], i2358.m_PersistentCalls)
+  return i2358
 }
 
 Deserializers["UnityEngine.Events.PersistentCallGroup"] = function (request, data, root) {
-  var i846 = root || request.c( 'UnityEngine.Events.PersistentCallGroup' )
-  var i847 = data
-  var i849 = i847[0]
-  var i848 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Events.PersistentCall')))
-  for(var i = 0; i < i849.length; i += 1) {
-    i848.add(request.d('UnityEngine.Events.PersistentCall', i849[i + 0]));
+  var i2360 = root || request.c( 'UnityEngine.Events.PersistentCallGroup' )
+  var i2361 = data
+  var i2363 = i2361[0]
+  var i2362 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Events.PersistentCall')))
+  for(var i = 0; i < i2363.length; i += 1) {
+    i2362.add(request.d('UnityEngine.Events.PersistentCall', i2363[i + 0]));
   }
-  i846.m_Calls = i848
-  return i846
+  i2360.m_Calls = i2362
+  return i2360
 }
 
 Deserializers["UnityEngine.Events.PersistentCall"] = function (request, data, root) {
-  var i852 = root || request.c( 'UnityEngine.Events.PersistentCall' )
-  var i853 = data
-  request.r(i853[0], i853[1], 0, i852, 'm_Target')
-  i852.m_TargetAssemblyTypeName = i853[2]
-  i852.m_MethodName = i853[3]
-  i852.m_Mode = i853[4]
-  i852.m_Arguments = request.d('UnityEngine.Events.ArgumentCache', i853[5], i852.m_Arguments)
-  i852.m_CallState = i853[6]
-  return i852
+  var i2366 = root || request.c( 'UnityEngine.Events.PersistentCall' )
+  var i2367 = data
+  request.r(i2367[0], i2367[1], 0, i2366, 'm_Target')
+  i2366.m_TargetAssemblyTypeName = i2367[2]
+  i2366.m_MethodName = i2367[3]
+  i2366.m_Mode = i2367[4]
+  i2366.m_Arguments = request.d('UnityEngine.Events.ArgumentCache', i2367[5], i2366.m_Arguments)
+  i2366.m_CallState = i2367[6]
+  return i2366
 }
 
 Deserializers["Tile"] = function (request, data, root) {
-  var i854 = root || request.c( 'Tile' )
-  var i855 = data
-  request.r(i855[0], i855[1], 0, i854, 'itemImage')
-  request.r(i855[2], i855[3], 0, i854, 'tileData')
-  i854.MovementMagnitude = i855[4]
-  i854.MovementDuration = i855[5]
-  return i854
+  var i2368 = root || request.c( 'Tile' )
+  var i2369 = data
+  request.r(i2369[0], i2369[1], 0, i2368, 'itemImage')
+  request.r(i2369[2], i2369[3], 0, i2368, 'tileData')
+  i2368.MovementMagnitude = i2369[4]
+  i2368.MovementDuration = i2369[5]
+  return i2368
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.Transform"] = function (request, data, root) {
-  var i856 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Transform' )
-  var i857 = data
-  i856.position = new pc.Vec3( i857[0], i857[1], i857[2] )
-  i856.scale = new pc.Vec3( i857[3], i857[4], i857[5] )
-  i856.rotation = new pc.Quat(i857[6], i857[7], i857[8], i857[9])
-  return i856
+  var i2370 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Transform' )
+  var i2371 = data
+  i2370.position = new pc.Vec3( i2371[0], i2371[1], i2371[2] )
+  i2370.scale = new pc.Vec3( i2371[3], i2371[4], i2371[5] )
+  i2370.rotation = new pc.Quat(i2371[6], i2371[7], i2371[8], i2371[9])
+  return i2370
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.ParticleSystem"] = function (request, data, root) {
-  var i858 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.ParticleSystem' )
-  var i859 = data
-  i858.main = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.MainModule', i859[0], i858.main)
-  i858.colorBySpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorBySpeedModule', i859[1], i858.colorBySpeed)
-  i858.colorOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorOverLifetimeModule', i859[2], i858.colorOverLifetime)
-  i858.emission = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.EmissionModule', i859[3], i858.emission)
-  i858.rotationBySpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationBySpeedModule', i859[4], i858.rotationBySpeed)
-  i858.rotationOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationOverLifetimeModule', i859[5], i858.rotationOverLifetime)
-  i858.shape = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ShapeModule', i859[6], i858.shape)
-  i858.sizeBySpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeBySpeedModule', i859[7], i858.sizeBySpeed)
-  i858.sizeOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeOverLifetimeModule', i859[8], i858.sizeOverLifetime)
-  i858.textureSheetAnimation = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.TextureSheetAnimationModule', i859[9], i858.textureSheetAnimation)
-  i858.velocityOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.VelocityOverLifetimeModule', i859[10], i858.velocityOverLifetime)
-  i858.noise = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.NoiseModule', i859[11], i858.noise)
-  i858.inheritVelocity = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.InheritVelocityModule', i859[12], i858.inheritVelocity)
-  i858.forceOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ForceOverLifetimeModule', i859[13], i858.forceOverLifetime)
-  i858.limitVelocityOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.LimitVelocityOverLifetimeModule', i859[14], i858.limitVelocityOverLifetime)
-  i858.useAutoRandomSeed = !!i859[15]
-  i858.randomSeed = i859[16]
-  return i858
+  var i2372 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.ParticleSystem' )
+  var i2373 = data
+  i2372.main = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.MainModule', i2373[0], i2372.main)
+  i2372.colorBySpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorBySpeedModule', i2373[1], i2372.colorBySpeed)
+  i2372.colorOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorOverLifetimeModule', i2373[2], i2372.colorOverLifetime)
+  i2372.emission = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.EmissionModule', i2373[3], i2372.emission)
+  i2372.rotationBySpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationBySpeedModule', i2373[4], i2372.rotationBySpeed)
+  i2372.rotationOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationOverLifetimeModule', i2373[5], i2372.rotationOverLifetime)
+  i2372.shape = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ShapeModule', i2373[6], i2372.shape)
+  i2372.sizeBySpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeBySpeedModule', i2373[7], i2372.sizeBySpeed)
+  i2372.sizeOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeOverLifetimeModule', i2373[8], i2372.sizeOverLifetime)
+  i2372.textureSheetAnimation = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.TextureSheetAnimationModule', i2373[9], i2372.textureSheetAnimation)
+  i2372.velocityOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.VelocityOverLifetimeModule', i2373[10], i2372.velocityOverLifetime)
+  i2372.noise = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.NoiseModule', i2373[11], i2372.noise)
+  i2372.inheritVelocity = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.InheritVelocityModule', i2373[12], i2372.inheritVelocity)
+  i2372.forceOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ForceOverLifetimeModule', i2373[13], i2372.forceOverLifetime)
+  i2372.limitVelocityOverLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemModules.LimitVelocityOverLifetimeModule', i2373[14], i2372.limitVelocityOverLifetime)
+  i2372.useAutoRandomSeed = !!i2373[15]
+  i2372.randomSeed = i2373[16]
+  return i2372
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.MainModule"] = function (request, data, root) {
-  var i860 = root || new pc.ParticleSystemMain()
-  var i861 = data
-  i860.duration = i861[0]
-  i860.loop = !!i861[1]
-  i860.prewarm = !!i861[2]
-  i860.startDelay = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[3], i860.startDelay)
-  i860.startLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[4], i860.startLifetime)
-  i860.startSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[5], i860.startSpeed)
-  i860.startSize3D = !!i861[6]
-  i860.startSizeX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[7], i860.startSizeX)
-  i860.startSizeY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[8], i860.startSizeY)
-  i860.startSizeZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[9], i860.startSizeZ)
-  i860.startRotation3D = !!i861[10]
-  i860.startRotationX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[11], i860.startRotationX)
-  i860.startRotationY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[12], i860.startRotationY)
-  i860.startRotationZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[13], i860.startRotationZ)
-  i860.startColor = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient', i861[14], i860.startColor)
-  i860.gravityModifier = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i861[15], i860.gravityModifier)
-  i860.simulationSpace = i861[16]
-  request.r(i861[17], i861[18], 0, i860, 'customSimulationSpace')
-  i860.simulationSpeed = i861[19]
-  i860.useUnscaledTime = !!i861[20]
-  i860.scalingMode = i861[21]
-  i860.playOnAwake = !!i861[22]
-  i860.maxParticles = i861[23]
-  i860.emitterVelocityMode = i861[24]
-  i860.stopAction = i861[25]
-  return i860
+  var i2374 = root || new pc.ParticleSystemMain()
+  var i2375 = data
+  i2374.duration = i2375[0]
+  i2374.loop = !!i2375[1]
+  i2374.prewarm = !!i2375[2]
+  i2374.startDelay = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[3], i2374.startDelay)
+  i2374.startLifetime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[4], i2374.startLifetime)
+  i2374.startSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[5], i2374.startSpeed)
+  i2374.startSize3D = !!i2375[6]
+  i2374.startSizeX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[7], i2374.startSizeX)
+  i2374.startSizeY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[8], i2374.startSizeY)
+  i2374.startSizeZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[9], i2374.startSizeZ)
+  i2374.startRotation3D = !!i2375[10]
+  i2374.startRotationX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[11], i2374.startRotationX)
+  i2374.startRotationY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[12], i2374.startRotationY)
+  i2374.startRotationZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[13], i2374.startRotationZ)
+  i2374.startColor = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient', i2375[14], i2374.startColor)
+  i2374.gravityModifier = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2375[15], i2374.gravityModifier)
+  i2374.simulationSpace = i2375[16]
+  request.r(i2375[17], i2375[18], 0, i2374, 'customSimulationSpace')
+  i2374.simulationSpeed = i2375[19]
+  i2374.useUnscaledTime = !!i2375[20]
+  i2374.scalingMode = i2375[21]
+  i2374.playOnAwake = !!i2375[22]
+  i2374.maxParticles = i2375[23]
+  i2374.emitterVelocityMode = i2375[24]
+  i2374.stopAction = i2375[25]
+  return i2374
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve"] = function (request, data, root) {
-  var i862 = root || new pc.MinMaxCurve()
-  var i863 = data
-  i862.mode = i863[0]
-  i862.curveMin = new pc.AnimationCurve( { keys_flow: i863[1] } )
-  i862.curveMax = new pc.AnimationCurve( { keys_flow: i863[2] } )
-  i862.curveMultiplier = i863[3]
-  i862.constantMin = i863[4]
-  i862.constantMax = i863[5]
-  return i862
+  var i2376 = root || new pc.MinMaxCurve()
+  var i2377 = data
+  i2376.mode = i2377[0]
+  i2376.curveMin = new pc.AnimationCurve( { keys_flow: i2377[1] } )
+  i2376.curveMax = new pc.AnimationCurve( { keys_flow: i2377[2] } )
+  i2376.curveMultiplier = i2377[3]
+  i2376.constantMin = i2377[4]
+  i2376.constantMax = i2377[5]
+  return i2376
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient"] = function (request, data, root) {
-  var i864 = root || new pc.MinMaxGradient()
-  var i865 = data
-  i864.mode = i865[0]
-  i864.gradientMin = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient', i865[1], i864.gradientMin)
-  i864.gradientMax = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient', i865[2], i864.gradientMax)
-  i864.colorMin = new pc.Color(i865[3], i865[4], i865[5], i865[6])
-  i864.colorMax = new pc.Color(i865[7], i865[8], i865[9], i865[10])
-  return i864
+  var i2378 = root || new pc.MinMaxGradient()
+  var i2379 = data
+  i2378.mode = i2379[0]
+  i2378.gradientMin = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient', i2379[1], i2378.gradientMin)
+  i2378.gradientMax = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient', i2379[2], i2378.gradientMax)
+  i2378.colorMin = new pc.Color(i2379[3], i2379[4], i2379[5], i2379[6])
+  i2378.colorMax = new pc.Color(i2379[7], i2379[8], i2379[9], i2379[10])
+  return i2378
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient"] = function (request, data, root) {
-  var i866 = root || request.c( 'Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient' )
-  var i867 = data
-  i866.mode = i867[0]
-  var i869 = i867[1]
-  var i868 = []
-  for(var i = 0; i < i869.length; i += 1) {
-    i868.push( request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientColorKey', i869[i + 0]) );
+  var i2380 = root || request.c( 'Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient' )
+  var i2381 = data
+  i2380.mode = i2381[0]
+  var i2383 = i2381[1]
+  var i2382 = []
+  for(var i = 0; i < i2383.length; i += 1) {
+    i2382.push( request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientColorKey', i2383[i + 0]) );
   }
-  i866.colorKeys = i868
-  var i871 = i867[2]
-  var i870 = []
-  for(var i = 0; i < i871.length; i += 1) {
-    i870.push( request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientAlphaKey', i871[i + 0]) );
+  i2380.colorKeys = i2382
+  var i2385 = i2381[2]
+  var i2384 = []
+  for(var i = 0; i < i2385.length; i += 1) {
+    i2384.push( request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientAlphaKey', i2385[i + 0]) );
   }
-  i866.alphaKeys = i870
-  return i866
+  i2380.alphaKeys = i2384
+  return i2380
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorBySpeedModule"] = function (request, data, root) {
-  var i872 = root || new pc.ParticleSystemColorBySpeed()
-  var i873 = data
-  i872.enabled = !!i873[0]
-  i872.color = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient', i873[1], i872.color)
-  i872.range = new pc.Vec2( i873[2], i873[3] )
-  return i872
+  var i2386 = root || new pc.ParticleSystemColorBySpeed()
+  var i2387 = data
+  i2386.enabled = !!i2387[0]
+  i2386.color = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient', i2387[1], i2386.color)
+  i2386.range = new pc.Vec2( i2387[2], i2387[3] )
+  return i2386
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientColorKey"] = function (request, data, root) {
-  var i876 = root || request.c( 'Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientColorKey' )
-  var i877 = data
-  i876.color = new pc.Color(i877[0], i877[1], i877[2], i877[3])
-  i876.time = i877[4]
-  return i876
+  var i2390 = root || request.c( 'Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientColorKey' )
+  var i2391 = data
+  i2390.color = new pc.Color(i2391[0], i2391[1], i2391[2], i2391[3])
+  i2390.time = i2391[4]
+  return i2390
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientAlphaKey"] = function (request, data, root) {
-  var i880 = root || request.c( 'Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientAlphaKey' )
-  var i881 = data
-  i880.alpha = i881[0]
-  i880.time = i881[1]
-  return i880
+  var i2394 = root || request.c( 'Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientAlphaKey' )
+  var i2395 = data
+  i2394.alpha = i2395[0]
+  i2394.time = i2395[1]
+  return i2394
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorOverLifetimeModule"] = function (request, data, root) {
-  var i882 = root || new pc.ParticleSystemColorOverLifetime()
-  var i883 = data
-  i882.enabled = !!i883[0]
-  i882.color = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient', i883[1], i882.color)
-  return i882
+  var i2396 = root || new pc.ParticleSystemColorOverLifetime()
+  var i2397 = data
+  i2396.enabled = !!i2397[0]
+  i2396.color = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient', i2397[1], i2396.color)
+  return i2396
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.EmissionModule"] = function (request, data, root) {
-  var i884 = root || new pc.ParticleSystemEmitter()
-  var i885 = data
-  i884.enabled = !!i885[0]
-  i884.rateOverTime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i885[1], i884.rateOverTime)
-  i884.rateOverDistance = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i885[2], i884.rateOverDistance)
-  var i887 = i885[3]
-  var i886 = []
-  for(var i = 0; i < i887.length; i += 1) {
-    i886.push( request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Burst', i887[i + 0]) );
+  var i2398 = root || new pc.ParticleSystemEmitter()
+  var i2399 = data
+  i2398.enabled = !!i2399[0]
+  i2398.rateOverTime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2399[1], i2398.rateOverTime)
+  i2398.rateOverDistance = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2399[2], i2398.rateOverDistance)
+  var i2401 = i2399[3]
+  var i2400 = []
+  for(var i = 0; i < i2401.length; i += 1) {
+    i2400.push( request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Burst', i2401[i + 0]) );
   }
-  i884.bursts = i886
-  return i884
+  i2398.bursts = i2400
+  return i2398
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Burst"] = function (request, data, root) {
-  var i890 = root || new pc.ParticleSystemBurst()
-  var i891 = data
-  i890.count = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i891[0], i890.count)
-  i890.cycleCount = i891[1]
-  i890.minCount = i891[2]
-  i890.maxCount = i891[3]
-  i890.repeatInterval = i891[4]
-  i890.time = i891[5]
-  return i890
+  var i2404 = root || new pc.ParticleSystemBurst()
+  var i2405 = data
+  i2404.count = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2405[0], i2404.count)
+  i2404.cycleCount = i2405[1]
+  i2404.minCount = i2405[2]
+  i2404.maxCount = i2405[3]
+  i2404.repeatInterval = i2405[4]
+  i2404.time = i2405[5]
+  return i2404
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationBySpeedModule"] = function (request, data, root) {
-  var i892 = root || new pc.ParticleSystemRotationBySpeed()
-  var i893 = data
-  i892.enabled = !!i893[0]
-  i892.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i893[1], i892.x)
-  i892.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i893[2], i892.y)
-  i892.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i893[3], i892.z)
-  i892.separateAxes = !!i893[4]
-  i892.range = new pc.Vec2( i893[5], i893[6] )
-  return i892
+  var i2406 = root || new pc.ParticleSystemRotationBySpeed()
+  var i2407 = data
+  i2406.enabled = !!i2407[0]
+  i2406.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2407[1], i2406.x)
+  i2406.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2407[2], i2406.y)
+  i2406.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2407[3], i2406.z)
+  i2406.separateAxes = !!i2407[4]
+  i2406.range = new pc.Vec2( i2407[5], i2407[6] )
+  return i2406
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationOverLifetimeModule"] = function (request, data, root) {
-  var i894 = root || new pc.ParticleSystemRotationOverLifetime()
-  var i895 = data
-  i894.enabled = !!i895[0]
-  i894.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i895[1], i894.x)
-  i894.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i895[2], i894.y)
-  i894.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i895[3], i894.z)
-  i894.separateAxes = !!i895[4]
-  return i894
+  var i2408 = root || new pc.ParticleSystemRotationOverLifetime()
+  var i2409 = data
+  i2408.enabled = !!i2409[0]
+  i2408.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2409[1], i2408.x)
+  i2408.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2409[2], i2408.y)
+  i2408.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2409[3], i2408.z)
+  i2408.separateAxes = !!i2409[4]
+  return i2408
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ShapeModule"] = function (request, data, root) {
-  var i896 = root || new pc.ParticleSystemShape()
-  var i897 = data
-  i896.enabled = !!i897[0]
-  i896.shapeType = i897[1]
-  i896.randomDirectionAmount = i897[2]
-  i896.sphericalDirectionAmount = i897[3]
-  i896.randomPositionAmount = i897[4]
-  i896.alignToDirection = !!i897[5]
-  i896.radius = i897[6]
-  i896.radiusMode = i897[7]
-  i896.radiusSpread = i897[8]
-  i896.radiusSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i897[9], i896.radiusSpeed)
-  i896.radiusThickness = i897[10]
-  i896.angle = i897[11]
-  i896.length = i897[12]
-  i896.boxThickness = new pc.Vec3( i897[13], i897[14], i897[15] )
-  i896.meshShapeType = i897[16]
-  request.r(i897[17], i897[18], 0, i896, 'mesh')
-  request.r(i897[19], i897[20], 0, i896, 'meshRenderer')
-  request.r(i897[21], i897[22], 0, i896, 'skinnedMeshRenderer')
-  i896.useMeshMaterialIndex = !!i897[23]
-  i896.meshMaterialIndex = i897[24]
-  i896.useMeshColors = !!i897[25]
-  i896.normalOffset = i897[26]
-  i896.arc = i897[27]
-  i896.arcMode = i897[28]
-  i896.arcSpread = i897[29]
-  i896.arcSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i897[30], i896.arcSpeed)
-  i896.donutRadius = i897[31]
-  i896.position = new pc.Vec3( i897[32], i897[33], i897[34] )
-  i896.rotation = new pc.Vec3( i897[35], i897[36], i897[37] )
-  i896.scale = new pc.Vec3( i897[38], i897[39], i897[40] )
-  return i896
+  var i2410 = root || new pc.ParticleSystemShape()
+  var i2411 = data
+  i2410.enabled = !!i2411[0]
+  i2410.shapeType = i2411[1]
+  i2410.randomDirectionAmount = i2411[2]
+  i2410.sphericalDirectionAmount = i2411[3]
+  i2410.randomPositionAmount = i2411[4]
+  i2410.alignToDirection = !!i2411[5]
+  i2410.radius = i2411[6]
+  i2410.radiusMode = i2411[7]
+  i2410.radiusSpread = i2411[8]
+  i2410.radiusSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2411[9], i2410.radiusSpeed)
+  i2410.radiusThickness = i2411[10]
+  i2410.angle = i2411[11]
+  i2410.length = i2411[12]
+  i2410.boxThickness = new pc.Vec3( i2411[13], i2411[14], i2411[15] )
+  i2410.meshShapeType = i2411[16]
+  request.r(i2411[17], i2411[18], 0, i2410, 'mesh')
+  request.r(i2411[19], i2411[20], 0, i2410, 'meshRenderer')
+  request.r(i2411[21], i2411[22], 0, i2410, 'skinnedMeshRenderer')
+  i2410.useMeshMaterialIndex = !!i2411[23]
+  i2410.meshMaterialIndex = i2411[24]
+  i2410.useMeshColors = !!i2411[25]
+  i2410.normalOffset = i2411[26]
+  i2410.arc = i2411[27]
+  i2410.arcMode = i2411[28]
+  i2410.arcSpread = i2411[29]
+  i2410.arcSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2411[30], i2410.arcSpeed)
+  i2410.donutRadius = i2411[31]
+  i2410.position = new pc.Vec3( i2411[32], i2411[33], i2411[34] )
+  i2410.rotation = new pc.Vec3( i2411[35], i2411[36], i2411[37] )
+  i2410.scale = new pc.Vec3( i2411[38], i2411[39], i2411[40] )
+  return i2410
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeBySpeedModule"] = function (request, data, root) {
-  var i898 = root || new pc.ParticleSystemSizeBySpeed()
-  var i899 = data
-  i898.enabled = !!i899[0]
-  i898.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i899[1], i898.x)
-  i898.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i899[2], i898.y)
-  i898.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i899[3], i898.z)
-  i898.separateAxes = !!i899[4]
-  i898.range = new pc.Vec2( i899[5], i899[6] )
-  return i898
+  var i2412 = root || new pc.ParticleSystemSizeBySpeed()
+  var i2413 = data
+  i2412.enabled = !!i2413[0]
+  i2412.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2413[1], i2412.x)
+  i2412.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2413[2], i2412.y)
+  i2412.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2413[3], i2412.z)
+  i2412.separateAxes = !!i2413[4]
+  i2412.range = new pc.Vec2( i2413[5], i2413[6] )
+  return i2412
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeOverLifetimeModule"] = function (request, data, root) {
-  var i900 = root || new pc.ParticleSystemSizeOverLifetime()
-  var i901 = data
-  i900.enabled = !!i901[0]
-  i900.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i901[1], i900.x)
-  i900.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i901[2], i900.y)
-  i900.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i901[3], i900.z)
-  i900.separateAxes = !!i901[4]
-  return i900
+  var i2414 = root || new pc.ParticleSystemSizeOverLifetime()
+  var i2415 = data
+  i2414.enabled = !!i2415[0]
+  i2414.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2415[1], i2414.x)
+  i2414.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2415[2], i2414.y)
+  i2414.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2415[3], i2414.z)
+  i2414.separateAxes = !!i2415[4]
+  return i2414
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.TextureSheetAnimationModule"] = function (request, data, root) {
-  var i902 = root || new pc.ParticleSystemTextureSheetAnimation()
-  var i903 = data
-  i902.enabled = !!i903[0]
-  i902.mode = i903[1]
-  i902.animation = i903[2]
-  i902.numTilesX = i903[3]
-  i902.numTilesY = i903[4]
-  i902.useRandomRow = !!i903[5]
-  i902.frameOverTime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i903[6], i902.frameOverTime)
-  i902.startFrame = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i903[7], i902.startFrame)
-  i902.cycleCount = i903[8]
-  i902.rowIndex = i903[9]
-  i902.flipU = i903[10]
-  i902.flipV = i903[11]
-  i902.spriteCount = i903[12]
-  var i905 = i903[13]
-  var i904 = []
-  for(var i = 0; i < i905.length; i += 2) {
-  request.r(i905[i + 0], i905[i + 1], 2, i904, '')
+  var i2416 = root || new pc.ParticleSystemTextureSheetAnimation()
+  var i2417 = data
+  i2416.enabled = !!i2417[0]
+  i2416.mode = i2417[1]
+  i2416.animation = i2417[2]
+  i2416.numTilesX = i2417[3]
+  i2416.numTilesY = i2417[4]
+  i2416.useRandomRow = !!i2417[5]
+  i2416.frameOverTime = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2417[6], i2416.frameOverTime)
+  i2416.startFrame = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2417[7], i2416.startFrame)
+  i2416.cycleCount = i2417[8]
+  i2416.rowIndex = i2417[9]
+  i2416.flipU = i2417[10]
+  i2416.flipV = i2417[11]
+  i2416.spriteCount = i2417[12]
+  var i2419 = i2417[13]
+  var i2418 = []
+  for(var i = 0; i < i2419.length; i += 2) {
+  request.r(i2419[i + 0], i2419[i + 1], 2, i2418, '')
   }
-  i902.sprites = i904
-  return i902
+  i2416.sprites = i2418
+  return i2416
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.VelocityOverLifetimeModule"] = function (request, data, root) {
-  var i908 = root || new pc.ParticleSystemVelocityOverLifetime()
-  var i909 = data
-  i908.enabled = !!i909[0]
-  i908.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[1], i908.x)
-  i908.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[2], i908.y)
-  i908.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[3], i908.z)
-  i908.radial = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[4], i908.radial)
-  i908.speedModifier = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[5], i908.speedModifier)
-  i908.space = i909[6]
-  i908.orbitalX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[7], i908.orbitalX)
-  i908.orbitalY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[8], i908.orbitalY)
-  i908.orbitalZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[9], i908.orbitalZ)
-  i908.orbitalOffsetX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[10], i908.orbitalOffsetX)
-  i908.orbitalOffsetY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[11], i908.orbitalOffsetY)
-  i908.orbitalOffsetZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i909[12], i908.orbitalOffsetZ)
-  return i908
+  var i2422 = root || new pc.ParticleSystemVelocityOverLifetime()
+  var i2423 = data
+  i2422.enabled = !!i2423[0]
+  i2422.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[1], i2422.x)
+  i2422.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[2], i2422.y)
+  i2422.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[3], i2422.z)
+  i2422.radial = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[4], i2422.radial)
+  i2422.speedModifier = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[5], i2422.speedModifier)
+  i2422.space = i2423[6]
+  i2422.orbitalX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[7], i2422.orbitalX)
+  i2422.orbitalY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[8], i2422.orbitalY)
+  i2422.orbitalZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[9], i2422.orbitalZ)
+  i2422.orbitalOffsetX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[10], i2422.orbitalOffsetX)
+  i2422.orbitalOffsetY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[11], i2422.orbitalOffsetY)
+  i2422.orbitalOffsetZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2423[12], i2422.orbitalOffsetZ)
+  return i2422
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.NoiseModule"] = function (request, data, root) {
-  var i910 = root || new pc.ParticleSystemNoise()
-  var i911 = data
-  i910.enabled = !!i911[0]
-  i910.separateAxes = !!i911[1]
-  i910.strengthX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[2], i910.strengthX)
-  i910.strengthY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[3], i910.strengthY)
-  i910.strengthZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[4], i910.strengthZ)
-  i910.frequency = i911[5]
-  i910.damping = !!i911[6]
-  i910.octaveCount = i911[7]
-  i910.octaveMultiplier = i911[8]
-  i910.octaveScale = i911[9]
-  i910.quality = i911[10]
-  i910.scrollSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[11], i910.scrollSpeed)
-  i910.scrollSpeedMultiplier = i911[12]
-  i910.remapEnabled = !!i911[13]
-  i910.remapX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[14], i910.remapX)
-  i910.remapY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[15], i910.remapY)
-  i910.remapZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[16], i910.remapZ)
-  i910.positionAmount = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[17], i910.positionAmount)
-  i910.rotationAmount = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[18], i910.rotationAmount)
-  i910.sizeAmount = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i911[19], i910.sizeAmount)
-  return i910
+  var i2424 = root || new pc.ParticleSystemNoise()
+  var i2425 = data
+  i2424.enabled = !!i2425[0]
+  i2424.separateAxes = !!i2425[1]
+  i2424.strengthX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[2], i2424.strengthX)
+  i2424.strengthY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[3], i2424.strengthY)
+  i2424.strengthZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[4], i2424.strengthZ)
+  i2424.frequency = i2425[5]
+  i2424.damping = !!i2425[6]
+  i2424.octaveCount = i2425[7]
+  i2424.octaveMultiplier = i2425[8]
+  i2424.octaveScale = i2425[9]
+  i2424.quality = i2425[10]
+  i2424.scrollSpeed = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[11], i2424.scrollSpeed)
+  i2424.scrollSpeedMultiplier = i2425[12]
+  i2424.remapEnabled = !!i2425[13]
+  i2424.remapX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[14], i2424.remapX)
+  i2424.remapY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[15], i2424.remapY)
+  i2424.remapZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[16], i2424.remapZ)
+  i2424.positionAmount = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[17], i2424.positionAmount)
+  i2424.rotationAmount = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[18], i2424.rotationAmount)
+  i2424.sizeAmount = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2425[19], i2424.sizeAmount)
+  return i2424
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.InheritVelocityModule"] = function (request, data, root) {
-  var i912 = root || new pc.ParticleSystemInheritVelocity()
-  var i913 = data
-  i912.enabled = !!i913[0]
-  i912.mode = i913[1]
-  i912.curve = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i913[2], i912.curve)
-  return i912
+  var i2426 = root || new pc.ParticleSystemInheritVelocity()
+  var i2427 = data
+  i2426.enabled = !!i2427[0]
+  i2426.mode = i2427[1]
+  i2426.curve = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2427[2], i2426.curve)
+  return i2426
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ForceOverLifetimeModule"] = function (request, data, root) {
-  var i914 = root || new pc.ParticleSystemForceOverLifetime()
-  var i915 = data
-  i914.enabled = !!i915[0]
-  i914.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i915[1], i914.x)
-  i914.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i915[2], i914.y)
-  i914.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i915[3], i914.z)
-  i914.space = i915[4]
-  i914.randomized = !!i915[5]
-  return i914
+  var i2428 = root || new pc.ParticleSystemForceOverLifetime()
+  var i2429 = data
+  i2428.enabled = !!i2429[0]
+  i2428.x = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2429[1], i2428.x)
+  i2428.y = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2429[2], i2428.y)
+  i2428.z = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2429[3], i2428.z)
+  i2428.space = i2429[4]
+  i2428.randomized = !!i2429[5]
+  return i2428
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.ParticleSystemModules.LimitVelocityOverLifetimeModule"] = function (request, data, root) {
-  var i916 = root || new pc.ParticleSystemLimitVelocityOverLifetime()
-  var i917 = data
-  i916.enabled = !!i917[0]
-  i916.limit = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i917[1], i916.limit)
-  i916.limitX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i917[2], i916.limitX)
-  i916.limitY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i917[3], i916.limitY)
-  i916.limitZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i917[4], i916.limitZ)
-  i916.dampen = i917[5]
-  i916.separateAxes = !!i917[6]
-  i916.space = i917[7]
-  i916.drag = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i917[8], i916.drag)
-  i916.multiplyDragByParticleSize = !!i917[9]
-  i916.multiplyDragByParticleVelocity = !!i917[10]
-  return i916
+  var i2430 = root || new pc.ParticleSystemLimitVelocityOverLifetime()
+  var i2431 = data
+  i2430.enabled = !!i2431[0]
+  i2430.limit = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2431[1], i2430.limit)
+  i2430.limitX = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2431[2], i2430.limitX)
+  i2430.limitY = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2431[3], i2430.limitY)
+  i2430.limitZ = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2431[4], i2430.limitZ)
+  i2430.dampen = i2431[5]
+  i2430.separateAxes = !!i2431[6]
+  i2430.space = i2431[7]
+  i2430.drag = request.d('Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve', i2431[8], i2430.drag)
+  i2430.multiplyDragByParticleSize = !!i2431[9]
+  i2430.multiplyDragByParticleVelocity = !!i2431[10]
+  return i2430
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.ParticleSystemRenderer"] = function (request, data, root) {
-  var i918 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.ParticleSystemRenderer' )
-  var i919 = data
-  i918.enabled = !!i919[0]
-  request.r(i919[1], i919[2], 0, i918, 'sharedMaterial')
-  var i921 = i919[3]
-  var i920 = []
-  for(var i = 0; i < i921.length; i += 2) {
-  request.r(i921[i + 0], i921[i + 1], 2, i920, '')
+  var i2432 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.ParticleSystemRenderer' )
+  var i2433 = data
+  i2432.enabled = !!i2433[0]
+  request.r(i2433[1], i2433[2], 0, i2432, 'sharedMaterial')
+  var i2435 = i2433[3]
+  var i2434 = []
+  for(var i = 0; i < i2435.length; i += 2) {
+  request.r(i2435[i + 0], i2435[i + 1], 2, i2434, '')
   }
-  i918.sharedMaterials = i920
-  i918.receiveShadows = !!i919[4]
-  i918.shadowCastingMode = i919[5]
-  i918.sortingLayerID = i919[6]
-  i918.sortingOrder = i919[7]
-  i918.lightmapIndex = i919[8]
-  i918.lightmapSceneIndex = i919[9]
-  i918.lightmapScaleOffset = new pc.Vec4( i919[10], i919[11], i919[12], i919[13] )
-  i918.lightProbeUsage = i919[14]
-  i918.reflectionProbeUsage = i919[15]
-  request.r(i919[16], i919[17], 0, i918, 'mesh')
-  i918.meshCount = i919[18]
-  i918.activeVertexStreamsCount = i919[19]
-  i918.alignment = i919[20]
-  i918.renderMode = i919[21]
-  i918.sortMode = i919[22]
-  i918.lengthScale = i919[23]
-  i918.velocityScale = i919[24]
-  i918.cameraVelocityScale = i919[25]
-  i918.normalDirection = i919[26]
-  i918.sortingFudge = i919[27]
-  i918.minParticleSize = i919[28]
-  i918.maxParticleSize = i919[29]
-  i918.pivot = new pc.Vec3( i919[30], i919[31], i919[32] )
-  request.r(i919[33], i919[34], 0, i918, 'trailMaterial')
-  return i918
+  i2432.sharedMaterials = i2434
+  i2432.receiveShadows = !!i2433[4]
+  i2432.shadowCastingMode = i2433[5]
+  i2432.sortingLayerID = i2433[6]
+  i2432.sortingOrder = i2433[7]
+  i2432.lightmapIndex = i2433[8]
+  i2432.lightmapSceneIndex = i2433[9]
+  i2432.lightmapScaleOffset = new pc.Vec4( i2433[10], i2433[11], i2433[12], i2433[13] )
+  i2432.lightProbeUsage = i2433[14]
+  i2432.reflectionProbeUsage = i2433[15]
+  request.r(i2433[16], i2433[17], 0, i2432, 'mesh')
+  i2432.meshCount = i2433[18]
+  i2432.activeVertexStreamsCount = i2433[19]
+  i2432.alignment = i2433[20]
+  i2432.renderMode = i2433[21]
+  i2432.sortMode = i2433[22]
+  i2432.lengthScale = i2433[23]
+  i2432.velocityScale = i2433[24]
+  i2432.cameraVelocityScale = i2433[25]
+  i2432.normalDirection = i2433[26]
+  i2432.sortingFudge = i2433[27]
+  i2432.minParticleSize = i2433[28]
+  i2432.maxParticleSize = i2433[29]
+  i2432.pivot = new pc.Vec3( i2433[30], i2433[31], i2433[32] )
+  request.r(i2433[33], i2433[34], 0, i2432, 'trailMaterial')
+  return i2432
 }
 
 Deserializers["CartoonFX.CFXR_Effect"] = function (request, data, root) {
-  var i922 = root || request.c( 'CartoonFX.CFXR_Effect' )
-  var i923 = data
-  i922.clearBehavior = i923[0]
-  i922.cameraShake = request.d('CartoonFX.CFXR_Effect+CameraShake', i923[1], i922.cameraShake)
-  var i925 = i923[2]
-  var i924 = []
-  for(var i = 0; i < i925.length; i += 1) {
-    i924.push( request.d('CartoonFX.CFXR_Effect+AnimatedLight', i925[i + 0]) );
+  var i2436 = root || request.c( 'CartoonFX.CFXR_Effect' )
+  var i2437 = data
+  i2436.clearBehavior = i2437[0]
+  i2436.cameraShake = request.d('CartoonFX.CFXR_Effect+CameraShake', i2437[1], i2436.cameraShake)
+  var i2439 = i2437[2]
+  var i2438 = []
+  for(var i = 0; i < i2439.length; i += 1) {
+    i2438.push( request.d('CartoonFX.CFXR_Effect+AnimatedLight', i2439[i + 0]) );
   }
-  i922.animatedLights = i924
-  request.r(i923[3], i923[4], 0, i922, 'fadeOutReference')
-  return i922
+  i2436.animatedLights = i2438
+  request.r(i2437[3], i2437[4], 0, i2436, 'fadeOutReference')
+  return i2436
 }
 
 Deserializers["CartoonFX.CFXR_Effect+CameraShake"] = function (request, data, root) {
-  var i926 = root || request.c( 'CartoonFX.CFXR_Effect+CameraShake' )
-  var i927 = data
-  i926.camEnabled = !!i927[0]
-  i926.useMainCamera = !!i927[1]
-  var i929 = i927[2]
-  var i928 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Camera')))
-  for(var i = 0; i < i929.length; i += 2) {
-  request.r(i929[i + 0], i929[i + 1], 1, i928, '')
+  var i2440 = root || request.c( 'CartoonFX.CFXR_Effect+CameraShake' )
+  var i2441 = data
+  i2440.camEnabled = !!i2441[0]
+  i2440.useMainCamera = !!i2441[1]
+  var i2443 = i2441[2]
+  var i2442 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Camera')))
+  for(var i = 0; i < i2443.length; i += 2) {
+  request.r(i2443[i + 0], i2443[i + 1], 1, i2442, '')
   }
-  i926.cameras = i928
-  i926.delay = i927[3]
-  i926.duration = i927[4]
-  i926.shakeSpace = i927[5]
-  i926.shakeStrength = new pc.Vec3( i927[6], i927[7], i927[8] )
-  i926.shakeCurve = new pc.AnimationCurve( { keys_flow: i927[9] } )
-  i926.shakesDelay = i927[10]
-  return i926
+  i2440.cameras = i2442
+  i2440.delay = i2441[3]
+  i2440.duration = i2441[4]
+  i2440.shakeSpace = i2441[5]
+  i2440.shakeStrength = new pc.Vec3( i2441[6], i2441[7], i2441[8] )
+  i2440.shakeCurve = new pc.AnimationCurve( { keys_flow: i2441[9] } )
+  i2440.shakesDelay = i2441[10]
+  return i2440
 }
 
 Deserializers["CartoonFX.CFXR_Effect+AnimatedLight"] = function (request, data, root) {
-  var i934 = root || request.c( 'CartoonFX.CFXR_Effect+AnimatedLight' )
-  var i935 = data
-  request.r(i935[0], i935[1], 0, i934, 'light')
-  i934.loop = !!i935[2]
-  i934.animateIntensity = !!i935[3]
-  i934.intensityStart = i935[4]
-  i934.intensityEnd = i935[5]
-  i934.intensityDuration = i935[6]
-  i934.intensityCurve = new pc.AnimationCurve( { keys_flow: i935[7] } )
-  i934.perlinIntensity = !!i935[8]
-  i934.perlinIntensitySpeed = i935[9]
-  i934.fadeIn = !!i935[10]
-  i934.fadeInDuration = i935[11]
-  i934.fadeOut = !!i935[12]
-  i934.fadeOutDuration = i935[13]
-  i934.animateRange = !!i935[14]
-  i934.rangeStart = i935[15]
-  i934.rangeEnd = i935[16]
-  i934.rangeDuration = i935[17]
-  i934.rangeCurve = new pc.AnimationCurve( { keys_flow: i935[18] } )
-  i934.perlinRange = !!i935[19]
-  i934.perlinRangeSpeed = i935[20]
-  i934.animateColor = !!i935[21]
-  i934.colorGradient = i935[22] ? new pc.ColorGradient(i935[22][0], i935[22][1], i935[22][2]) : null
-  i934.colorDuration = i935[23]
-  i934.colorCurve = new pc.AnimationCurve( { keys_flow: i935[24] } )
-  i934.perlinColor = !!i935[25]
-  i934.perlinColorSpeed = i935[26]
-  return i934
+  var i2448 = root || request.c( 'CartoonFX.CFXR_Effect+AnimatedLight' )
+  var i2449 = data
+  request.r(i2449[0], i2449[1], 0, i2448, 'light')
+  i2448.loop = !!i2449[2]
+  i2448.animateIntensity = !!i2449[3]
+  i2448.intensityStart = i2449[4]
+  i2448.intensityEnd = i2449[5]
+  i2448.intensityDuration = i2449[6]
+  i2448.intensityCurve = new pc.AnimationCurve( { keys_flow: i2449[7] } )
+  i2448.perlinIntensity = !!i2449[8]
+  i2448.perlinIntensitySpeed = i2449[9]
+  i2448.fadeIn = !!i2449[10]
+  i2448.fadeInDuration = i2449[11]
+  i2448.fadeOut = !!i2449[12]
+  i2448.fadeOutDuration = i2449[13]
+  i2448.animateRange = !!i2449[14]
+  i2448.rangeStart = i2449[15]
+  i2448.rangeEnd = i2449[16]
+  i2448.rangeDuration = i2449[17]
+  i2448.rangeCurve = new pc.AnimationCurve( { keys_flow: i2449[18] } )
+  i2448.perlinRange = !!i2449[19]
+  i2448.perlinRangeSpeed = i2449[20]
+  i2448.animateColor = !!i2449[21]
+  i2448.colorGradient = i2449[22] ? new pc.ColorGradient(i2449[22][0], i2449[22][1], i2449[22][2]) : null
+  i2448.colorDuration = i2449[23]
+  i2448.colorCurve = new pc.AnimationCurve( { keys_flow: i2449[24] } )
+  i2448.perlinColor = !!i2449[25]
+  i2448.perlinColorSpeed = i2449[26]
+  return i2448
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.Light"] = function (request, data, root) {
-  var i936 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Light' )
-  var i937 = data
-  i936.enabled = !!i937[0]
-  i936.type = i937[1]
-  i936.color = new pc.Color(i937[2], i937[3], i937[4], i937[5])
-  i936.cullingMask = i937[6]
-  i936.intensity = i937[7]
-  i936.range = i937[8]
-  i936.spotAngle = i937[9]
-  i936.shadows = i937[10]
-  i936.shadowNormalBias = i937[11]
-  i936.shadowBias = i937[12]
-  i936.shadowStrength = i937[13]
-  i936.shadowResolution = i937[14]
-  i936.lightmapBakeType = i937[15]
-  i936.renderMode = i937[16]
-  request.r(i937[17], i937[18], 0, i936, 'cookie')
-  i936.cookieSize = i937[19]
-  return i936
+  var i2450 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Light' )
+  var i2451 = data
+  i2450.enabled = !!i2451[0]
+  i2450.type = i2451[1]
+  i2450.color = new pc.Color(i2451[2], i2451[3], i2451[4], i2451[5])
+  i2450.cullingMask = i2451[6]
+  i2450.intensity = i2451[7]
+  i2450.range = i2451[8]
+  i2450.spotAngle = i2451[9]
+  i2450.shadows = i2451[10]
+  i2450.shadowNormalBias = i2451[11]
+  i2450.shadowBias = i2451[12]
+  i2450.shadowStrength = i2451[13]
+  i2450.shadowResolution = i2451[14]
+  i2450.lightmapBakeType = i2451[15]
+  i2450.renderMode = i2451[16]
+  request.r(i2451[17], i2451[18], 0, i2450, 'cookie')
+  i2450.cookieSize = i2451[19]
+  return i2450
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Mesh"] = function (request, data, root) {
-  var i938 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh' )
-  var i939 = data
-  i938.name = i939[0]
-  i938.halfPrecision = !!i939[1]
-  i938.useUInt32IndexFormat = !!i939[2]
-  i938.vertexCount = i939[3]
-  i938.aabb = i939[4]
-  var i941 = i939[5]
-  var i940 = []
-  for(var i = 0; i < i941.length; i += 1) {
-    i940.push( !!i941[i + 0] );
+  var i2452 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh' )
+  var i2453 = data
+  i2452.name = i2453[0]
+  i2452.halfPrecision = !!i2453[1]
+  i2452.useUInt32IndexFormat = !!i2453[2]
+  i2452.vertexCount = i2453[3]
+  i2452.aabb = i2453[4]
+  var i2455 = i2453[5]
+  var i2454 = []
+  for(var i = 0; i < i2455.length; i += 1) {
+    i2454.push( !!i2455[i + 0] );
   }
-  i938.streams = i940
-  i938.vertices = i939[6]
-  var i943 = i939[7]
-  var i942 = []
-  for(var i = 0; i < i943.length; i += 1) {
-    i942.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Mesh+SubMesh', i943[i + 0]) );
+  i2452.streams = i2454
+  i2452.vertices = i2453[6]
+  var i2457 = i2453[7]
+  var i2456 = []
+  for(var i = 0; i < i2457.length; i += 1) {
+    i2456.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Mesh+SubMesh', i2457[i + 0]) );
   }
-  i938.subMeshes = i942
-  var i945 = i939[8]
-  var i944 = []
-  for(var i = 0; i < i945.length; i += 16) {
-    i944.push( new pc.Mat4().setData(i945[i + 0], i945[i + 1], i945[i + 2], i945[i + 3],  i945[i + 4], i945[i + 5], i945[i + 6], i945[i + 7],  i945[i + 8], i945[i + 9], i945[i + 10], i945[i + 11],  i945[i + 12], i945[i + 13], i945[i + 14], i945[i + 15]) );
+  i2452.subMeshes = i2456
+  var i2459 = i2453[8]
+  var i2458 = []
+  for(var i = 0; i < i2459.length; i += 16) {
+    i2458.push( new pc.Mat4().setData(i2459[i + 0], i2459[i + 1], i2459[i + 2], i2459[i + 3],  i2459[i + 4], i2459[i + 5], i2459[i + 6], i2459[i + 7],  i2459[i + 8], i2459[i + 9], i2459[i + 10], i2459[i + 11],  i2459[i + 12], i2459[i + 13], i2459[i + 14], i2459[i + 15]) );
   }
-  i938.bindposes = i944
-  var i947 = i939[9]
-  var i946 = []
-  for(var i = 0; i < i947.length; i += 1) {
-    i946.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShape', i947[i + 0]) );
+  i2452.bindposes = i2458
+  var i2461 = i2453[9]
+  var i2460 = []
+  for(var i = 0; i < i2461.length; i += 1) {
+    i2460.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShape', i2461[i + 0]) );
   }
-  i938.blendShapes = i946
-  return i938
+  i2452.blendShapes = i2460
+  return i2452
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Mesh+SubMesh"] = function (request, data, root) {
-  var i952 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh+SubMesh' )
-  var i953 = data
-  i952.triangles = i953[0]
-  return i952
+  var i2466 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh+SubMesh' )
+  var i2467 = data
+  i2466.triangles = i2467[0]
+  return i2466
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShape"] = function (request, data, root) {
-  var i958 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShape' )
-  var i959 = data
-  i958.name = i959[0]
-  var i961 = i959[1]
-  var i960 = []
-  for(var i = 0; i < i961.length; i += 1) {
-    i960.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShapeFrame', i961[i + 0]) );
+  var i2472 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShape' )
+  var i2473 = data
+  i2472.name = i2473[0]
+  var i2475 = i2473[1]
+  var i2474 = []
+  for(var i = 0; i < i2475.length; i += 1) {
+    i2474.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShapeFrame', i2475[i + 0]) );
   }
-  i958.frames = i960
-  return i958
+  i2472.frames = i2474
+  return i2472
 }
 
 Deserializers["AnimatedTile"] = function (request, data, root) {
-  var i962 = root || request.c( 'AnimatedTile' )
-  var i963 = data
-  i962.Duration = i963[0]
-  request.r(i963[1], i963[2], 0, i962, 'tileData')
-  var i965 = i963[3]
-  var i964 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Vector3')))
-  for(var i = 0; i < i965.length; i += 3) {
-    i964.add(new pc.Vec3( i965[i + 0], i965[i + 1], i965[i + 2] ));
+  var i2476 = root || request.c( 'AnimatedTile' )
+  var i2477 = data
+  i2476.Duration = i2477[0]
+  request.r(i2477[1], i2477[2], 0, i2476, 'tileData')
+  var i2479 = i2477[3]
+  var i2478 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Vector3')))
+  for(var i = 0; i < i2479.length; i += 3) {
+    i2478.add(new pc.Vec3( i2479[i + 0], i2479[i + 1], i2479[i + 2] ));
   }
-  i962.targetPos = i964
-  var i967 = i963[4]
-  var i966 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Vector3')))
-  for(var i = 0; i < i967.length; i += 3) {
-    i966.add(new pc.Vec3( i967[i + 0], i967[i + 1], i967[i + 2] ));
+  i2476.targetPos = i2478
+  var i2481 = i2477[4]
+  var i2480 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Vector3')))
+  for(var i = 0; i < i2481.length; i += 3) {
+    i2480.add(new pc.Vec3( i2481[i + 0], i2481[i + 1], i2481[i + 2] ));
   }
-  i962.targetPosPortrait = i966
-  var i969 = i963[5]
-  var i968 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Vector3')))
-  for(var i = 0; i < i969.length; i += 3) {
-    i968.add(new pc.Vec3( i969[i + 0], i969[i + 1], i969[i + 2] ));
+  i2476.targetPosPortrait = i2480
+  var i2483 = i2477[5]
+  var i2482 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Vector3')))
+  for(var i = 0; i < i2483.length; i += 3) {
+    i2482.add(new pc.Vec3( i2483[i + 0], i2483[i + 1], i2483[i + 2] ));
   }
-  i962.targetPosLandscape = i968
-  var i971 = i963[6]
-  var i970 = new (System.Collections.Generic.List$1(Bridge.ns('System.String')))
-  for(var i = 0; i < i971.length; i += 1) {
-    i970.add(i971[i + 0]);
+  i2476.targetPosLandscape = i2482
+  var i2485 = i2477[6]
+  var i2484 = new (System.Collections.Generic.List$1(Bridge.ns('System.String')))
+  for(var i = 0; i < i2485.length; i += 1) {
+    i2484.add(i2485[i + 0]);
   }
-  i962.targets = i970
-  request.r(i963[7], i963[8], 0, i962, 'image')
-  var i973 = i963[9]
-  var i972 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.ParticleSystem')))
-  for(var i = 0; i < i973.length; i += 2) {
-  request.r(i973[i + 0], i973[i + 1], 1, i972, '')
+  i2476.targets = i2484
+  request.r(i2477[7], i2477[8], 0, i2476, 'image')
+  var i2487 = i2477[9]
+  var i2486 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.ParticleSystem')))
+  for(var i = 0; i < i2487.length; i += 2) {
+  request.r(i2487[i + 0], i2487[i + 1], 1, i2486, '')
   }
-  i962.vfxParticles = i972
-  request.r(i963[10], i963[11], 0, i962, 'trailVFXPrefab')
-  request.r(i963[12], i963[13], 0, i962, 'circleTrailVFXPrefab')
-  request.r(i963[14], i963[15], 0, i962, 'trailRenderer')
-  return i962
+  i2476.vfxParticles = i2486
+  request.r(i2477[10], i2477[11], 0, i2476, 'trailVFXPrefab')
+  request.r(i2477[12], i2477[13], 0, i2476, 'circleTrailVFXPrefab')
+  request.r(i2477[14], i2477[15], 0, i2476, 'trailRenderer')
+  return i2476
 }
 
 Deserializers["StateEvents"] = function (request, data, root) {
-  var i980 = root || request.c( 'StateEvents' )
-  var i981 = data
-  i980.OnEnableEvent = request.d('UnityEngine.Events.UnityEvent', i981[0], i980.OnEnableEvent)
-  i980.OnDisableEvent = request.d('UnityEngine.Events.UnityEvent', i981[1], i980.OnDisableEvent)
-  i980.OnStartEvent = request.d('UnityEngine.Events.UnityEvent', i981[2], i980.OnStartEvent)
-  i980.autoEnable = !!i981[3]
-  i980.autoEnableDelay = i981[4]
-  i980.autoDisableDelay = i981[5]
-  return i980
+  var i2494 = root || request.c( 'StateEvents' )
+  var i2495 = data
+  i2494.OnEnableEvent = request.d('UnityEngine.Events.UnityEvent', i2495[0], i2494.OnEnableEvent)
+  i2494.OnDisableEvent = request.d('UnityEngine.Events.UnityEvent', i2495[1], i2494.OnDisableEvent)
+  i2494.OnStartEvent = request.d('UnityEngine.Events.UnityEvent', i2495[2], i2494.OnStartEvent)
+  i2494.autoEnable = !!i2495[3]
+  i2494.autoEnableDelay = i2495[4]
+  i2494.autoDisableDelay = i2495[5]
+  return i2494
 }
 
 Deserializers["UnityEngine.Events.ArgumentCache"] = function (request, data, root) {
-  var i982 = root || request.c( 'UnityEngine.Events.ArgumentCache' )
-  var i983 = data
-  request.r(i983[0], i983[1], 0, i982, 'm_ObjectArgument')
-  i982.m_ObjectArgumentAssemblyTypeName = i983[2]
-  i982.m_IntArgument = i983[3]
-  i982.m_FloatArgument = i983[4]
-  i982.m_StringArgument = i983[5]
-  i982.m_BoolArgument = !!i983[6]
-  return i982
+  var i2496 = root || request.c( 'UnityEngine.Events.ArgumentCache' )
+  var i2497 = data
+  request.r(i2497[0], i2497[1], 0, i2496, 'm_ObjectArgument')
+  i2496.m_ObjectArgumentAssemblyTypeName = i2497[2]
+  i2496.m_IntArgument = i2497[3]
+  i2496.m_FloatArgument = i2497[4]
+  i2496.m_StringArgument = i2497[5]
+  i2496.m_BoolArgument = !!i2497[6]
+  return i2496
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.TrailRenderer"] = function (request, data, root) {
-  var i984 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.TrailRenderer' )
-  var i985 = data
-  i984.enabled = !!i985[0]
-  request.r(i985[1], i985[2], 0, i984, 'sharedMaterial')
-  var i987 = i985[3]
-  var i986 = []
-  for(var i = 0; i < i987.length; i += 2) {
-  request.r(i987[i + 0], i987[i + 1], 2, i986, '')
+  var i2498 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.TrailRenderer' )
+  var i2499 = data
+  i2498.enabled = !!i2499[0]
+  request.r(i2499[1], i2499[2], 0, i2498, 'sharedMaterial')
+  var i2501 = i2499[3]
+  var i2500 = []
+  for(var i = 0; i < i2501.length; i += 2) {
+  request.r(i2501[i + 0], i2501[i + 1], 2, i2500, '')
   }
-  i984.sharedMaterials = i986
-  i984.receiveShadows = !!i985[4]
-  i984.shadowCastingMode = i985[5]
-  i984.sortingLayerID = i985[6]
-  i984.sortingOrder = i985[7]
-  i984.lightmapIndex = i985[8]
-  i984.lightmapSceneIndex = i985[9]
-  i984.lightmapScaleOffset = new pc.Vec4( i985[10], i985[11], i985[12], i985[13] )
-  i984.lightProbeUsage = i985[14]
-  i984.reflectionProbeUsage = i985[15]
-  var i989 = i985[16]
-  var i988 = []
-  for(var i = 0; i < i989.length; i += 3) {
-    i988.push( new pc.Vec3( i989[i + 0], i989[i + 1], i989[i + 2] ) );
+  i2498.sharedMaterials = i2500
+  i2498.receiveShadows = !!i2499[4]
+  i2498.shadowCastingMode = i2499[5]
+  i2498.sortingLayerID = i2499[6]
+  i2498.sortingOrder = i2499[7]
+  i2498.lightmapIndex = i2499[8]
+  i2498.lightmapSceneIndex = i2499[9]
+  i2498.lightmapScaleOffset = new pc.Vec4( i2499[10], i2499[11], i2499[12], i2499[13] )
+  i2498.lightProbeUsage = i2499[14]
+  i2498.reflectionProbeUsage = i2499[15]
+  var i2503 = i2499[16]
+  var i2502 = []
+  for(var i = 0; i < i2503.length; i += 3) {
+    i2502.push( new pc.Vec3( i2503[i + 0], i2503[i + 1], i2503[i + 2] ) );
   }
-  i984.positions = i988
-  i984.positionCount = i985[17]
-  i984.time = i985[18]
-  i984.startWidth = i985[19]
-  i984.endWidth = i985[20]
-  i984.widthMultiplier = i985[21]
-  i984.autodestruct = !!i985[22]
-  i984.emitting = !!i985[23]
-  i984.numCornerVertices = i985[24]
-  i984.numCapVertices = i985[25]
-  i984.minVertexDistance = i985[26]
-  i984.colorGradient = i985[27] ? new pc.ColorGradient(i985[27][0], i985[27][1], i985[27][2]) : null
-  i984.startColor = new pc.Color(i985[28], i985[29], i985[30], i985[31])
-  i984.endColor = new pc.Color(i985[32], i985[33], i985[34], i985[35])
-  i984.generateLightingData = !!i985[36]
-  i984.textureMode = i985[37]
-  i984.alignment = i985[38]
-  i984.widthCurve = new pc.AnimationCurve( { keys_flow: i985[39] } )
-  return i984
+  i2498.positions = i2502
+  i2498.positionCount = i2499[17]
+  i2498.time = i2499[18]
+  i2498.startWidth = i2499[19]
+  i2498.endWidth = i2499[20]
+  i2498.widthMultiplier = i2499[21]
+  i2498.autodestruct = !!i2499[22]
+  i2498.emitting = !!i2499[23]
+  i2498.numCornerVertices = i2499[24]
+  i2498.numCapVertices = i2499[25]
+  i2498.minVertexDistance = i2499[26]
+  i2498.colorGradient = i2499[27] ? new pc.ColorGradient(i2499[27][0], i2499[27][1], i2499[27][2]) : null
+  i2498.startColor = new pc.Color(i2499[28], i2499[29], i2499[30], i2499[31])
+  i2498.endColor = new pc.Color(i2499[32], i2499[33], i2499[34], i2499[35])
+  i2498.generateLightingData = !!i2499[36]
+  i2498.textureMode = i2499[37]
+  i2498.alignment = i2499[38]
+  i2498.widthCurve = new pc.AnimationCurve( { keys_flow: i2499[39] } )
+  return i2498
 }
 
 Deserializers["PositionTracking"] = function (request, data, root) {
-  var i992 = root || request.c( 'PositionTracking' )
-  var i993 = data
-  return i992
+  var i2506 = root || request.c( 'PositionTracking' )
+  var i2507 = data
+  return i2506
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Scene.Scene"] = function (request, data, root) {
-  var i994 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Scene.Scene' )
-  var i995 = data
-  i994.name = i995[0]
-  i994.index = i995[1]
-  i994.startup = !!i995[2]
-  return i994
+  var i2508 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Scene.Scene' )
+  var i2509 = data
+  i2508.name = i2509[0]
+  i2508.index = i2509[1]
+  i2508.startup = !!i2509[2]
+  return i2508
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.Camera"] = function (request, data, root) {
-  var i996 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Camera' )
-  var i997 = data
-  i996.enabled = !!i997[0]
-  i996.aspect = i997[1]
-  i996.orthographic = !!i997[2]
-  i996.orthographicSize = i997[3]
-  i996.backgroundColor = new pc.Color(i997[4], i997[5], i997[6], i997[7])
-  i996.nearClipPlane = i997[8]
-  i996.farClipPlane = i997[9]
-  i996.fieldOfView = i997[10]
-  i996.depth = i997[11]
-  i996.clearFlags = i997[12]
-  i996.cullingMask = i997[13]
-  i996.rect = i997[14]
-  request.r(i997[15], i997[16], 0, i996, 'targetTexture')
-  i996.usePhysicalProperties = !!i997[17]
-  i996.focalLength = i997[18]
-  i996.sensorSize = new pc.Vec2( i997[19], i997[20] )
-  i996.lensShift = new pc.Vec2( i997[21], i997[22] )
-  i996.gateFit = i997[23]
-  i996.commandBufferCount = i997[24]
-  i996.cameraType = i997[25]
-  return i996
+  var i2510 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Camera' )
+  var i2511 = data
+  i2510.enabled = !!i2511[0]
+  i2510.aspect = i2511[1]
+  i2510.orthographic = !!i2511[2]
+  i2510.orthographicSize = i2511[3]
+  i2510.backgroundColor = new pc.Color(i2511[4], i2511[5], i2511[6], i2511[7])
+  i2510.nearClipPlane = i2511[8]
+  i2510.farClipPlane = i2511[9]
+  i2510.fieldOfView = i2511[10]
+  i2510.depth = i2511[11]
+  i2510.clearFlags = i2511[12]
+  i2510.cullingMask = i2511[13]
+  i2510.rect = i2511[14]
+  request.r(i2511[15], i2511[16], 0, i2510, 'targetTexture')
+  i2510.usePhysicalProperties = !!i2511[17]
+  i2510.focalLength = i2511[18]
+  i2510.sensorSize = new pc.Vec2( i2511[19], i2511[20] )
+  i2510.lensShift = new pc.Vec2( i2511[21], i2511[22] )
+  i2510.gateFit = i2511[23]
+  i2510.commandBufferCount = i2511[24]
+  i2510.cameraType = i2511[25]
+  return i2510
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.Canvas"] = function (request, data, root) {
-  var i998 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Canvas' )
-  var i999 = data
-  i998.enabled = !!i999[0]
-  i998.planeDistance = i999[1]
-  i998.referencePixelsPerUnit = i999[2]
-  i998.isFallbackOverlay = !!i999[3]
-  i998.renderMode = i999[4]
-  i998.renderOrder = i999[5]
-  i998.sortingLayerName = i999[6]
-  i998.sortingOrder = i999[7]
-  i998.scaleFactor = i999[8]
-  request.r(i999[9], i999[10], 0, i998, 'worldCamera')
-  i998.overrideSorting = !!i999[11]
-  i998.pixelPerfect = !!i999[12]
-  i998.targetDisplay = i999[13]
-  i998.overridePixelPerfect = !!i999[14]
-  return i998
+  var i2512 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Canvas' )
+  var i2513 = data
+  i2512.enabled = !!i2513[0]
+  i2512.planeDistance = i2513[1]
+  i2512.referencePixelsPerUnit = i2513[2]
+  i2512.isFallbackOverlay = !!i2513[3]
+  i2512.renderMode = i2513[4]
+  i2512.renderOrder = i2513[5]
+  i2512.sortingLayerName = i2513[6]
+  i2512.sortingOrder = i2513[7]
+  i2512.scaleFactor = i2513[8]
+  request.r(i2513[9], i2513[10], 0, i2512, 'worldCamera')
+  i2512.overrideSorting = !!i2513[11]
+  i2512.pixelPerfect = !!i2513[12]
+  i2512.targetDisplay = i2513[13]
+  i2512.overridePixelPerfect = !!i2513[14]
+  return i2512
 }
 
 Deserializers["UnityEngine.UI.CanvasScaler"] = function (request, data, root) {
-  var i1000 = root || request.c( 'UnityEngine.UI.CanvasScaler' )
-  var i1001 = data
-  i1000.m_UiScaleMode = i1001[0]
-  i1000.m_ReferencePixelsPerUnit = i1001[1]
-  i1000.m_ScaleFactor = i1001[2]
-  i1000.m_ReferenceResolution = new pc.Vec2( i1001[3], i1001[4] )
-  i1000.m_ScreenMatchMode = i1001[5]
-  i1000.m_MatchWidthOrHeight = i1001[6]
-  i1000.m_PhysicalUnit = i1001[7]
-  i1000.m_FallbackScreenDPI = i1001[8]
-  i1000.m_DefaultSpriteDPI = i1001[9]
-  i1000.m_DynamicPixelsPerUnit = i1001[10]
-  i1000.m_PresetInfoIsWorld = !!i1001[11]
-  return i1000
+  var i2514 = root || request.c( 'UnityEngine.UI.CanvasScaler' )
+  var i2515 = data
+  i2514.m_UiScaleMode = i2515[0]
+  i2514.m_ReferencePixelsPerUnit = i2515[1]
+  i2514.m_ScaleFactor = i2515[2]
+  i2514.m_ReferenceResolution = new pc.Vec2( i2515[3], i2515[4] )
+  i2514.m_ScreenMatchMode = i2515[5]
+  i2514.m_MatchWidthOrHeight = i2515[6]
+  i2514.m_PhysicalUnit = i2515[7]
+  i2514.m_FallbackScreenDPI = i2515[8]
+  i2514.m_DefaultSpriteDPI = i2515[9]
+  i2514.m_DynamicPixelsPerUnit = i2515[10]
+  i2514.m_PresetInfoIsWorld = !!i2515[11]
+  return i2514
 }
 
 Deserializers["UnityEngine.UI.GraphicRaycaster"] = function (request, data, root) {
-  var i1002 = root || request.c( 'UnityEngine.UI.GraphicRaycaster' )
-  var i1003 = data
-  i1002.m_IgnoreReversedGraphics = !!i1003[0]
-  i1002.m_BlockingObjects = i1003[1]
-  i1002.m_BlockingMask = UnityEngine.LayerMask.FromIntegerValue( i1003[2] )
-  return i1002
+  var i2516 = root || request.c( 'UnityEngine.UI.GraphicRaycaster' )
+  var i2517 = data
+  i2516.m_IgnoreReversedGraphics = !!i2517[0]
+  i2516.m_BlockingObjects = i2517[1]
+  i2516.m_BlockingMask = UnityEngine.LayerMask.FromIntegerValue( i2517[2] )
+  return i2516
 }
 
 Deserializers["BasicFade"] = function (request, data, root) {
-  var i1004 = root || request.c( 'BasicFade' )
-  var i1005 = data
-  request.r(i1005[0], i1005[1], 0, i1004, 'canvasGroup')
-  i1004.duration = i1005[2]
-  return i1004
+  var i2518 = root || request.c( 'BasicFade' )
+  var i2519 = data
+  request.r(i2519[0], i2519[1], 0, i2518, 'canvasGroup')
+  i2518.duration = i2519[2]
+  return i2518
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.CanvasGroup"] = function (request, data, root) {
-  var i1006 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.CanvasGroup' )
-  var i1007 = data
-  i1006.m_Alpha = i1007[0]
-  i1006.m_Interactable = !!i1007[1]
-  i1006.m_BlocksRaycasts = !!i1007[2]
-  i1006.m_IgnoreParentGroups = !!i1007[3]
-  i1006.enabled = !!i1007[4]
-  return i1006
+  var i2520 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.CanvasGroup' )
+  var i2521 = data
+  i2520.m_Alpha = i2521[0]
+  i2520.m_Interactable = !!i2521[1]
+  i2520.m_BlocksRaycasts = !!i2521[2]
+  i2520.m_IgnoreParentGroups = !!i2521[3]
+  i2520.enabled = !!i2521[4]
+  return i2520
 }
 
 Deserializers["AppearAnimation"] = function (request, data, root) {
-  var i1008 = root || request.c( 'AppearAnimation' )
-  var i1009 = data
-  i1008.OnMovementComplete = request.d('UnityEngine.Events.UnityEvent', i1009[0], i1008.OnMovementComplete)
-  i1008.fadeInDuration = i1009[1]
-  i1008.fadeInDelay = i1009[2]
-  i1008.fillDuration = i1009[3]
-  i1008.fillDelay = i1009[4]
-  i1008.targetFillAmount = i1009[5]
-  i1008.initialFillAmount = i1009[6]
-  return i1008
+  var i2522 = root || request.c( 'AppearAnimation' )
+  var i2523 = data
+  i2522.OnMovementComplete = request.d('UnityEngine.Events.UnityEvent', i2523[0], i2522.OnMovementComplete)
+  i2522.fadeInDuration = i2523[1]
+  i2522.fadeInDelay = i2523[2]
+  i2522.fillDuration = i2523[3]
+  i2522.fillDelay = i2523[4]
+  i2522.targetFillAmount = i2523[5]
+  i2522.initialFillAmount = i2523[6]
+  return i2522
 }
 
 Deserializers["PlayerGuide"] = function (request, data, root) {
-  var i1010 = root || request.c( 'PlayerGuide' )
-  var i1011 = data
-  var i1013 = i1011[0]
-  var i1012 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
-  for(var i = 0; i < i1013.length; i += 2) {
-  request.r(i1013[i + 0], i1013[i + 1], 1, i1012, '')
+  var i2524 = root || request.c( 'PlayerGuide' )
+  var i2525 = data
+  var i2527 = i2525[0]
+  var i2526 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
+  for(var i = 0; i < i2527.length; i += 2) {
+  request.r(i2527[i + 0], i2527[i + 1], 1, i2526, '')
   }
-  i1010.prompts = i1012
-  return i1010
+  i2524.prompts = i2526
+  return i2524
 }
 
 Deserializers["UnityEngine.UI.Button"] = function (request, data, root) {
-  var i1016 = root || request.c( 'UnityEngine.UI.Button' )
-  var i1017 = data
-  i1016.m_OnClick = request.d('UnityEngine.UI.Button+ButtonClickedEvent', i1017[0], i1016.m_OnClick)
-  i1016.m_Navigation = request.d('UnityEngine.UI.Navigation', i1017[1], i1016.m_Navigation)
-  i1016.m_Transition = i1017[2]
-  i1016.m_Colors = request.d('UnityEngine.UI.ColorBlock', i1017[3], i1016.m_Colors)
-  i1016.m_SpriteState = request.d('UnityEngine.UI.SpriteState', i1017[4], i1016.m_SpriteState)
-  i1016.m_AnimationTriggers = request.d('UnityEngine.UI.AnimationTriggers', i1017[5], i1016.m_AnimationTriggers)
-  i1016.m_Interactable = !!i1017[6]
-  request.r(i1017[7], i1017[8], 0, i1016, 'm_TargetGraphic')
-  return i1016
+  var i2530 = root || request.c( 'UnityEngine.UI.Button' )
+  var i2531 = data
+  i2530.m_OnClick = request.d('UnityEngine.UI.Button+ButtonClickedEvent', i2531[0], i2530.m_OnClick)
+  i2530.m_Navigation = request.d('UnityEngine.UI.Navigation', i2531[1], i2530.m_Navigation)
+  i2530.m_Transition = i2531[2]
+  i2530.m_Colors = request.d('UnityEngine.UI.ColorBlock', i2531[3], i2530.m_Colors)
+  i2530.m_SpriteState = request.d('UnityEngine.UI.SpriteState', i2531[4], i2530.m_SpriteState)
+  i2530.m_AnimationTriggers = request.d('UnityEngine.UI.AnimationTriggers', i2531[5], i2530.m_AnimationTriggers)
+  i2530.m_Interactable = !!i2531[6]
+  request.r(i2531[7], i2531[8], 0, i2530, 'm_TargetGraphic')
+  return i2530
 }
 
 Deserializers["UnityEngine.UI.Button+ButtonClickedEvent"] = function (request, data, root) {
-  var i1018 = root || request.c( 'UnityEngine.UI.Button+ButtonClickedEvent' )
-  var i1019 = data
-  i1018.m_PersistentCalls = request.d('UnityEngine.Events.PersistentCallGroup', i1019[0], i1018.m_PersistentCalls)
-  return i1018
+  var i2532 = root || request.c( 'UnityEngine.UI.Button+ButtonClickedEvent' )
+  var i2533 = data
+  i2532.m_PersistentCalls = request.d('UnityEngine.Events.PersistentCallGroup', i2533[0], i2532.m_PersistentCalls)
+  return i2532
 }
 
 Deserializers["UnityEngine.UI.Navigation"] = function (request, data, root) {
-  var i1020 = root || request.c( 'UnityEngine.UI.Navigation' )
-  var i1021 = data
-  i1020.m_Mode = i1021[0]
-  i1020.m_WrapAround = !!i1021[1]
-  request.r(i1021[2], i1021[3], 0, i1020, 'm_SelectOnUp')
-  request.r(i1021[4], i1021[5], 0, i1020, 'm_SelectOnDown')
-  request.r(i1021[6], i1021[7], 0, i1020, 'm_SelectOnLeft')
-  request.r(i1021[8], i1021[9], 0, i1020, 'm_SelectOnRight')
-  return i1020
+  var i2534 = root || request.c( 'UnityEngine.UI.Navigation' )
+  var i2535 = data
+  i2534.m_Mode = i2535[0]
+  i2534.m_WrapAround = !!i2535[1]
+  request.r(i2535[2], i2535[3], 0, i2534, 'm_SelectOnUp')
+  request.r(i2535[4], i2535[5], 0, i2534, 'm_SelectOnDown')
+  request.r(i2535[6], i2535[7], 0, i2534, 'm_SelectOnLeft')
+  request.r(i2535[8], i2535[9], 0, i2534, 'm_SelectOnRight')
+  return i2534
 }
 
 Deserializers["UnityEngine.UI.ColorBlock"] = function (request, data, root) {
-  var i1022 = root || request.c( 'UnityEngine.UI.ColorBlock' )
-  var i1023 = data
-  i1022.m_NormalColor = new pc.Color(i1023[0], i1023[1], i1023[2], i1023[3])
-  i1022.m_HighlightedColor = new pc.Color(i1023[4], i1023[5], i1023[6], i1023[7])
-  i1022.m_PressedColor = new pc.Color(i1023[8], i1023[9], i1023[10], i1023[11])
-  i1022.m_SelectedColor = new pc.Color(i1023[12], i1023[13], i1023[14], i1023[15])
-  i1022.m_DisabledColor = new pc.Color(i1023[16], i1023[17], i1023[18], i1023[19])
-  i1022.m_ColorMultiplier = i1023[20]
-  i1022.m_FadeDuration = i1023[21]
-  return i1022
+  var i2536 = root || request.c( 'UnityEngine.UI.ColorBlock' )
+  var i2537 = data
+  i2536.m_NormalColor = new pc.Color(i2537[0], i2537[1], i2537[2], i2537[3])
+  i2536.m_HighlightedColor = new pc.Color(i2537[4], i2537[5], i2537[6], i2537[7])
+  i2536.m_PressedColor = new pc.Color(i2537[8], i2537[9], i2537[10], i2537[11])
+  i2536.m_SelectedColor = new pc.Color(i2537[12], i2537[13], i2537[14], i2537[15])
+  i2536.m_DisabledColor = new pc.Color(i2537[16], i2537[17], i2537[18], i2537[19])
+  i2536.m_ColorMultiplier = i2537[20]
+  i2536.m_FadeDuration = i2537[21]
+  return i2536
 }
 
 Deserializers["UnityEngine.UI.SpriteState"] = function (request, data, root) {
-  var i1024 = root || request.c( 'UnityEngine.UI.SpriteState' )
-  var i1025 = data
-  request.r(i1025[0], i1025[1], 0, i1024, 'm_HighlightedSprite')
-  request.r(i1025[2], i1025[3], 0, i1024, 'm_PressedSprite')
-  request.r(i1025[4], i1025[5], 0, i1024, 'm_SelectedSprite')
-  request.r(i1025[6], i1025[7], 0, i1024, 'm_DisabledSprite')
-  return i1024
+  var i2538 = root || request.c( 'UnityEngine.UI.SpriteState' )
+  var i2539 = data
+  request.r(i2539[0], i2539[1], 0, i2538, 'm_HighlightedSprite')
+  request.r(i2539[2], i2539[3], 0, i2538, 'm_PressedSprite')
+  request.r(i2539[4], i2539[5], 0, i2538, 'm_SelectedSprite')
+  request.r(i2539[6], i2539[7], 0, i2538, 'm_DisabledSprite')
+  return i2538
 }
 
 Deserializers["UnityEngine.UI.AnimationTriggers"] = function (request, data, root) {
-  var i1026 = root || request.c( 'UnityEngine.UI.AnimationTriggers' )
-  var i1027 = data
-  i1026.m_NormalTrigger = i1027[0]
-  i1026.m_HighlightedTrigger = i1027[1]
-  i1026.m_PressedTrigger = i1027[2]
-  i1026.m_SelectedTrigger = i1027[3]
-  i1026.m_DisabledTrigger = i1027[4]
-  return i1026
+  var i2540 = root || request.c( 'UnityEngine.UI.AnimationTriggers' )
+  var i2541 = data
+  i2540.m_NormalTrigger = i2541[0]
+  i2540.m_HighlightedTrigger = i2541[1]
+  i2540.m_PressedTrigger = i2541[2]
+  i2540.m_SelectedTrigger = i2541[3]
+  i2540.m_DisabledTrigger = i2541[4]
+  return i2540
 }
 
 Deserializers["RectAnimator"] = function (request, data, root) {
-  var i1028 = root || request.c( 'RectAnimator' )
-  var i1029 = data
-  request.r(i1029[0], i1029[1], 0, i1028, 'rectTransform')
-  i1028.animateScale = !!i1029[2]
-  i1028.isScaleLooping = !!i1029[3]
-  i1028.scaleTo = i1029[4]
-  i1028.scaleDuration = i1029[5]
-  i1028.scaleEaseType = i1029[6]
-  i1028.scaleStartDelay = i1029[7]
-  i1028.animateMove = !!i1029[8]
-  i1028.isMoveLooping = !!i1029[9]
-  i1028.moveTo = new pc.Vec2( i1029[10], i1029[11] )
-  i1028.moveDuration = i1029[12]
-  i1028.moveEaseType = i1029[13]
-  i1028.moveLoopType = i1029[14]
-  i1028.moveStartDelay = i1029[15]
-  i1028.initialPos = new pc.Vec3( i1029[16], i1029[17], i1029[18] )
-  i1028.initialScale = new pc.Vec3( i1029[19], i1029[20], i1029[21] )
-  return i1028
+  var i2542 = root || request.c( 'RectAnimator' )
+  var i2543 = data
+  request.r(i2543[0], i2543[1], 0, i2542, 'rectTransform')
+  i2542.animateScale = !!i2543[2]
+  i2542.isScaleLooping = !!i2543[3]
+  i2542.scaleTo = i2543[4]
+  i2542.scaleDuration = i2543[5]
+  i2542.scaleEaseType = i2543[6]
+  i2542.scaleStartDelay = i2543[7]
+  i2542.animateMove = !!i2543[8]
+  i2542.isMoveLooping = !!i2543[9]
+  i2542.moveTo = new pc.Vec2( i2543[10], i2543[11] )
+  i2542.moveDuration = i2543[12]
+  i2542.moveEaseType = i2543[13]
+  i2542.moveLoopType = i2543[14]
+  i2542.moveStartDelay = i2543[15]
+  i2542.initialPos = new pc.Vec3( i2543[16], i2543[17], i2543[18] )
+  i2542.initialScale = new pc.Vec3( i2543[19], i2543[20], i2543[21] )
+  return i2542
 }
 
 Deserializers["TileManager"] = function (request, data, root) {
-  var i1030 = root || request.c( 'TileManager' )
-  var i1031 = data
-  i1030.cellWidth = i1031[0]
-  i1030.cellHeight = i1031[1]
-  request.r(i1031[2], i1031[3], 0, i1030, 'canvasGroup')
-  var i1033 = i1031[4]
-  var i1032 = new (System.Collections.Generic.List$1(Bridge.ns('TileCell')))
-  for(var i = 0; i < i1033.length; i += 2) {
-  request.r(i1033[i + 0], i1033[i + 1], 1, i1032, '')
+  var i2544 = root || request.c( 'TileManager' )
+  var i2545 = data
+  i2544.cellWidth = i2545[0]
+  i2544.cellHeight = i2545[1]
+  request.r(i2545[2], i2545[3], 0, i2544, 'canvasGroup')
+  var i2547 = i2545[4]
+  var i2546 = new (System.Collections.Generic.List$1(Bridge.ns('TileCell')))
+  for(var i = 0; i < i2547.length; i += 2) {
+  request.r(i2547[i + 0], i2547[i + 1], 1, i2546, '')
   }
-  i1030.cells = i1032
-  var i1035 = i1031[5]
-  var i1034 = new (System.Collections.Generic.List$1(Bridge.ns('TileData')))
-  for(var i = 0; i < i1035.length; i += 2) {
-  request.r(i1035[i + 0], i1035[i + 1], 1, i1034, '')
+  i2544.cells = i2546
+  var i2549 = i2545[5]
+  var i2548 = new (System.Collections.Generic.List$1(Bridge.ns('TileData')))
+  for(var i = 0; i < i2549.length; i += 2) {
+  request.r(i2549[i + 0], i2549[i + 1], 1, i2548, '')
   }
-  i1030.tileDataPool = i1034
-  i1030.GridHeight = i1031[6]
-  i1030.SequenceDelay = i1031[7]
-  i1030.BreakDelay = i1031[8]
-  i1030.FallDelay = i1031[9]
-  i1030.CheckDelay = i1031[10]
-  i1030.levelColorValues = i1031[11]
-  var i1037 = i1031[12]
-  var i1036 = new (System.Collections.Generic.List$1(Bridge.ns('TileData')))
-  for(var i = 0; i < i1037.length; i += 2) {
-  request.r(i1037[i + 0], i1037[i + 1], 1, i1036, '')
+  i2544.tileDataPool = i2548
+  i2544.GridHeight = i2545[6]
+  i2544.SequenceDelay = i2545[7]
+  i2544.BreakDelay = i2545[8]
+  i2544.FallDelay = i2545[9]
+  i2544.CheckDelay = i2545[10]
+  i2544.levelColorValues = i2545[11]
+  var i2551 = i2545[12]
+  var i2550 = new (System.Collections.Generic.List$1(Bridge.ns('TileData')))
+  for(var i = 0; i < i2551.length; i += 2) {
+  request.r(i2551[i + 0], i2551[i + 1], 1, i2550, '')
   }
-  i1030.powerupDataPool = i1036
-  request.r(i1031[13], i1031[14], 0, i1030, 'dynamitePowerup')
-  return i1030
+  i2544.powerupDataPool = i2550
+  request.r(i2545[13], i2545[14], 0, i2544, 'dynamitePowerup')
+  return i2544
 }
 
 Deserializers["SpecialTileManager"] = function (request, data, root) {
-  var i1042 = root || request.c( 'SpecialTileManager' )
-  var i1043 = data
-  request.r(i1043[0], i1043[1], 0, i1042, 'tileManager')
-  var i1045 = i1043[2]
-  var i1044 = new (System.Collections.Generic.List$1(Bridge.ns('TileCell')))
-  for(var i = 0; i < i1045.length; i += 2) {
-  request.r(i1045[i + 0], i1045[i + 1], 1, i1044, '')
+  var i2556 = root || request.c( 'SpecialTileManager' )
+  var i2557 = data
+  request.r(i2557[0], i2557[1], 0, i2556, 'tileManager')
+  var i2559 = i2557[2]
+  var i2558 = new (System.Collections.Generic.List$1(Bridge.ns('TileCell')))
+  for(var i = 0; i < i2559.length; i += 2) {
+  request.r(i2559[i + 0], i2559[i + 1], 1, i2558, '')
   }
-  i1042.cellList = i1044
-  var i1047 = i1043[3]
-  var i1046 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.SkeletonGraphic')))
-  for(var i = 0; i < i1047.length; i += 2) {
-  request.r(i1047[i + 0], i1047[i + 1], 1, i1046, '')
+  i2556.cellList = i2558
+  var i2561 = i2557[3]
+  var i2560 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.SkeletonGraphic')))
+  for(var i = 0; i < i2561.length; i += 2) {
+  request.r(i2561[i + 0], i2561[i + 1], 1, i2560, '')
   }
-  i1042.SpecialTiles = i1046
-  i1042.specialTileTargetPos = i1043[4]
-  i1042.pigPos = i1043[5]
-  i1042.chickenPos = i1043[6]
-  return i1042
+  i2556.SpecialTiles = i2560
+  i2556.specialTileTargetPos = i2557[4]
+  i2556.pigPos = i2557[5]
+  i2556.chickenPos = i2557[6]
+  return i2556
 }
 
 Deserializers["UnityEngine.UI.HorizontalLayoutGroup"] = function (request, data, root) {
-  var i1050 = root || request.c( 'UnityEngine.UI.HorizontalLayoutGroup' )
-  var i1051 = data
-  i1050.m_Spacing = i1051[0]
-  i1050.m_ChildForceExpandWidth = !!i1051[1]
-  i1050.m_ChildForceExpandHeight = !!i1051[2]
-  i1050.m_ChildControlWidth = !!i1051[3]
-  i1050.m_ChildControlHeight = !!i1051[4]
-  i1050.m_ChildScaleWidth = !!i1051[5]
-  i1050.m_ChildScaleHeight = !!i1051[6]
-  i1050.m_ReverseArrangement = !!i1051[7]
-  i1050.m_Padding = UnityEngine.RectOffset.FromPaddings(i1051[8], i1051[9], i1051[10], i1051[11])
-  i1050.m_ChildAlignment = i1051[12]
-  return i1050
+  var i2564 = root || request.c( 'UnityEngine.UI.HorizontalLayoutGroup' )
+  var i2565 = data
+  i2564.m_Spacing = i2565[0]
+  i2564.m_ChildForceExpandWidth = !!i2565[1]
+  i2564.m_ChildForceExpandHeight = !!i2565[2]
+  i2564.m_ChildControlWidth = !!i2565[3]
+  i2564.m_ChildControlHeight = !!i2565[4]
+  i2564.m_ChildScaleWidth = !!i2565[5]
+  i2564.m_ChildScaleHeight = !!i2565[6]
+  i2564.m_ReverseArrangement = !!i2565[7]
+  i2564.m_Padding = UnityEngine.RectOffset.FromPaddings(i2565[8], i2565[9], i2565[10], i2565[11])
+  i2564.m_ChildAlignment = i2565[12]
+  return i2564
 }
 
 Deserializers["UIMoveTo"] = function (request, data, root) {
-  var i1052 = root || request.c( 'UIMoveTo' )
-  var i1053 = data
-  request.r(i1053[0], i1053[1], 0, i1052, 'imageTransform')
-  i1052.targetPosition = new pc.Vec2( i1053[2], i1053[3] )
-  i1052.anticipationOffset = i1053[4]
-  i1052.duration = i1053[5]
-  i1052.enableOnStart = !!i1053[6]
-  i1052.delayBeforeStart = i1053[7]
-  i1052.delayBeforeEnd = i1053[8]
-  i1052.OnMovementStart = request.d('UnityEngine.Events.UnityEvent', i1053[9], i1052.OnMovementStart)
-  i1052.OnMovementComplete = request.d('UnityEngine.Events.UnityEvent', i1053[10], i1052.OnMovementComplete)
-  var i1055 = i1053[11]
-  var i1054 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
-  for(var i = 0; i < i1055.length; i += 2) {
-  request.r(i1055[i + 0], i1055[i + 1], 1, i1054, '')
+  var i2566 = root || request.c( 'UIMoveTo' )
+  var i2567 = data
+  request.r(i2567[0], i2567[1], 0, i2566, 'imageTransform')
+  i2566.targetPosition = new pc.Vec2( i2567[2], i2567[3] )
+  i2566.anticipationOffset = i2567[4]
+  i2566.duration = i2567[5]
+  i2566.enableOnStart = !!i2567[6]
+  i2566.delayBeforeStart = i2567[7]
+  i2566.delayBeforeEnd = i2567[8]
+  i2566.OnMovementStart = request.d('UnityEngine.Events.UnityEvent', i2567[9], i2566.OnMovementStart)
+  i2566.OnMovementComplete = request.d('UnityEngine.Events.UnityEvent', i2567[10], i2566.OnMovementComplete)
+  var i2569 = i2567[11]
+  var i2568 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
+  for(var i = 0; i < i2569.length; i += 2) {
+  request.r(i2569[i + 0], i2569[i + 1], 1, i2568, '')
   }
-  i1052.objectsToEnable = i1054
-  return i1052
+  i2566.objectsToEnable = i2568
+  return i2566
 }
 
 Deserializers["UnityEngine.UI.GridLayoutGroup"] = function (request, data, root) {
-  var i1056 = root || request.c( 'UnityEngine.UI.GridLayoutGroup' )
-  var i1057 = data
-  i1056.m_StartCorner = i1057[0]
-  i1056.m_StartAxis = i1057[1]
-  i1056.m_CellSize = new pc.Vec2( i1057[2], i1057[3] )
-  i1056.m_Spacing = new pc.Vec2( i1057[4], i1057[5] )
-  i1056.m_Constraint = i1057[6]
-  i1056.m_ConstraintCount = i1057[7]
-  i1056.m_Padding = UnityEngine.RectOffset.FromPaddings(i1057[8], i1057[9], i1057[10], i1057[11])
-  i1056.m_ChildAlignment = i1057[12]
-  return i1056
+  var i2570 = root || request.c( 'UnityEngine.UI.GridLayoutGroup' )
+  var i2571 = data
+  i2570.m_StartCorner = i2571[0]
+  i2570.m_StartAxis = i2571[1]
+  i2570.m_CellSize = new pc.Vec2( i2571[2], i2571[3] )
+  i2570.m_Spacing = new pc.Vec2( i2571[4], i2571[5] )
+  i2570.m_Constraint = i2571[6]
+  i2570.m_ConstraintCount = i2571[7]
+  i2570.m_Padding = UnityEngine.RectOffset.FromPaddings(i2571[8], i2571[9], i2571[10], i2571[11])
+  i2570.m_ChildAlignment = i2571[12]
+  return i2570
 }
 
 Deserializers["UnityEngine.UI.Mask"] = function (request, data, root) {
-  var i1058 = root || request.c( 'UnityEngine.UI.Mask' )
-  var i1059 = data
-  i1058.m_ShowMaskGraphic = !!i1059[0]
-  return i1058
+  var i2572 = root || request.c( 'UnityEngine.UI.Mask' )
+  var i2573 = data
+  i2572.m_ShowMaskGraphic = !!i2573[0]
+  return i2572
 }
 
 Deserializers["Spine.Unity.SkeletonGraphic"] = function (request, data, root) {
-  var i1060 = root || request.c( 'Spine.Unity.SkeletonGraphic' )
-  var i1061 = data
-  request.r(i1061[0], i1061[1], 0, i1060, 'skeletonDataAsset')
-  request.r(i1061[2], i1061[3], 0, i1060, 'additiveMaterial')
-  request.r(i1061[4], i1061[5], 0, i1060, 'multiplyMaterial')
-  request.r(i1061[6], i1061[7], 0, i1060, 'screenMaterial')
-  i1060.initialSkinName = i1061[8]
-  i1060.initialFlipX = !!i1061[9]
-  i1060.initialFlipY = !!i1061[10]
-  i1060.startingAnimation = i1061[11]
-  i1060.startingLoop = !!i1061[12]
-  i1060.timeScale = i1061[13]
-  i1060.freeze = !!i1061[14]
-  i1060.layoutScaleMode = i1061[15]
-  i1060.updateWhenInvisible = i1061[16]
-  i1060.allowMultipleCanvasRenderers = !!i1061[17]
-  var i1063 = i1061[18]
-  var i1062 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.CanvasRenderer')))
-  for(var i = 0; i < i1063.length; i += 2) {
-  request.r(i1063[i + 0], i1063[i + 1], 1, i1062, '')
+  var i2574 = root || request.c( 'Spine.Unity.SkeletonGraphic' )
+  var i2575 = data
+  request.r(i2575[0], i2575[1], 0, i2574, 'skeletonDataAsset')
+  request.r(i2575[2], i2575[3], 0, i2574, 'additiveMaterial')
+  request.r(i2575[4], i2575[5], 0, i2574, 'multiplyMaterial')
+  request.r(i2575[6], i2575[7], 0, i2574, 'screenMaterial')
+  i2574.initialSkinName = i2575[8]
+  i2574.initialFlipX = !!i2575[9]
+  i2574.initialFlipY = !!i2575[10]
+  i2574.startingAnimation = i2575[11]
+  i2574.startingLoop = !!i2575[12]
+  i2574.timeScale = i2575[13]
+  i2574.freeze = !!i2575[14]
+  i2574.layoutScaleMode = i2575[15]
+  i2574.updateWhenInvisible = i2575[16]
+  i2574.allowMultipleCanvasRenderers = !!i2575[17]
+  var i2577 = i2575[18]
+  var i2576 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.CanvasRenderer')))
+  for(var i = 0; i < i2577.length; i += 2) {
+  request.r(i2577[i + 0], i2577[i + 1], 1, i2576, '')
   }
-  i1060.canvasRenderers = i1062
-  i1060.enableSeparatorSlots = !!i1061[19]
-  i1060.updateSeparatorPartLocation = !!i1061[20]
-  i1060.updateSeparatorPartScale = !!i1061[21]
-  i1060.disableMeshAssignmentOnOverride = !!i1061[22]
-  i1060.m_SkeletonColor = new pc.Color(i1061[23], i1061[24], i1061[25], i1061[26])
-  i1060.referenceSize = new pc.Vec2( i1061[27], i1061[28] )
-  i1060.pivotOffset = new pc.Vec2( i1061[29], i1061[30] )
-  i1060.referenceScale = i1061[31]
-  i1060.layoutScale = i1061[32]
-  i1060.rectTransformSize = new pc.Vec2( i1061[33], i1061[34] )
-  i1060.editReferenceRect = !!i1061[35]
-  var i1065 = i1061[36]
-  var i1064 = []
-  for(var i = 0; i < i1065.length; i += 1) {
-    i1064.push( i1065[i + 0] );
+  i2574.canvasRenderers = i2576
+  i2574.enableSeparatorSlots = !!i2575[19]
+  i2574.updateSeparatorPartLocation = !!i2575[20]
+  i2574.updateSeparatorPartScale = !!i2575[21]
+  i2574.disableMeshAssignmentOnOverride = !!i2575[22]
+  i2574.m_SkeletonColor = new pc.Color(i2575[23], i2575[24], i2575[25], i2575[26])
+  i2574.referenceSize = new pc.Vec2( i2575[27], i2575[28] )
+  i2574.pivotOffset = new pc.Vec2( i2575[29], i2575[30] )
+  i2574.referenceScale = i2575[31]
+  i2574.layoutScale = i2575[32]
+  i2574.rectTransformSize = new pc.Vec2( i2575[33], i2575[34] )
+  i2574.editReferenceRect = !!i2575[35]
+  var i2579 = i2575[36]
+  var i2578 = []
+  for(var i = 0; i < i2579.length; i += 1) {
+    i2578.push( i2579[i + 0] );
   }
-  i1060.separatorSlotNames = i1064
-  var i1067 = i1061[37]
-  var i1066 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Transform')))
-  for(var i = 0; i < i1067.length; i += 2) {
-  request.r(i1067[i + 0], i1067[i + 1], 1, i1066, '')
+  i2574.separatorSlotNames = i2578
+  var i2581 = i2575[37]
+  var i2580 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Transform')))
+  for(var i = 0; i < i2581.length; i += 2) {
+  request.r(i2581[i + 0], i2581[i + 1], 1, i2580, '')
   }
-  i1060.separatorParts = i1066
-  i1060.physicsPositionInheritanceFactor = new pc.Vec2( i1061[38], i1061[39] )
-  i1060.physicsRotationInheritanceFactor = i1061[40]
-  request.r(i1061[41], i1061[42], 0, i1060, 'physicsMovementRelativeTo')
-  i1060.meshGenerator = request.d('Spine.Unity.MeshGenerator', i1061[43], i1060.meshGenerator)
-  i1060.updateTiming = i1061[44]
-  i1060.unscaledTime = !!i1061[45]
-  request.r(i1061[46], i1061[47], 0, i1060, 'm_Material')
-  i1060.m_Maskable = !!i1061[48]
-  i1060.m_Color = new pc.Color(i1061[49], i1061[50], i1061[51], i1061[52])
-  i1060.m_RaycastTarget = !!i1061[53]
-  i1060.m_RaycastPadding = new pc.Vec4( i1061[54], i1061[55], i1061[56], i1061[57] )
-  return i1060
+  i2574.separatorParts = i2580
+  i2574.physicsPositionInheritanceFactor = new pc.Vec2( i2575[38], i2575[39] )
+  i2574.physicsRotationInheritanceFactor = i2575[40]
+  request.r(i2575[41], i2575[42], 0, i2574, 'physicsMovementRelativeTo')
+  i2574.meshGenerator = request.d('Spine.Unity.MeshGenerator', i2575[43], i2574.meshGenerator)
+  i2574.updateTiming = i2575[44]
+  i2574.unscaledTime = !!i2575[45]
+  request.r(i2575[46], i2575[47], 0, i2574, 'm_Material')
+  i2574.m_Maskable = !!i2575[48]
+  i2574.m_Color = new pc.Color(i2575[49], i2575[50], i2575[51], i2575[52])
+  i2574.m_RaycastTarget = !!i2575[53]
+  i2574.m_RaycastPadding = new pc.Vec4( i2575[54], i2575[55], i2575[56], i2575[57] )
+  return i2574
 }
 
 Deserializers["Spine.Unity.MeshGenerator"] = function (request, data, root) {
-  var i1074 = root || request.c( 'Spine.Unity.MeshGenerator' )
-  var i1075 = data
-  i1074.settings = request.d('Spine.Unity.MeshGenerator+Settings', i1075[0], i1074.settings)
-  return i1074
+  var i2588 = root || request.c( 'Spine.Unity.MeshGenerator' )
+  var i2589 = data
+  i2588.settings = request.d('Spine.Unity.MeshGenerator+Settings', i2589[0], i2588.settings)
+  return i2588
 }
 
 Deserializers["Spine.Unity.MeshGenerator+Settings"] = function (request, data, root) {
-  var i1076 = root || request.c( 'Spine.Unity.MeshGenerator+Settings' )
-  var i1077 = data
-  i1076.useClipping = !!i1077[0]
-  i1076.zSpacing = i1077[1]
-  i1076.tintBlack = !!i1077[2]
-  i1076.canvasGroupCompatible = !!i1077[3]
-  i1076.pmaVertexColors = !!i1077[4]
-  i1076.addNormals = !!i1077[5]
-  i1076.calculateTangents = !!i1077[6]
-  i1076.immutableTriangles = !!i1077[7]
-  return i1076
+  var i2590 = root || request.c( 'Spine.Unity.MeshGenerator+Settings' )
+  var i2591 = data
+  i2590.useClipping = !!i2591[0]
+  i2590.zSpacing = i2591[1]
+  i2590.tintBlack = !!i2591[2]
+  i2590.canvasGroupCompatible = !!i2591[3]
+  i2590.pmaVertexColors = !!i2591[4]
+  i2590.addNormals = !!i2591[5]
+  i2590.calculateTangents = !!i2591[6]
+  i2590.immutableTriangles = !!i2591[7]
+  return i2590
 }
 
 Deserializers["AnimatedTileSpawner"] = function (request, data, root) {
-  var i1078 = root || request.c( 'AnimatedTileSpawner' )
-  var i1079 = data
-  var i1081 = i1079[0]
-  var i1080 = new (System.Collections.Generic.List$1(Bridge.ns('AnimatedTile')))
-  for(var i = 0; i < i1081.length; i += 2) {
-  request.r(i1081[i + 0], i1081[i + 1], 1, i1080, '')
+  var i2592 = root || request.c( 'AnimatedTileSpawner' )
+  var i2593 = data
+  var i2595 = i2593[0]
+  var i2594 = new (System.Collections.Generic.List$1(Bridge.ns('AnimatedTile')))
+  for(var i = 0; i < i2595.length; i += 2) {
+  request.r(i2595[i + 0], i2595[i + 1], 1, i2594, '')
   }
-  i1078.tiles = i1080
-  return i1078
+  i2592.tiles = i2594
+  return i2592
 }
 
 Deserializers["DynamiteEffect"] = function (request, data, root) {
-  var i1084 = root || request.c( 'DynamiteEffect' )
-  var i1085 = data
-  i1084.initialScale = new pc.Vec3( i1085[0], i1085[1], i1085[2] )
-  i1084.targetPos = new pc.Vec3( i1085[3], i1085[4], i1085[5] )
-  i1084.duration = i1085[6]
-  request.r(i1085[7], i1085[8], 0, i1084, 'model')
-  request.r(i1085[9], i1085[10], 0, i1084, 'explosionEffectPrefab')
-  return i1084
+  var i2598 = root || request.c( 'DynamiteEffect' )
+  var i2599 = data
+  i2598.initialScale = new pc.Vec3( i2599[0], i2599[1], i2599[2] )
+  i2598.targetPos = new pc.Vec3( i2599[3], i2599[4], i2599[5] )
+  i2598.duration = i2599[6]
+  request.r(i2599[7], i2599[8], 0, i2598, 'model')
+  request.r(i2599[9], i2599[10], 0, i2598, 'explosionEffectPrefab')
+  return i2598
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.SpriteRenderer"] = function (request, data, root) {
-  var i1086 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.SpriteRenderer' )
-  var i1087 = data
-  i1086.enabled = !!i1087[0]
-  request.r(i1087[1], i1087[2], 0, i1086, 'sharedMaterial')
-  var i1089 = i1087[3]
-  var i1088 = []
-  for(var i = 0; i < i1089.length; i += 2) {
-  request.r(i1089[i + 0], i1089[i + 1], 2, i1088, '')
+  var i2600 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.SpriteRenderer' )
+  var i2601 = data
+  i2600.enabled = !!i2601[0]
+  request.r(i2601[1], i2601[2], 0, i2600, 'sharedMaterial')
+  var i2603 = i2601[3]
+  var i2602 = []
+  for(var i = 0; i < i2603.length; i += 2) {
+  request.r(i2603[i + 0], i2603[i + 1], 2, i2602, '')
   }
-  i1086.sharedMaterials = i1088
-  i1086.receiveShadows = !!i1087[4]
-  i1086.shadowCastingMode = i1087[5]
-  i1086.sortingLayerID = i1087[6]
-  i1086.sortingOrder = i1087[7]
-  i1086.lightmapIndex = i1087[8]
-  i1086.lightmapSceneIndex = i1087[9]
-  i1086.lightmapScaleOffset = new pc.Vec4( i1087[10], i1087[11], i1087[12], i1087[13] )
-  i1086.lightProbeUsage = i1087[14]
-  i1086.reflectionProbeUsage = i1087[15]
-  i1086.color = new pc.Color(i1087[16], i1087[17], i1087[18], i1087[19])
-  request.r(i1087[20], i1087[21], 0, i1086, 'sprite')
-  i1086.flipX = !!i1087[22]
-  i1086.flipY = !!i1087[23]
-  i1086.drawMode = i1087[24]
-  i1086.size = new pc.Vec2( i1087[25], i1087[26] )
-  i1086.tileMode = i1087[27]
-  i1086.adaptiveModeThreshold = i1087[28]
-  i1086.maskInteraction = i1087[29]
-  i1086.spriteSortPoint = i1087[30]
-  return i1086
+  i2600.sharedMaterials = i2602
+  i2600.receiveShadows = !!i2601[4]
+  i2600.shadowCastingMode = i2601[5]
+  i2600.sortingLayerID = i2601[6]
+  i2600.sortingOrder = i2601[7]
+  i2600.lightmapIndex = i2601[8]
+  i2600.lightmapSceneIndex = i2601[9]
+  i2600.lightmapScaleOffset = new pc.Vec4( i2601[10], i2601[11], i2601[12], i2601[13] )
+  i2600.lightProbeUsage = i2601[14]
+  i2600.reflectionProbeUsage = i2601[15]
+  i2600.color = new pc.Color(i2601[16], i2601[17], i2601[18], i2601[19])
+  request.r(i2601[20], i2601[21], 0, i2600, 'sprite')
+  i2600.flipX = !!i2601[22]
+  i2600.flipY = !!i2601[23]
+  i2600.drawMode = i2601[24]
+  i2600.size = new pc.Vec2( i2601[25], i2601[26] )
+  i2600.tileMode = i2601[27]
+  i2600.adaptiveModeThreshold = i2601[28]
+  i2600.maskInteraction = i2601[29]
+  i2600.spriteSortPoint = i2601[30]
+  return i2600
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Components.Animator"] = function (request, data, root) {
-  var i1090 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Animator' )
-  var i1091 = data
-  request.r(i1091[0], i1091[1], 0, i1090, 'animatorController')
-  request.r(i1091[2], i1091[3], 0, i1090, 'avatar')
-  i1090.updateMode = i1091[4]
-  i1090.hasTransformHierarchy = !!i1091[5]
-  i1090.applyRootMotion = !!i1091[6]
-  var i1093 = i1091[7]
-  var i1092 = []
-  for(var i = 0; i < i1093.length; i += 2) {
-  request.r(i1093[i + 0], i1093[i + 1], 2, i1092, '')
+  var i2604 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Components.Animator' )
+  var i2605 = data
+  request.r(i2605[0], i2605[1], 0, i2604, 'animatorController')
+  request.r(i2605[2], i2605[3], 0, i2604, 'avatar')
+  i2604.updateMode = i2605[4]
+  i2604.hasTransformHierarchy = !!i2605[5]
+  i2604.applyRootMotion = !!i2605[6]
+  var i2607 = i2605[7]
+  var i2606 = []
+  for(var i = 0; i < i2607.length; i += 2) {
+  request.r(i2607[i + 0], i2607[i + 1], 2, i2606, '')
   }
-  i1090.humanBones = i1092
-  i1090.enabled = !!i1091[8]
-  return i1090
+  i2604.humanBones = i2606
+  i2604.enabled = !!i2605[8]
+  return i2604
 }
 
 Deserializers["MergeHands"] = function (request, data, root) {
-  var i1096 = root || request.c( 'MergeHands' )
-  var i1097 = data
-  request.r(i1097[0], i1097[1], 0, i1096, 'rectTransform')
-  request.r(i1097[2], i1097[3], 0, i1096, 'target1')
-  request.r(i1097[4], i1097[5], 0, i1096, 'target2')
-  return i1096
-}
-
-Deserializers["PNGSequencer"] = function (request, data, root) {
-  var i1098 = root || request.c( 'PNGSequencer' )
-  var i1099 = data
-  i1098.frameRate = i1099[0]
-  var i1101 = i1099[1]
-  var i1100 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.Sprite')))
-  for(var i = 0; i < i1101.length; i += 2) {
-  request.r(i1101[i + 0], i1101[i + 1], 1, i1100, '')
-  }
-  i1098.frames = i1100
-  i1098.loop = !!i1099[2]
-  i1098.playOnStart = !!i1099[3]
-  i1098.autoDestroy = !!i1099[4]
-  i1098.isUIElement = !!i1099[5]
-  request.r(i1099[6], i1099[7], 0, i1098, 'targetImage')
-  request.r(i1099[8], i1099[9], 0, i1098, 'targetRenderer')
-  return i1098
+  var i2610 = root || request.c( 'MergeHands' )
+  var i2611 = data
+  request.r(i2611[0], i2611[1], 0, i2610, 'rectTransform')
+  request.r(i2611[2], i2611[3], 0, i2610, 'target1')
+  request.r(i2611[4], i2611[5], 0, i2610, 'target2')
+  return i2610
 }
 
 Deserializers["UnityEngine.EventSystems.EventSystem"] = function (request, data, root) {
-  var i1104 = root || request.c( 'UnityEngine.EventSystems.EventSystem' )
-  var i1105 = data
-  request.r(i1105[0], i1105[1], 0, i1104, 'm_FirstSelected')
-  i1104.m_sendNavigationEvents = !!i1105[2]
-  i1104.m_DragThreshold = i1105[3]
-  return i1104
+  var i2612 = root || request.c( 'UnityEngine.EventSystems.EventSystem' )
+  var i2613 = data
+  request.r(i2613[0], i2613[1], 0, i2612, 'm_FirstSelected')
+  i2612.m_sendNavigationEvents = !!i2613[2]
+  i2612.m_DragThreshold = i2613[3]
+  return i2612
 }
 
 Deserializers["UnityEngine.EventSystems.StandaloneInputModule"] = function (request, data, root) {
-  var i1106 = root || request.c( 'UnityEngine.EventSystems.StandaloneInputModule' )
-  var i1107 = data
-  i1106.m_HorizontalAxis = i1107[0]
-  i1106.m_VerticalAxis = i1107[1]
-  i1106.m_SubmitButton = i1107[2]
-  i1106.m_CancelButton = i1107[3]
-  i1106.m_InputActionsPerSecond = i1107[4]
-  i1106.m_RepeatDelay = i1107[5]
-  i1106.m_ForceModuleActive = !!i1107[6]
-  i1106.m_SendPointerHoverToParent = !!i1107[7]
-  return i1106
+  var i2614 = root || request.c( 'UnityEngine.EventSystems.StandaloneInputModule' )
+  var i2615 = data
+  i2614.m_HorizontalAxis = i2615[0]
+  i2614.m_VerticalAxis = i2615[1]
+  i2614.m_SubmitButton = i2615[2]
+  i2614.m_CancelButton = i2615[3]
+  i2614.m_InputActionsPerSecond = i2615[4]
+  i2614.m_RepeatDelay = i2615[5]
+  i2614.m_ForceModuleActive = !!i2615[6]
+  i2614.m_SendPointerHoverToParent = !!i2615[7]
+  return i2614
 }
 
 Deserializers["GameManager"] = function (request, data, root) {
-  var i1108 = root || request.c( 'GameManager' )
-  var i1109 = data
-  i1108.IsSIP = !!i1109[0]
-  i1108.gameType = i1109[1]
-  i1108.toggleInactivityPanel = !!i1109[2]
-  i1108.OnStartMIP1 = request.d('UnityEngine.Events.UnityEvent', i1109[3], i1108.OnStartMIP1)
-  i1108.OnStartMIP2 = request.d('UnityEngine.Events.UnityEvent', i1109[4], i1108.OnStartMIP2)
-  i1108.IsDoneCollecting = !!i1109[5]
-  i1108.OnLevelComplete = request.d('UnityEngine.Events.UnityEvent', i1109[6], i1108.OnLevelComplete)
-  request.r(i1109[7], i1109[8], 0, i1108, 'TutorialPanel')
-  request.r(i1109[9], i1109[10], 0, i1108, 'GamePanel')
-  request.r(i1109[11], i1109[12], 0, i1108, 'EndCard')
-  request.r(i1109[13], i1109[14], 0, i1108, 'CTAPanel')
-  request.r(i1109[15], i1109[16], 0, i1108, 'FailPanel')
-  request.r(i1109[17], i1109[18], 0, i1108, 'EndCardInActivityPanel')
-  i1108.iosLink = i1109[19]
-  i1108.androidLink = i1109[20]
-  i1108.hasTimer = !!i1109[21]
-  i1108.currentTimer = i1109[22]
-  i1108.maxTime = i1109[23]
-  i1108.gameOver = !!i1109[24]
-  request.r(i1109[25], i1109[26], 0, i1108, 'inactivityPanel')
-  request.r(i1109[27], i1109[28], 0, i1108, 'inactivityPanelGame')
-  i1108.inactivityTime = i1109[29]
-  i1108.inactivityTimer = i1109[30]
-  request.r(i1109[31], i1109[32], 0, i1108, 'timerText')
-  var i1111 = i1109[33]
-  var i1110 = new (System.Collections.Generic.List$1(Bridge.ns('GameManager+FurnitureItems')))
-  for(var i = 0; i < i1111.length; i += 1) {
-    i1110.add(request.d('GameManager+FurnitureItems', i1111[i + 0]));
+  var i2616 = root || request.c( 'GameManager' )
+  var i2617 = data
+  i2616.IsSIP = !!i2617[0]
+  i2616.gameType = i2617[1]
+  i2616.toggleInactivityPanel = !!i2617[2]
+  i2616.OnStartMIP1 = request.d('UnityEngine.Events.UnityEvent', i2617[3], i2616.OnStartMIP1)
+  i2616.OnStartMIP2 = request.d('UnityEngine.Events.UnityEvent', i2617[4], i2616.OnStartMIP2)
+  i2616.IsDoneCollecting = !!i2617[5]
+  i2616.OnLevelComplete = request.d('UnityEngine.Events.UnityEvent', i2617[6], i2616.OnLevelComplete)
+  request.r(i2617[7], i2617[8], 0, i2616, 'TutorialPanel')
+  request.r(i2617[9], i2617[10], 0, i2616, 'GamePanel')
+  request.r(i2617[11], i2617[12], 0, i2616, 'EndCard')
+  request.r(i2617[13], i2617[14], 0, i2616, 'CTAPanel')
+  request.r(i2617[15], i2617[16], 0, i2616, 'FailPanel')
+  request.r(i2617[17], i2617[18], 0, i2616, 'EndCardInActivityPanel')
+  i2616.iosLink = i2617[19]
+  i2616.androidLink = i2617[20]
+  i2616.hasTimer = !!i2617[21]
+  i2616.currentTimer = i2617[22]
+  i2616.maxTime = i2617[23]
+  i2616.gameOver = !!i2617[24]
+  request.r(i2617[25], i2617[26], 0, i2616, 'inactivityPanel')
+  request.r(i2617[27], i2617[28], 0, i2616, 'inactivityPanelGame')
+  i2616.inactivityTime = i2617[29]
+  i2616.inactivityTimer = i2617[30]
+  request.r(i2617[31], i2617[32], 0, i2616, 'timerText')
+  var i2619 = i2617[33]
+  var i2618 = new (System.Collections.Generic.List$1(Bridge.ns('GameManager+FurnitureItems')))
+  for(var i = 0; i < i2619.length; i += 1) {
+    i2618.add(request.d('GameManager+FurnitureItems', i2619[i + 0]));
   }
-  i1108.items = i1110
-  i1108.CurrentLevel = i1109[34]
-  var i1113 = i1109[35]
-  var i1112 = new (System.Collections.Generic.List$1(Bridge.ns('GameManager+FurnitureItems')))
-  for(var i = 0; i < i1113.length; i += 1) {
-    i1112.add(request.d('GameManager+FurnitureItems', i1113[i + 0]));
+  i2616.items = i2618
+  i2616.CurrentLevel = i2617[34]
+  var i2621 = i2617[35]
+  var i2620 = new (System.Collections.Generic.List$1(Bridge.ns('GameManager+FurnitureItems')))
+  for(var i = 0; i < i2621.length; i += 1) {
+    i2620.add(request.d('GameManager+FurnitureItems', i2621[i + 0]));
   }
-  i1108.currentFurnitures = i1112
-  var i1115 = i1109[36]
-  var i1114 = new (System.Collections.Generic.List$1(Bridge.ns('BasicFade')))
-  for(var i = 0; i < i1115.length; i += 2) {
-  request.r(i1115[i + 0], i1115[i + 1], 1, i1114, '')
+  i2616.currentFurnitures = i2620
+  var i2623 = i2617[36]
+  var i2622 = new (System.Collections.Generic.List$1(Bridge.ns('BasicFade')))
+  for(var i = 0; i < i2623.length; i += 2) {
+  request.r(i2623[i + 0], i2623[i + 1], 1, i2622, '')
   }
-  i1108.gameBoards = i1114
-  var i1117 = i1109[37]
-  var i1116 = new (System.Collections.Generic.List$1(Bridge.ns('AnimationBase')))
-  for(var i = 0; i < i1117.length; i += 2) {
-  request.r(i1117[i + 0], i1117[i + 1], 1, i1116, '')
+  i2616.gameBoards = i2622
+  var i2625 = i2617[37]
+  var i2624 = new (System.Collections.Generic.List$1(Bridge.ns('AnimationBase')))
+  for(var i = 0; i < i2625.length; i += 2) {
+  request.r(i2625[i + 0], i2625[i + 1], 1, i2624, '')
   }
-  i1108.furnitureDecorations = i1116
-  var i1119 = i1109[38]
-  var i1118 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
-  for(var i = 0; i < i1119.length; i += 2) {
-  request.r(i1119[i + 0], i1119[i + 1], 1, i1118, '')
+  i2616.furnitureDecorations = i2624
+  var i2627 = i2617[38]
+  var i2626 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
+  for(var i = 0; i < i2627.length; i += 2) {
+  request.r(i2627[i + 0], i2627[i + 1], 1, i2626, '')
   }
-  i1108.mip1Objects = i1118
-  var i1121 = i1109[39]
-  var i1120 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
-  for(var i = 0; i < i1121.length; i += 2) {
-  request.r(i1121[i + 0], i1121[i + 1], 1, i1120, '')
+  i2616.mip1Objects = i2626
+  var i2629 = i2617[39]
+  var i2628 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
+  for(var i = 0; i < i2629.length; i += 2) {
+  request.r(i2629[i + 0], i2629[i + 1], 1, i2628, '')
   }
-  i1108.mip2Objects = i1120
-  var i1123 = i1109[40]
-  var i1122 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
-  for(var i = 0; i < i1123.length; i += 2) {
-  request.r(i1123[i + 0], i1123[i + 1], 1, i1122, '')
+  i2616.mip2Objects = i2628
+  var i2631 = i2617[40]
+  var i2630 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
+  for(var i = 0; i < i2631.length; i += 2) {
+  request.r(i2631[i + 0], i2631[i + 1], 1, i2630, '')
   }
-  i1108.Feedback = i1122
-  var i1125 = i1109[41]
-  var i1124 = new (System.Collections.Generic.List$1(Bridge.ns('System.String')))
-  for(var i = 0; i < i1125.length; i += 1) {
-    i1124.add(i1125[i + 0]);
+  i2616.Feedback = i2630
+  var i2633 = i2617[41]
+  var i2632 = new (System.Collections.Generic.List$1(Bridge.ns('System.String')))
+  for(var i = 0; i < i2633.length; i += 1) {
+    i2632.add(i2633[i + 0]);
   }
-  i1108.audioKeys = i1124
-  var i1127 = i1109[42]
-  var i1126 = new (System.Collections.Generic.List$1(Bridge.ns('System.Single')))
-  for(var i = 0; i < i1127.length; i += 1) {
-    i1126.add(i1127[i + 0]);
+  i2616.audioKeys = i2632
+  var i2635 = i2617[42]
+  var i2634 = new (System.Collections.Generic.List$1(Bridge.ns('System.Single')))
+  for(var i = 0; i < i2635.length; i += 1) {
+    i2634.add(i2635[i + 0]);
   }
-  i1108.cameraPanLocation = i1126
-  request.r(i1109[43], i1109[44], 0, i1108, 'cameraPanObject')
-  i1108.mip1ButtonPress = !!i1109[45]
-  i1108.puzzlesToSolve = i1109[46]
-  var i1129 = i1109[47]
-  var i1128 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
-  for(var i = 0; i < i1129.length; i += 2) {
-  request.r(i1129[i + 0], i1129[i + 1], 1, i1128, '')
+  i2616.cameraPanLocation = i2634
+  request.r(i2617[43], i2617[44], 0, i2616, 'cameraPanObject')
+  i2616.mip1ButtonPress = !!i2617[45]
+  i2616.puzzlesToSolve = i2617[46]
+  var i2637 = i2617[47]
+  var i2636 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.GameObject')))
+  for(var i = 0; i < i2637.length; i += 2) {
+  request.r(i2637[i + 0], i2637[i + 1], 1, i2636, '')
   }
-  i1108.redirectButtons = i1128
-  return i1108
+  i2616.redirectButtons = i2636
+  return i2616
 }
 
 Deserializers["GameManager+FurnitureItems"] = function (request, data, root) {
-  var i1132 = root || request.c( 'GameManager+FurnitureItems' )
-  var i1133 = data
-  i1132.key = i1133[0]
-  request.r(i1133[1], i1133[2], 0, i1132, 'value')
-  return i1132
+  var i2640 = root || request.c( 'GameManager+FurnitureItems' )
+  var i2641 = data
+  i2640.key = i2641[0]
+  request.r(i2641[1], i2641[2], 0, i2640, 'value')
+  return i2640
 }
 
 Deserializers["AudioManager"] = function (request, data, root) {
-  var i1140 = root || request.c( 'AudioManager' )
-  var i1141 = data
-  request.r(i1141[0], i1141[1], 0, i1140, 'library')
-  i1140.sfxPoolSize = i1141[2]
-  return i1140
+  var i2648 = root || request.c( 'AudioManager' )
+  var i2649 = data
+  request.r(i2649[0], i2649[1], 0, i2648, 'library')
+  i2648.sfxPoolSize = i2649[2]
+  return i2648
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.RenderSettings"] = function (request, data, root) {
-  var i1142 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.RenderSettings' )
-  var i1143 = data
-  i1142.ambientIntensity = i1143[0]
-  i1142.reflectionIntensity = i1143[1]
-  i1142.ambientMode = i1143[2]
-  i1142.ambientLight = new pc.Color(i1143[3], i1143[4], i1143[5], i1143[6])
-  i1142.ambientSkyColor = new pc.Color(i1143[7], i1143[8], i1143[9], i1143[10])
-  i1142.ambientGroundColor = new pc.Color(i1143[11], i1143[12], i1143[13], i1143[14])
-  i1142.ambientEquatorColor = new pc.Color(i1143[15], i1143[16], i1143[17], i1143[18])
-  i1142.fogColor = new pc.Color(i1143[19], i1143[20], i1143[21], i1143[22])
-  i1142.fogEndDistance = i1143[23]
-  i1142.fogStartDistance = i1143[24]
-  i1142.fogDensity = i1143[25]
-  i1142.fog = !!i1143[26]
-  request.r(i1143[27], i1143[28], 0, i1142, 'skybox')
-  i1142.fogMode = i1143[29]
-  var i1145 = i1143[30]
-  var i1144 = []
-  for(var i = 0; i < i1145.length; i += 1) {
-    i1144.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+Lightmap', i1145[i + 0]) );
+  var i2650 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.RenderSettings' )
+  var i2651 = data
+  i2650.ambientIntensity = i2651[0]
+  i2650.reflectionIntensity = i2651[1]
+  i2650.ambientMode = i2651[2]
+  i2650.ambientLight = new pc.Color(i2651[3], i2651[4], i2651[5], i2651[6])
+  i2650.ambientSkyColor = new pc.Color(i2651[7], i2651[8], i2651[9], i2651[10])
+  i2650.ambientGroundColor = new pc.Color(i2651[11], i2651[12], i2651[13], i2651[14])
+  i2650.ambientEquatorColor = new pc.Color(i2651[15], i2651[16], i2651[17], i2651[18])
+  i2650.fogColor = new pc.Color(i2651[19], i2651[20], i2651[21], i2651[22])
+  i2650.fogEndDistance = i2651[23]
+  i2650.fogStartDistance = i2651[24]
+  i2650.fogDensity = i2651[25]
+  i2650.fog = !!i2651[26]
+  request.r(i2651[27], i2651[28], 0, i2650, 'skybox')
+  i2650.fogMode = i2651[29]
+  var i2653 = i2651[30]
+  var i2652 = []
+  for(var i = 0; i < i2653.length; i += 1) {
+    i2652.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+Lightmap', i2653[i + 0]) );
   }
-  i1142.lightmaps = i1144
-  i1142.lightProbes = request.d('Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+LightProbes', i1143[31], i1142.lightProbes)
-  i1142.lightmapsMode = i1143[32]
-  i1142.mixedBakeMode = i1143[33]
-  i1142.environmentLightingMode = i1143[34]
-  i1142.ambientProbe = new pc.SphericalHarmonicsL2(i1143[35])
-  i1142.referenceAmbientProbe = new pc.SphericalHarmonicsL2(i1143[36])
-  i1142.useReferenceAmbientProbe = !!i1143[37]
-  request.r(i1143[38], i1143[39], 0, i1142, 'customReflection')
-  request.r(i1143[40], i1143[41], 0, i1142, 'defaultReflection')
-  i1142.defaultReflectionMode = i1143[42]
-  i1142.defaultReflectionResolution = i1143[43]
-  i1142.sunLightObjectId = i1143[44]
-  i1142.pixelLightCount = i1143[45]
-  i1142.defaultReflectionHDR = !!i1143[46]
-  i1142.hasLightDataAsset = !!i1143[47]
-  i1142.hasManualGenerate = !!i1143[48]
-  return i1142
+  i2650.lightmaps = i2652
+  i2650.lightProbes = request.d('Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+LightProbes', i2651[31], i2650.lightProbes)
+  i2650.lightmapsMode = i2651[32]
+  i2650.mixedBakeMode = i2651[33]
+  i2650.environmentLightingMode = i2651[34]
+  i2650.ambientProbe = new pc.SphericalHarmonicsL2(i2651[35])
+  i2650.referenceAmbientProbe = new pc.SphericalHarmonicsL2(i2651[36])
+  i2650.useReferenceAmbientProbe = !!i2651[37]
+  request.r(i2651[38], i2651[39], 0, i2650, 'customReflection')
+  request.r(i2651[40], i2651[41], 0, i2650, 'defaultReflection')
+  i2650.defaultReflectionMode = i2651[42]
+  i2650.defaultReflectionResolution = i2651[43]
+  i2650.sunLightObjectId = i2651[44]
+  i2650.pixelLightCount = i2651[45]
+  i2650.defaultReflectionHDR = !!i2651[46]
+  i2650.hasLightDataAsset = !!i2651[47]
+  i2650.hasManualGenerate = !!i2651[48]
+  return i2650
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+Lightmap"] = function (request, data, root) {
-  var i1148 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+Lightmap' )
-  var i1149 = data
-  request.r(i1149[0], i1149[1], 0, i1148, 'lightmapColor')
-  request.r(i1149[2], i1149[3], 0, i1148, 'lightmapDirection')
-  return i1148
+  var i2656 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+Lightmap' )
+  var i2657 = data
+  request.r(i2657[0], i2657[1], 0, i2656, 'lightmapColor')
+  request.r(i2657[2], i2657[3], 0, i2656, 'lightmapDirection')
+  return i2656
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+LightProbes"] = function (request, data, root) {
-  var i1150 = root || new UnityEngine.LightProbes()
-  var i1151 = data
-  return i1150
+  var i2658 = root || new UnityEngine.LightProbes()
+  var i2659 = data
+  return i2658
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader"] = function (request, data, root) {
-  var i1156 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader' )
-  var i1157 = data
-  var i1159 = i1157[0]
-  var i1158 = new (System.Collections.Generic.List$1(Bridge.ns('Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError')))
-  for(var i = 0; i < i1159.length; i += 1) {
-    i1158.add(request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError', i1159[i + 0]));
+  var i2664 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader' )
+  var i2665 = data
+  var i2667 = i2665[0]
+  var i2666 = new (System.Collections.Generic.List$1(Bridge.ns('Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError')))
+  for(var i = 0; i < i2667.length; i += 1) {
+    i2666.add(request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError', i2667[i + 0]));
   }
-  i1156.ShaderCompilationErrors = i1158
-  i1156.name = i1157[1]
-  i1156.guid = i1157[2]
-  var i1161 = i1157[3]
-  var i1160 = []
-  for(var i = 0; i < i1161.length; i += 1) {
-    i1160.push( i1161[i + 0] );
+  i2664.ShaderCompilationErrors = i2666
+  i2664.name = i2665[1]
+  i2664.guid = i2665[2]
+  var i2669 = i2665[3]
+  var i2668 = []
+  for(var i = 0; i < i2669.length; i += 1) {
+    i2668.push( i2669[i + 0] );
   }
-  i1156.shaderDefinedKeywords = i1160
-  var i1163 = i1157[4]
-  var i1162 = []
-  for(var i = 0; i < i1163.length; i += 1) {
-    i1162.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass', i1163[i + 0]) );
+  i2664.shaderDefinedKeywords = i2668
+  var i2671 = i2665[4]
+  var i2670 = []
+  for(var i = 0; i < i2671.length; i += 1) {
+    i2670.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass', i2671[i + 0]) );
   }
-  i1156.passes = i1162
-  var i1165 = i1157[5]
-  var i1164 = []
-  for(var i = 0; i < i1165.length; i += 1) {
-    i1164.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+UsePass', i1165[i + 0]) );
+  i2664.passes = i2670
+  var i2673 = i2665[5]
+  var i2672 = []
+  for(var i = 0; i < i2673.length; i += 1) {
+    i2672.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+UsePass', i2673[i + 0]) );
   }
-  i1156.usePasses = i1164
-  var i1167 = i1157[6]
-  var i1166 = []
-  for(var i = 0; i < i1167.length; i += 1) {
-    i1166.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+DefaultParameterValue', i1167[i + 0]) );
+  i2664.usePasses = i2672
+  var i2675 = i2665[6]
+  var i2674 = []
+  for(var i = 0; i < i2675.length; i += 1) {
+    i2674.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+DefaultParameterValue', i2675[i + 0]) );
   }
-  i1156.defaultParameterValues = i1166
-  request.r(i1157[7], i1157[8], 0, i1156, 'unityFallbackShader')
-  i1156.readDepth = !!i1157[9]
-  i1156.isCreatedByShaderGraph = !!i1157[10]
-  i1156.compiled = !!i1157[11]
-  return i1156
+  i2664.defaultParameterValues = i2674
+  request.r(i2665[7], i2665[8], 0, i2664, 'unityFallbackShader')
+  i2664.readDepth = !!i2665[9]
+  i2664.isCreatedByShaderGraph = !!i2665[10]
+  i2664.compiled = !!i2665[11]
+  return i2664
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError"] = function (request, data, root) {
-  var i1170 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError' )
-  var i1171 = data
-  i1170.shaderName = i1171[0]
-  i1170.errorMessage = i1171[1]
-  return i1170
+  var i2678 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError' )
+  var i2679 = data
+  i2678.shaderName = i2679[0]
+  i2678.errorMessage = i2679[1]
+  return i2678
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass"] = function (request, data, root) {
-  var i1174 = root || new pc.UnityShaderPass()
-  var i1175 = data
-  i1174.id = i1175[0]
-  i1174.subShaderIndex = i1175[1]
-  i1174.name = i1175[2]
-  i1174.passType = i1175[3]
-  i1174.grabPassTextureName = i1175[4]
-  i1174.usePass = !!i1175[5]
-  i1174.zTest = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[6], i1174.zTest)
-  i1174.zWrite = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[7], i1174.zWrite)
-  i1174.culling = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[8], i1174.culling)
-  i1174.blending = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending', i1175[9], i1174.blending)
-  i1174.alphaBlending = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending', i1175[10], i1174.alphaBlending)
-  i1174.colorWriteMask = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[11], i1174.colorWriteMask)
-  i1174.offsetUnits = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[12], i1174.offsetUnits)
-  i1174.offsetFactor = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[13], i1174.offsetFactor)
-  i1174.stencilRef = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[14], i1174.stencilRef)
-  i1174.stencilReadMask = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[15], i1174.stencilReadMask)
-  i1174.stencilWriteMask = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1175[16], i1174.stencilWriteMask)
-  i1174.stencilOp = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp', i1175[17], i1174.stencilOp)
-  i1174.stencilOpFront = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp', i1175[18], i1174.stencilOpFront)
-  i1174.stencilOpBack = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp', i1175[19], i1174.stencilOpBack)
-  var i1177 = i1175[20]
-  var i1176 = []
-  for(var i = 0; i < i1177.length; i += 1) {
-    i1176.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Tag', i1177[i + 0]) );
+  var i2682 = root || new pc.UnityShaderPass()
+  var i2683 = data
+  i2682.id = i2683[0]
+  i2682.subShaderIndex = i2683[1]
+  i2682.name = i2683[2]
+  i2682.passType = i2683[3]
+  i2682.grabPassTextureName = i2683[4]
+  i2682.usePass = !!i2683[5]
+  i2682.zTest = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[6], i2682.zTest)
+  i2682.zWrite = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[7], i2682.zWrite)
+  i2682.culling = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[8], i2682.culling)
+  i2682.blending = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending', i2683[9], i2682.blending)
+  i2682.alphaBlending = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending', i2683[10], i2682.alphaBlending)
+  i2682.colorWriteMask = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[11], i2682.colorWriteMask)
+  i2682.offsetUnits = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[12], i2682.offsetUnits)
+  i2682.offsetFactor = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[13], i2682.offsetFactor)
+  i2682.stencilRef = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[14], i2682.stencilRef)
+  i2682.stencilReadMask = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[15], i2682.stencilReadMask)
+  i2682.stencilWriteMask = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2683[16], i2682.stencilWriteMask)
+  i2682.stencilOp = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp', i2683[17], i2682.stencilOp)
+  i2682.stencilOpFront = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp', i2683[18], i2682.stencilOpFront)
+  i2682.stencilOpBack = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp', i2683[19], i2682.stencilOpBack)
+  var i2685 = i2683[20]
+  var i2684 = []
+  for(var i = 0; i < i2685.length; i += 1) {
+    i2684.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Tag', i2685[i + 0]) );
   }
-  i1174.tags = i1176
-  var i1179 = i1175[21]
-  var i1178 = []
-  for(var i = 0; i < i1179.length; i += 1) {
-    i1178.push( i1179[i + 0] );
+  i2682.tags = i2684
+  var i2687 = i2683[21]
+  var i2686 = []
+  for(var i = 0; i < i2687.length; i += 1) {
+    i2686.push( i2687[i + 0] );
   }
-  i1174.passDefinedKeywords = i1178
-  var i1181 = i1175[22]
-  var i1180 = []
-  for(var i = 0; i < i1181.length; i += 1) {
-    i1180.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+KeywordGroup', i1181[i + 0]) );
+  i2682.passDefinedKeywords = i2686
+  var i2689 = i2683[22]
+  var i2688 = []
+  for(var i = 0; i < i2689.length; i += 1) {
+    i2688.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+KeywordGroup', i2689[i + 0]) );
   }
-  i1174.passDefinedKeywordGroups = i1180
-  var i1183 = i1175[23]
-  var i1182 = []
-  for(var i = 0; i < i1183.length; i += 1) {
-    i1182.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant', i1183[i + 0]) );
+  i2682.passDefinedKeywordGroups = i2688
+  var i2691 = i2683[23]
+  var i2690 = []
+  for(var i = 0; i < i2691.length; i += 1) {
+    i2690.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant', i2691[i + 0]) );
   }
-  i1174.variants = i1182
-  var i1185 = i1175[24]
-  var i1184 = []
-  for(var i = 0; i < i1185.length; i += 1) {
-    i1184.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant', i1185[i + 0]) );
+  i2682.variants = i2690
+  var i2693 = i2683[24]
+  var i2692 = []
+  for(var i = 0; i < i2693.length; i += 1) {
+    i2692.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant', i2693[i + 0]) );
   }
-  i1174.excludedVariants = i1184
-  i1174.hasDepthReader = !!i1175[25]
-  return i1174
+  i2682.excludedVariants = i2692
+  i2682.hasDepthReader = !!i2683[25]
+  return i2682
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value"] = function (request, data, root) {
-  var i1186 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value' )
-  var i1187 = data
-  i1186.val = i1187[0]
-  i1186.name = i1187[1]
-  return i1186
+  var i2694 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value' )
+  var i2695 = data
+  i2694.val = i2695[0]
+  i2694.name = i2695[1]
+  return i2694
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending"] = function (request, data, root) {
-  var i1188 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending' )
-  var i1189 = data
-  i1188.src = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1189[0], i1188.src)
-  i1188.dst = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1189[1], i1188.dst)
-  i1188.op = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1189[2], i1188.op)
-  return i1188
+  var i2696 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending' )
+  var i2697 = data
+  i2696.src = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2697[0], i2696.src)
+  i2696.dst = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2697[1], i2696.dst)
+  i2696.op = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2697[2], i2696.op)
+  return i2696
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp"] = function (request, data, root) {
-  var i1190 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp' )
-  var i1191 = data
-  i1190.pass = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1191[0], i1190.pass)
-  i1190.fail = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1191[1], i1190.fail)
-  i1190.zFail = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1191[2], i1190.zFail)
-  i1190.comp = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i1191[3], i1190.comp)
-  return i1190
+  var i2698 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp' )
+  var i2699 = data
+  i2698.pass = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2699[0], i2698.pass)
+  i2698.fail = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2699[1], i2698.fail)
+  i2698.zFail = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2699[2], i2698.zFail)
+  i2698.comp = request.d('Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value', i2699[3], i2698.comp)
+  return i2698
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Tag"] = function (request, data, root) {
-  var i1194 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Tag' )
-  var i1195 = data
-  i1194.name = i1195[0]
-  i1194.value = i1195[1]
-  return i1194
+  var i2702 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Tag' )
+  var i2703 = data
+  i2702.name = i2703[0]
+  i2702.value = i2703[1]
+  return i2702
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+KeywordGroup"] = function (request, data, root) {
-  var i1198 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+KeywordGroup' )
-  var i1199 = data
-  var i1201 = i1199[0]
-  var i1200 = []
-  for(var i = 0; i < i1201.length; i += 1) {
-    i1200.push( i1201[i + 0] );
+  var i2706 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+KeywordGroup' )
+  var i2707 = data
+  var i2709 = i2707[0]
+  var i2708 = []
+  for(var i = 0; i < i2709.length; i += 1) {
+    i2708.push( i2709[i + 0] );
   }
-  i1198.keywords = i1200
-  i1198.hasDiscard = !!i1199[1]
-  return i1198
+  i2706.keywords = i2708
+  i2706.hasDiscard = !!i2707[1]
+  return i2706
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant"] = function (request, data, root) {
-  var i1204 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant' )
-  var i1205 = data
-  i1204.passId = i1205[0]
-  i1204.subShaderIndex = i1205[1]
-  var i1207 = i1205[2]
-  var i1206 = []
-  for(var i = 0; i < i1207.length; i += 1) {
-    i1206.push( i1207[i + 0] );
+  var i2712 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant' )
+  var i2713 = data
+  i2712.passId = i2713[0]
+  i2712.subShaderIndex = i2713[1]
+  var i2715 = i2713[2]
+  var i2714 = []
+  for(var i = 0; i < i2715.length; i += 1) {
+    i2714.push( i2715[i + 0] );
   }
-  i1204.keywords = i1206
-  i1204.vertexProgram = i1205[3]
-  i1204.fragmentProgram = i1205[4]
-  i1204.exportedForWebGl2 = !!i1205[5]
-  i1204.readDepth = !!i1205[6]
-  return i1204
+  i2712.keywords = i2714
+  i2712.vertexProgram = i2713[3]
+  i2712.fragmentProgram = i2713[4]
+  i2712.exportedForWebGl2 = !!i2713[5]
+  i2712.readDepth = !!i2713[6]
+  return i2712
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+UsePass"] = function (request, data, root) {
-  var i1210 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+UsePass' )
-  var i1211 = data
-  request.r(i1211[0], i1211[1], 0, i1210, 'shader')
-  i1210.pass = i1211[2]
-  return i1210
+  var i2718 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+UsePass' )
+  var i2719 = data
+  request.r(i2719[0], i2719[1], 0, i2718, 'shader')
+  i2718.pass = i2719[2]
+  return i2718
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Shader+DefaultParameterValue"] = function (request, data, root) {
-  var i1214 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+DefaultParameterValue' )
-  var i1215 = data
-  i1214.name = i1215[0]
-  i1214.type = i1215[1]
-  i1214.value = new pc.Vec4( i1215[2], i1215[3], i1215[4], i1215[5] )
-  i1214.textureValue = i1215[6]
-  i1214.shaderPropertyFlag = i1215[7]
-  return i1214
+  var i2722 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Shader+DefaultParameterValue' )
+  var i2723 = data
+  i2722.name = i2723[0]
+  i2722.type = i2723[1]
+  i2722.value = new pc.Vec4( i2723[2], i2723[3], i2723[4], i2723[5] )
+  i2722.textureValue = i2723[6]
+  i2722.shaderPropertyFlag = i2723[7]
+  return i2722
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Textures.Sprite"] = function (request, data, root) {
-  var i1216 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Textures.Sprite' )
-  var i1217 = data
-  i1216.name = i1217[0]
-  request.r(i1217[1], i1217[2], 0, i1216, 'texture')
-  i1216.aabb = i1217[3]
-  i1216.vertices = i1217[4]
-  i1216.triangles = i1217[5]
-  i1216.textureRect = UnityEngine.Rect.MinMaxRect(i1217[6], i1217[7], i1217[8], i1217[9])
-  i1216.packedRect = UnityEngine.Rect.MinMaxRect(i1217[10], i1217[11], i1217[12], i1217[13])
-  i1216.border = new pc.Vec4( i1217[14], i1217[15], i1217[16], i1217[17] )
-  i1216.transparency = i1217[18]
-  i1216.bounds = i1217[19]
-  i1216.pixelsPerUnit = i1217[20]
-  i1216.textureWidth = i1217[21]
-  i1216.textureHeight = i1217[22]
-  i1216.nativeSize = new pc.Vec2( i1217[23], i1217[24] )
-  i1216.pivot = new pc.Vec2( i1217[25], i1217[26] )
-  i1216.textureRectOffset = new pc.Vec2( i1217[27], i1217[28] )
-  return i1216
+  var i2724 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Textures.Sprite' )
+  var i2725 = data
+  i2724.name = i2725[0]
+  request.r(i2725[1], i2725[2], 0, i2724, 'texture')
+  i2724.aabb = i2725[3]
+  i2724.vertices = i2725[4]
+  i2724.triangles = i2725[5]
+  i2724.textureRect = UnityEngine.Rect.MinMaxRect(i2725[6], i2725[7], i2725[8], i2725[9])
+  i2724.packedRect = UnityEngine.Rect.MinMaxRect(i2725[10], i2725[11], i2725[12], i2725[13])
+  i2724.border = new pc.Vec4( i2725[14], i2725[15], i2725[16], i2725[17] )
+  i2724.transparency = i2725[18]
+  i2724.bounds = i2725[19]
+  i2724.pixelsPerUnit = i2725[20]
+  i2724.textureWidth = i2725[21]
+  i2724.textureHeight = i2725[22]
+  i2724.nativeSize = new pc.Vec2( i2725[23], i2725[24] )
+  i2724.pivot = new pc.Vec2( i2725[25], i2725[26] )
+  i2724.textureRectOffset = new pc.Vec2( i2725[27], i2725[28] )
+  return i2724
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.AudioClip"] = function (request, data, root) {
-  var i1218 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.AudioClip' )
-  var i1219 = data
-  i1218.name = i1219[0]
-  return i1218
+  var i2726 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.AudioClip' )
+  var i2727 = data
+  i2726.name = i2727[0]
+  return i2726
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip"] = function (request, data, root) {
-  var i1220 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip' )
-  var i1221 = data
-  i1220.name = i1221[0]
-  i1220.wrapMode = i1221[1]
-  i1220.isLooping = !!i1221[2]
-  i1220.length = i1221[3]
-  var i1223 = i1221[4]
-  var i1222 = []
-  for(var i = 0; i < i1223.length; i += 1) {
-    i1222.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve', i1223[i + 0]) );
+  var i2728 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip' )
+  var i2729 = data
+  i2728.name = i2729[0]
+  i2728.wrapMode = i2729[1]
+  i2728.isLooping = !!i2729[2]
+  i2728.length = i2729[3]
+  var i2731 = i2729[4]
+  var i2730 = []
+  for(var i = 0; i < i2731.length; i += 1) {
+    i2730.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve', i2731[i + 0]) );
   }
-  i1220.curves = i1222
-  var i1225 = i1221[5]
-  var i1224 = []
-  for(var i = 0; i < i1225.length; i += 1) {
-    i1224.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationEvent', i1225[i + 0]) );
+  i2728.curves = i2730
+  var i2733 = i2729[5]
+  var i2732 = []
+  for(var i = 0; i < i2733.length; i += 1) {
+    i2732.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationEvent', i2733[i + 0]) );
   }
-  i1220.events = i1224
-  i1220.halfPrecision = !!i1221[6]
-  i1220._frameRate = i1221[7]
-  i1220.localBounds = request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.Bounds', i1221[8], i1220.localBounds)
-  i1220.hasMuscleCurves = !!i1221[9]
-  var i1227 = i1221[10]
-  var i1226 = []
-  for(var i = 0; i < i1227.length; i += 1) {
-    i1226.push( i1227[i + 0] );
+  i2728.events = i2732
+  i2728.halfPrecision = !!i2729[6]
+  i2728._frameRate = i2729[7]
+  i2728.localBounds = request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.Bounds', i2729[8], i2728.localBounds)
+  i2728.hasMuscleCurves = !!i2729[9]
+  var i2735 = i2729[10]
+  var i2734 = []
+  for(var i = 0; i < i2735.length; i += 1) {
+    i2734.push( i2735[i + 0] );
   }
-  i1220.clipMuscleConstant = i1226
-  i1220.clipBindingConstant = request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip+AnimationClipBindingConstant', i1221[11], i1220.clipBindingConstant)
-  return i1220
+  i2728.clipMuscleConstant = i2734
+  i2728.clipBindingConstant = request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip+AnimationClipBindingConstant', i2729[11], i2728.clipBindingConstant)
+  return i2728
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve"] = function (request, data, root) {
-  var i1230 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve' )
-  var i1231 = data
-  i1230.path = i1231[0]
-  i1230.hash = i1231[1]
-  i1230.componentType = i1231[2]
-  i1230.property = i1231[3]
-  i1230.keys = i1231[4]
-  var i1233 = i1231[5]
-  var i1232 = []
-  for(var i = 0; i < i1233.length; i += 1) {
-    i1232.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve+ObjectReferenceKey', i1233[i + 0]) );
+  var i2738 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve' )
+  var i2739 = data
+  i2738.path = i2739[0]
+  i2738.hash = i2739[1]
+  i2738.componentType = i2739[2]
+  i2738.property = i2739[3]
+  i2738.keys = i2739[4]
+  var i2741 = i2739[5]
+  var i2740 = []
+  for(var i = 0; i < i2741.length; i += 1) {
+    i2740.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve+ObjectReferenceKey', i2741[i + 0]) );
   }
-  i1230.objectReferenceKeys = i1232
-  return i1230
+  i2738.objectReferenceKeys = i2740
+  return i2738
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve+ObjectReferenceKey"] = function (request, data, root) {
-  var i1236 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve+ObjectReferenceKey' )
-  var i1237 = data
-  i1236.time = i1237[0]
-  request.r(i1237[1], i1237[2], 0, i1236, 'value')
-  return i1236
+  var i2744 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve+ObjectReferenceKey' )
+  var i2745 = data
+  i2744.time = i2745[0]
+  request.r(i2745[1], i2745[2], 0, i2744, 'value')
+  return i2744
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationEvent"] = function (request, data, root) {
-  var i1240 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationEvent' )
-  var i1241 = data
-  i1240.functionName = i1241[0]
-  i1240.floatParameter = i1241[1]
-  i1240.intParameter = i1241[2]
-  i1240.stringParameter = i1241[3]
-  request.r(i1241[4], i1241[5], 0, i1240, 'objectReferenceParameter')
-  i1240.time = i1241[6]
-  return i1240
+  var i2748 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationEvent' )
+  var i2749 = data
+  i2748.functionName = i2749[0]
+  i2748.floatParameter = i2749[1]
+  i2748.intParameter = i2749[2]
+  i2748.stringParameter = i2749[3]
+  request.r(i2749[4], i2749[5], 0, i2748, 'objectReferenceParameter')
+  i2748.time = i2749[6]
+  return i2748
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Data.Bounds"] = function (request, data, root) {
-  var i1242 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.Bounds' )
-  var i1243 = data
-  i1242.center = new pc.Vec3( i1243[0], i1243[1], i1243[2] )
-  i1242.extends = new pc.Vec3( i1243[3], i1243[4], i1243[5] )
-  return i1242
+  var i2750 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.Bounds' )
+  var i2751 = data
+  i2750.center = new pc.Vec3( i2751[0], i2751[1], i2751[2] )
+  i2750.extends = new pc.Vec3( i2751[3], i2751[4], i2751[5] )
+  return i2750
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip+AnimationClipBindingConstant"] = function (request, data, root) {
-  var i1246 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip+AnimationClipBindingConstant' )
-  var i1247 = data
-  var i1249 = i1247[0]
-  var i1248 = []
-  for(var i = 0; i < i1249.length; i += 1) {
-    i1248.push( i1249[i + 0] );
+  var i2754 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip+AnimationClipBindingConstant' )
+  var i2755 = data
+  var i2757 = i2755[0]
+  var i2756 = []
+  for(var i = 0; i < i2757.length; i += 1) {
+    i2756.push( i2757[i + 0] );
   }
-  i1246.genericBindings = i1248
-  var i1251 = i1247[1]
-  var i1250 = []
-  for(var i = 0; i < i1251.length; i += 1) {
-    i1250.push( i1251[i + 0] );
+  i2754.genericBindings = i2756
+  var i2759 = i2755[1]
+  var i2758 = []
+  for(var i = 0; i < i2759.length; i += 1) {
+    i2758.push( i2759[i + 0] );
   }
-  i1246.pptrCurveMapping = i1250
-  return i1246
+  i2754.pptrCurveMapping = i2758
+  return i2754
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Font"] = function (request, data, root) {
-  var i1252 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Font' )
-  var i1253 = data
-  i1252.name = i1253[0]
-  i1252.ascent = i1253[1]
-  i1252.originalLineHeight = i1253[2]
-  i1252.fontSize = i1253[3]
-  var i1255 = i1253[4]
-  var i1254 = []
-  for(var i = 0; i < i1255.length; i += 1) {
-    i1254.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Font+CharacterInfo', i1255[i + 0]) );
+  var i2760 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Font' )
+  var i2761 = data
+  i2760.name = i2761[0]
+  i2760.ascent = i2761[1]
+  i2760.originalLineHeight = i2761[2]
+  i2760.fontSize = i2761[3]
+  var i2763 = i2761[4]
+  var i2762 = []
+  for(var i = 0; i < i2763.length; i += 1) {
+    i2762.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Font+CharacterInfo', i2763[i + 0]) );
   }
-  i1252.characterInfo = i1254
-  request.r(i1253[5], i1253[6], 0, i1252, 'texture')
-  i1252.originalFontSize = i1253[7]
-  return i1252
+  i2760.characterInfo = i2762
+  request.r(i2761[5], i2761[6], 0, i2760, 'texture')
+  i2760.originalFontSize = i2761[7]
+  return i2760
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Font+CharacterInfo"] = function (request, data, root) {
-  var i1258 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Font+CharacterInfo' )
-  var i1259 = data
-  i1258.index = i1259[0]
-  i1258.advance = i1259[1]
-  i1258.bearing = i1259[2]
-  i1258.glyphWidth = i1259[3]
-  i1258.glyphHeight = i1259[4]
-  i1258.minX = i1259[5]
-  i1258.maxX = i1259[6]
-  i1258.minY = i1259[7]
-  i1258.maxY = i1259[8]
-  i1258.uvBottomLeftX = i1259[9]
-  i1258.uvBottomLeftY = i1259[10]
-  i1258.uvBottomRightX = i1259[11]
-  i1258.uvBottomRightY = i1259[12]
-  i1258.uvTopLeftX = i1259[13]
-  i1258.uvTopLeftY = i1259[14]
-  i1258.uvTopRightX = i1259[15]
-  i1258.uvTopRightY = i1259[16]
-  return i1258
+  var i2766 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Font+CharacterInfo' )
+  var i2767 = data
+  i2766.index = i2767[0]
+  i2766.advance = i2767[1]
+  i2766.bearing = i2767[2]
+  i2766.glyphWidth = i2767[3]
+  i2766.glyphHeight = i2767[4]
+  i2766.minX = i2767[5]
+  i2766.maxX = i2767[6]
+  i2766.minY = i2767[7]
+  i2766.maxY = i2767[8]
+  i2766.uvBottomLeftX = i2767[9]
+  i2766.uvBottomLeftY = i2767[10]
+  i2766.uvBottomRightX = i2767[11]
+  i2766.uvBottomRightY = i2767[12]
+  i2766.uvTopLeftX = i2767[13]
+  i2766.uvTopLeftY = i2767[14]
+  i2766.uvTopRightX = i2767[15]
+  i2766.uvTopRightY = i2767[16]
+  return i2766
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorController"] = function (request, data, root) {
-  var i1260 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorController' )
-  var i1261 = data
-  i1260.name = i1261[0]
-  var i1263 = i1261[1]
-  var i1262 = []
-  for(var i = 0; i < i1263.length; i += 1) {
-    i1262.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerLayer', i1263[i + 0]) );
+  var i2768 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorController' )
+  var i2769 = data
+  i2768.name = i2769[0]
+  var i2771 = i2769[1]
+  var i2770 = []
+  for(var i = 0; i < i2771.length; i += 1) {
+    i2770.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerLayer', i2771[i + 0]) );
   }
-  i1260.layers = i1262
-  var i1265 = i1261[2]
-  var i1264 = []
-  for(var i = 0; i < i1265.length; i += 1) {
-    i1264.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerParameter', i1265[i + 0]) );
+  i2768.layers = i2770
+  var i2773 = i2769[2]
+  var i2772 = []
+  for(var i = 0; i < i2773.length; i += 1) {
+    i2772.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerParameter', i2773[i + 0]) );
   }
-  i1260.parameters = i1264
-  i1260.animationClips = i1261[3]
-  i1260.avatarUnsupported = i1261[4]
-  return i1260
+  i2768.parameters = i2772
+  i2768.animationClips = i2769[3]
+  i2768.avatarUnsupported = i2769[4]
+  return i2768
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerLayer"] = function (request, data, root) {
-  var i1268 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerLayer' )
-  var i1269 = data
-  i1268.name = i1269[0]
-  i1268.defaultWeight = i1269[1]
-  i1268.blendingMode = i1269[2]
-  i1268.avatarMask = i1269[3]
-  i1268.syncedLayerIndex = i1269[4]
-  i1268.syncedLayerAffectsTiming = !!i1269[5]
-  i1268.syncedLayers = i1269[6]
-  i1268.stateMachine = request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine', i1269[7], i1268.stateMachine)
-  return i1268
+  var i2776 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerLayer' )
+  var i2777 = data
+  i2776.name = i2777[0]
+  i2776.defaultWeight = i2777[1]
+  i2776.blendingMode = i2777[2]
+  i2776.avatarMask = i2777[3]
+  i2776.syncedLayerIndex = i2777[4]
+  i2776.syncedLayerAffectsTiming = !!i2777[5]
+  i2776.syncedLayers = i2777[6]
+  i2776.stateMachine = request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine', i2777[7], i2776.stateMachine)
+  return i2776
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine"] = function (request, data, root) {
-  var i1270 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine' )
-  var i1271 = data
-  i1270.id = i1271[0]
-  i1270.name = i1271[1]
-  i1270.path = i1271[2]
-  var i1273 = i1271[3]
-  var i1272 = []
-  for(var i = 0; i < i1273.length; i += 1) {
-    i1272.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorState', i1273[i + 0]) );
+  var i2778 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine' )
+  var i2779 = data
+  i2778.id = i2779[0]
+  i2778.name = i2779[1]
+  i2778.path = i2779[2]
+  var i2781 = i2779[3]
+  var i2780 = []
+  for(var i = 0; i < i2781.length; i += 1) {
+    i2780.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorState', i2781[i + 0]) );
   }
-  i1270.states = i1272
-  var i1275 = i1271[4]
-  var i1274 = []
-  for(var i = 0; i < i1275.length; i += 1) {
-    i1274.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine', i1275[i + 0]) );
+  i2778.states = i2780
+  var i2783 = i2779[4]
+  var i2782 = []
+  for(var i = 0; i < i2783.length; i += 1) {
+    i2782.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine', i2783[i + 0]) );
   }
-  i1270.machines = i1274
-  var i1277 = i1271[5]
-  var i1276 = []
-  for(var i = 0; i < i1277.length; i += 1) {
-    i1276.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition', i1277[i + 0]) );
+  i2778.machines = i2782
+  var i2785 = i2779[5]
+  var i2784 = []
+  for(var i = 0; i < i2785.length; i += 1) {
+    i2784.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition', i2785[i + 0]) );
   }
-  i1270.entryStateTransitions = i1276
-  var i1279 = i1271[6]
-  var i1278 = []
-  for(var i = 0; i < i1279.length; i += 1) {
-    i1278.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition', i1279[i + 0]) );
+  i2778.entryStateTransitions = i2784
+  var i2787 = i2779[6]
+  var i2786 = []
+  for(var i = 0; i < i2787.length; i += 1) {
+    i2786.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition', i2787[i + 0]) );
   }
-  i1270.exitStateTransitions = i1278
-  var i1281 = i1271[7]
-  var i1280 = []
-  for(var i = 0; i < i1281.length; i += 1) {
-    i1280.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition', i1281[i + 0]) );
+  i2778.exitStateTransitions = i2786
+  var i2789 = i2779[7]
+  var i2788 = []
+  for(var i = 0; i < i2789.length; i += 1) {
+    i2788.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition', i2789[i + 0]) );
   }
-  i1270.anyStateTransitions = i1280
-  i1270.defaultStateId = i1271[8]
-  return i1270
+  i2778.anyStateTransitions = i2788
+  i2778.defaultStateId = i2779[8]
+  return i2778
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorState"] = function (request, data, root) {
-  var i1284 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorState' )
-  var i1285 = data
-  i1284.id = i1285[0]
-  i1284.name = i1285[1]
-  i1284.cycleOffset = i1285[2]
-  i1284.cycleOffsetParameter = i1285[3]
-  i1284.cycleOffsetParameterActive = !!i1285[4]
-  i1284.mirror = !!i1285[5]
-  i1284.mirrorParameter = i1285[6]
-  i1284.mirrorParameterActive = !!i1285[7]
-  i1284.motionId = i1285[8]
-  i1284.nameHash = i1285[9]
-  i1284.fullPathHash = i1285[10]
-  i1284.speed = i1285[11]
-  i1284.speedParameter = i1285[12]
-  i1284.speedParameterActive = !!i1285[13]
-  i1284.tag = i1285[14]
-  i1284.tagHash = i1285[15]
-  i1284.writeDefaultValues = !!i1285[16]
-  var i1287 = i1285[17]
-  var i1286 = []
-  for(var i = 0; i < i1287.length; i += 2) {
-  request.r(i1287[i + 0], i1287[i + 1], 2, i1286, '')
+  var i2792 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorState' )
+  var i2793 = data
+  i2792.id = i2793[0]
+  i2792.name = i2793[1]
+  i2792.cycleOffset = i2793[2]
+  i2792.cycleOffsetParameter = i2793[3]
+  i2792.cycleOffsetParameterActive = !!i2793[4]
+  i2792.mirror = !!i2793[5]
+  i2792.mirrorParameter = i2793[6]
+  i2792.mirrorParameterActive = !!i2793[7]
+  i2792.motionId = i2793[8]
+  i2792.nameHash = i2793[9]
+  i2792.fullPathHash = i2793[10]
+  i2792.speed = i2793[11]
+  i2792.speedParameter = i2793[12]
+  i2792.speedParameterActive = !!i2793[13]
+  i2792.tag = i2793[14]
+  i2792.tagHash = i2793[15]
+  i2792.writeDefaultValues = !!i2793[16]
+  var i2795 = i2793[17]
+  var i2794 = []
+  for(var i = 0; i < i2795.length; i += 2) {
+  request.r(i2795[i + 0], i2795[i + 1], 2, i2794, '')
   }
-  i1284.behaviours = i1286
-  var i1289 = i1285[18]
-  var i1288 = []
-  for(var i = 0; i < i1289.length; i += 1) {
-    i1288.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition', i1289[i + 0]) );
+  i2792.behaviours = i2794
+  var i2797 = i2793[18]
+  var i2796 = []
+  for(var i = 0; i < i2797.length; i += 1) {
+    i2796.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition', i2797[i + 0]) );
   }
-  i1284.transitions = i1288
-  return i1284
+  i2792.transitions = i2796
+  return i2792
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition"] = function (request, data, root) {
-  var i1294 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition' )
-  var i1295 = data
-  i1294.fullPath = i1295[0]
-  i1294.canTransitionToSelf = !!i1295[1]
-  i1294.duration = i1295[2]
-  i1294.exitTime = i1295[3]
-  i1294.hasExitTime = !!i1295[4]
-  i1294.hasFixedDuration = !!i1295[5]
-  i1294.interruptionSource = i1295[6]
-  i1294.offset = i1295[7]
-  i1294.orderedInterruption = !!i1295[8]
-  i1294.destinationStateId = i1295[9]
-  i1294.isExit = !!i1295[10]
-  i1294.mute = !!i1295[11]
-  i1294.solo = !!i1295[12]
-  var i1297 = i1295[13]
-  var i1296 = []
-  for(var i = 0; i < i1297.length; i += 1) {
-    i1296.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition', i1297[i + 0]) );
+  var i2802 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition' )
+  var i2803 = data
+  i2802.fullPath = i2803[0]
+  i2802.canTransitionToSelf = !!i2803[1]
+  i2802.duration = i2803[2]
+  i2802.exitTime = i2803[3]
+  i2802.hasExitTime = !!i2803[4]
+  i2802.hasFixedDuration = !!i2803[5]
+  i2802.interruptionSource = i2803[6]
+  i2802.offset = i2803[7]
+  i2802.orderedInterruption = !!i2803[8]
+  i2802.destinationStateId = i2803[9]
+  i2802.isExit = !!i2803[10]
+  i2802.mute = !!i2803[11]
+  i2802.solo = !!i2803[12]
+  var i2805 = i2803[13]
+  var i2804 = []
+  for(var i = 0; i < i2805.length; i += 1) {
+    i2804.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition', i2805[i + 0]) );
   }
-  i1294.conditions = i1296
-  return i1294
+  i2802.conditions = i2804
+  return i2802
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition"] = function (request, data, root) {
-  var i1302 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition' )
-  var i1303 = data
-  i1302.destinationStateId = i1303[0]
-  i1302.isExit = !!i1303[1]
-  i1302.mute = !!i1303[2]
-  i1302.solo = !!i1303[3]
-  var i1305 = i1303[4]
-  var i1304 = []
-  for(var i = 0; i < i1305.length; i += 1) {
-    i1304.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition', i1305[i + 0]) );
+  var i2810 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition' )
+  var i2811 = data
+  i2810.destinationStateId = i2811[0]
+  i2810.isExit = !!i2811[1]
+  i2810.mute = !!i2811[2]
+  i2810.solo = !!i2811[3]
+  var i2813 = i2811[4]
+  var i2812 = []
+  for(var i = 0; i < i2813.length; i += 1) {
+    i2812.push( request.d('Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition', i2813[i + 0]) );
   }
-  i1302.conditions = i1304
-  return i1302
+  i2810.conditions = i2812
+  return i2810
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerParameter"] = function (request, data, root) {
-  var i1308 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerParameter' )
-  var i1309 = data
-  i1308.defaultBool = !!i1309[0]
-  i1308.defaultFloat = i1309[1]
-  i1308.defaultInt = i1309[2]
-  i1308.name = i1309[3]
-  i1308.nameHash = i1309[4]
-  i1308.type = i1309[5]
-  return i1308
+  var i2816 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerParameter' )
+  var i2817 = data
+  i2816.defaultBool = !!i2817[0]
+  i2816.defaultFloat = i2817[1]
+  i2816.defaultInt = i2817[2]
+  i2816.name = i2817[3]
+  i2816.nameHash = i2817[4]
+  i2816.type = i2817[5]
+  return i2816
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.TextAsset"] = function (request, data, root) {
-  var i1310 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.TextAsset' )
-  var i1311 = data
-  i1310.name = i1311[0]
-  i1310.bytes64 = i1311[1]
-  i1310.data = i1311[2]
-  return i1310
+  var i2818 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.TextAsset' )
+  var i2819 = data
+  i2818.name = i2819[0]
+  i2818.bytes64 = i2819[1]
+  i2818.data = i2819[2]
+  return i2818
 }
 
 Deserializers["TMPro.TMP_FontAsset"] = function (request, data, root) {
-  var i1312 = root || request.c( 'TMPro.TMP_FontAsset' )
-  var i1313 = data
-  i1312.hashCode = i1313[0]
-  request.r(i1313[1], i1313[2], 0, i1312, 'material')
-  i1312.materialHashCode = i1313[3]
-  request.r(i1313[4], i1313[5], 0, i1312, 'atlas')
-  i1312.normalStyle = i1313[6]
-  i1312.normalSpacingOffset = i1313[7]
-  i1312.boldStyle = i1313[8]
-  i1312.boldSpacing = i1313[9]
-  i1312.italicStyle = i1313[10]
-  i1312.tabSize = i1313[11]
-  i1312.m_Version = i1313[12]
-  i1312.m_SourceFontFileGUID = i1313[13]
-  request.r(i1313[14], i1313[15], 0, i1312, 'm_SourceFontFile_EditorRef')
-  request.r(i1313[16], i1313[17], 0, i1312, 'm_SourceFontFile')
-  i1312.m_AtlasPopulationMode = i1313[18]
-  i1312.m_FaceInfo = request.d('UnityEngine.TextCore.FaceInfo', i1313[19], i1312.m_FaceInfo)
-  var i1315 = i1313[20]
-  var i1314 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.TextCore.Glyph')))
-  for(var i = 0; i < i1315.length; i += 1) {
-    i1314.add(request.d('UnityEngine.TextCore.Glyph', i1315[i + 0]));
+  var i2820 = root || request.c( 'TMPro.TMP_FontAsset' )
+  var i2821 = data
+  i2820.hashCode = i2821[0]
+  request.r(i2821[1], i2821[2], 0, i2820, 'material')
+  i2820.materialHashCode = i2821[3]
+  request.r(i2821[4], i2821[5], 0, i2820, 'atlas')
+  i2820.normalStyle = i2821[6]
+  i2820.normalSpacingOffset = i2821[7]
+  i2820.boldStyle = i2821[8]
+  i2820.boldSpacing = i2821[9]
+  i2820.italicStyle = i2821[10]
+  i2820.tabSize = i2821[11]
+  i2820.m_Version = i2821[12]
+  i2820.m_SourceFontFileGUID = i2821[13]
+  request.r(i2821[14], i2821[15], 0, i2820, 'm_SourceFontFile_EditorRef')
+  request.r(i2821[16], i2821[17], 0, i2820, 'm_SourceFontFile')
+  i2820.m_AtlasPopulationMode = i2821[18]
+  i2820.m_FaceInfo = request.d('UnityEngine.TextCore.FaceInfo', i2821[19], i2820.m_FaceInfo)
+  var i2823 = i2821[20]
+  var i2822 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.TextCore.Glyph')))
+  for(var i = 0; i < i2823.length; i += 1) {
+    i2822.add(request.d('UnityEngine.TextCore.Glyph', i2823[i + 0]));
   }
-  i1312.m_GlyphTable = i1314
-  var i1317 = i1313[21]
-  var i1316 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Character')))
-  for(var i = 0; i < i1317.length; i += 1) {
-    i1316.add(request.d('TMPro.TMP_Character', i1317[i + 0]));
+  i2820.m_GlyphTable = i2822
+  var i2825 = i2821[21]
+  var i2824 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Character')))
+  for(var i = 0; i < i2825.length; i += 1) {
+    i2824.add(request.d('TMPro.TMP_Character', i2825[i + 0]));
   }
-  i1312.m_CharacterTable = i1316
-  var i1319 = i1313[22]
-  var i1318 = []
-  for(var i = 0; i < i1319.length; i += 2) {
-  request.r(i1319[i + 0], i1319[i + 1], 2, i1318, '')
+  i2820.m_CharacterTable = i2824
+  var i2827 = i2821[22]
+  var i2826 = []
+  for(var i = 0; i < i2827.length; i += 2) {
+  request.r(i2827[i + 0], i2827[i + 1], 2, i2826, '')
   }
-  i1312.m_AtlasTextures = i1318
-  i1312.m_AtlasTextureIndex = i1313[23]
-  i1312.m_IsMultiAtlasTexturesEnabled = !!i1313[24]
-  i1312.m_ClearDynamicDataOnBuild = !!i1313[25]
-  var i1321 = i1313[26]
-  var i1320 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.TextCore.GlyphRect')))
-  for(var i = 0; i < i1321.length; i += 1) {
-    i1320.add(request.d('UnityEngine.TextCore.GlyphRect', i1321[i + 0]));
+  i2820.m_AtlasTextures = i2826
+  i2820.m_AtlasTextureIndex = i2821[23]
+  i2820.m_IsMultiAtlasTexturesEnabled = !!i2821[24]
+  i2820.m_ClearDynamicDataOnBuild = !!i2821[25]
+  var i2829 = i2821[26]
+  var i2828 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.TextCore.GlyphRect')))
+  for(var i = 0; i < i2829.length; i += 1) {
+    i2828.add(request.d('UnityEngine.TextCore.GlyphRect', i2829[i + 0]));
   }
-  i1312.m_UsedGlyphRects = i1320
-  var i1323 = i1313[27]
-  var i1322 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.TextCore.GlyphRect')))
-  for(var i = 0; i < i1323.length; i += 1) {
-    i1322.add(request.d('UnityEngine.TextCore.GlyphRect', i1323[i + 0]));
+  i2820.m_UsedGlyphRects = i2828
+  var i2831 = i2821[27]
+  var i2830 = new (System.Collections.Generic.List$1(Bridge.ns('UnityEngine.TextCore.GlyphRect')))
+  for(var i = 0; i < i2831.length; i += 1) {
+    i2830.add(request.d('UnityEngine.TextCore.GlyphRect', i2831[i + 0]));
   }
-  i1312.m_FreeGlyphRects = i1322
-  i1312.m_fontInfo = request.d('TMPro.FaceInfo_Legacy', i1313[28], i1312.m_fontInfo)
-  i1312.m_AtlasWidth = i1313[29]
-  i1312.m_AtlasHeight = i1313[30]
-  i1312.m_AtlasPadding = i1313[31]
-  i1312.m_AtlasRenderMode = i1313[32]
-  var i1325 = i1313[33]
-  var i1324 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Glyph')))
-  for(var i = 0; i < i1325.length; i += 1) {
-    i1324.add(request.d('TMPro.TMP_Glyph', i1325[i + 0]));
+  i2820.m_FreeGlyphRects = i2830
+  i2820.m_fontInfo = request.d('TMPro.FaceInfo_Legacy', i2821[28], i2820.m_fontInfo)
+  i2820.m_AtlasWidth = i2821[29]
+  i2820.m_AtlasHeight = i2821[30]
+  i2820.m_AtlasPadding = i2821[31]
+  i2820.m_AtlasRenderMode = i2821[32]
+  var i2833 = i2821[33]
+  var i2832 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Glyph')))
+  for(var i = 0; i < i2833.length; i += 1) {
+    i2832.add(request.d('TMPro.TMP_Glyph', i2833[i + 0]));
   }
-  i1312.m_glyphInfoList = i1324
-  i1312.m_KerningTable = request.d('TMPro.KerningTable', i1313[34], i1312.m_KerningTable)
-  i1312.m_FontFeatureTable = request.d('TMPro.TMP_FontFeatureTable', i1313[35], i1312.m_FontFeatureTable)
-  var i1327 = i1313[36]
-  var i1326 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_FontAsset')))
-  for(var i = 0; i < i1327.length; i += 2) {
-  request.r(i1327[i + 0], i1327[i + 1], 1, i1326, '')
+  i2820.m_glyphInfoList = i2832
+  i2820.m_KerningTable = request.d('TMPro.KerningTable', i2821[34], i2820.m_KerningTable)
+  i2820.m_FontFeatureTable = request.d('TMPro.TMP_FontFeatureTable', i2821[35], i2820.m_FontFeatureTable)
+  var i2835 = i2821[36]
+  var i2834 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_FontAsset')))
+  for(var i = 0; i < i2835.length; i += 2) {
+  request.r(i2835[i + 0], i2835[i + 1], 1, i2834, '')
   }
-  i1312.fallbackFontAssets = i1326
-  var i1329 = i1313[37]
-  var i1328 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_FontAsset')))
-  for(var i = 0; i < i1329.length; i += 2) {
-  request.r(i1329[i + 0], i1329[i + 1], 1, i1328, '')
+  i2820.fallbackFontAssets = i2834
+  var i2837 = i2821[37]
+  var i2836 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_FontAsset')))
+  for(var i = 0; i < i2837.length; i += 2) {
+  request.r(i2837[i + 0], i2837[i + 1], 1, i2836, '')
   }
-  i1312.m_FallbackFontAssetTable = i1328
-  i1312.m_CreationSettings = request.d('TMPro.FontAssetCreationSettings', i1313[38], i1312.m_CreationSettings)
-  var i1331 = i1313[39]
-  var i1330 = []
-  for(var i = 0; i < i1331.length; i += 1) {
-    i1330.push( request.d('TMPro.TMP_FontWeightPair', i1331[i + 0]) );
+  i2820.m_FallbackFontAssetTable = i2836
+  i2820.m_CreationSettings = request.d('TMPro.FontAssetCreationSettings', i2821[38], i2820.m_CreationSettings)
+  var i2839 = i2821[39]
+  var i2838 = []
+  for(var i = 0; i < i2839.length; i += 1) {
+    i2838.push( request.d('TMPro.TMP_FontWeightPair', i2839[i + 0]) );
   }
-  i1312.m_FontWeightTable = i1330
-  var i1333 = i1313[40]
-  var i1332 = []
-  for(var i = 0; i < i1333.length; i += 1) {
-    i1332.push( request.d('TMPro.TMP_FontWeightPair', i1333[i + 0]) );
+  i2820.m_FontWeightTable = i2838
+  var i2841 = i2821[40]
+  var i2840 = []
+  for(var i = 0; i < i2841.length; i += 1) {
+    i2840.push( request.d('TMPro.TMP_FontWeightPair', i2841[i + 0]) );
   }
-  i1312.fontWeights = i1332
-  return i1312
+  i2820.fontWeights = i2840
+  return i2820
 }
 
 Deserializers["UnityEngine.TextCore.FaceInfo"] = function (request, data, root) {
-  var i1334 = root || request.c( 'UnityEngine.TextCore.FaceInfo' )
-  var i1335 = data
-  i1334.m_FaceIndex = i1335[0]
-  i1334.m_FamilyName = i1335[1]
-  i1334.m_StyleName = i1335[2]
-  i1334.m_PointSize = i1335[3]
-  i1334.m_Scale = i1335[4]
-  i1334.m_UnitsPerEM = i1335[5]
-  i1334.m_LineHeight = i1335[6]
-  i1334.m_AscentLine = i1335[7]
-  i1334.m_CapLine = i1335[8]
-  i1334.m_MeanLine = i1335[9]
-  i1334.m_Baseline = i1335[10]
-  i1334.m_DescentLine = i1335[11]
-  i1334.m_SuperscriptOffset = i1335[12]
-  i1334.m_SuperscriptSize = i1335[13]
-  i1334.m_SubscriptOffset = i1335[14]
-  i1334.m_SubscriptSize = i1335[15]
-  i1334.m_UnderlineOffset = i1335[16]
-  i1334.m_UnderlineThickness = i1335[17]
-  i1334.m_StrikethroughOffset = i1335[18]
-  i1334.m_StrikethroughThickness = i1335[19]
-  i1334.m_TabWidth = i1335[20]
-  return i1334
+  var i2842 = root || request.c( 'UnityEngine.TextCore.FaceInfo' )
+  var i2843 = data
+  i2842.m_FaceIndex = i2843[0]
+  i2842.m_FamilyName = i2843[1]
+  i2842.m_StyleName = i2843[2]
+  i2842.m_PointSize = i2843[3]
+  i2842.m_Scale = i2843[4]
+  i2842.m_UnitsPerEM = i2843[5]
+  i2842.m_LineHeight = i2843[6]
+  i2842.m_AscentLine = i2843[7]
+  i2842.m_CapLine = i2843[8]
+  i2842.m_MeanLine = i2843[9]
+  i2842.m_Baseline = i2843[10]
+  i2842.m_DescentLine = i2843[11]
+  i2842.m_SuperscriptOffset = i2843[12]
+  i2842.m_SuperscriptSize = i2843[13]
+  i2842.m_SubscriptOffset = i2843[14]
+  i2842.m_SubscriptSize = i2843[15]
+  i2842.m_UnderlineOffset = i2843[16]
+  i2842.m_UnderlineThickness = i2843[17]
+  i2842.m_StrikethroughOffset = i2843[18]
+  i2842.m_StrikethroughThickness = i2843[19]
+  i2842.m_TabWidth = i2843[20]
+  return i2842
 }
 
 Deserializers["UnityEngine.TextCore.Glyph"] = function (request, data, root) {
-  var i1338 = root || request.c( 'UnityEngine.TextCore.Glyph' )
-  var i1339 = data
-  i1338.m_Index = i1339[0]
-  i1338.m_Metrics = request.d('UnityEngine.TextCore.GlyphMetrics', i1339[1], i1338.m_Metrics)
-  i1338.m_GlyphRect = request.d('UnityEngine.TextCore.GlyphRect', i1339[2], i1338.m_GlyphRect)
-  i1338.m_Scale = i1339[3]
-  i1338.m_AtlasIndex = i1339[4]
-  i1338.m_ClassDefinitionType = i1339[5]
-  return i1338
+  var i2846 = root || request.c( 'UnityEngine.TextCore.Glyph' )
+  var i2847 = data
+  i2846.m_Index = i2847[0]
+  i2846.m_Metrics = request.d('UnityEngine.TextCore.GlyphMetrics', i2847[1], i2846.m_Metrics)
+  i2846.m_GlyphRect = request.d('UnityEngine.TextCore.GlyphRect', i2847[2], i2846.m_GlyphRect)
+  i2846.m_Scale = i2847[3]
+  i2846.m_AtlasIndex = i2847[4]
+  i2846.m_ClassDefinitionType = i2847[5]
+  return i2846
 }
 
 Deserializers["UnityEngine.TextCore.GlyphMetrics"] = function (request, data, root) {
-  var i1340 = root || request.c( 'UnityEngine.TextCore.GlyphMetrics' )
-  var i1341 = data
-  i1340.m_Width = i1341[0]
-  i1340.m_Height = i1341[1]
-  i1340.m_HorizontalBearingX = i1341[2]
-  i1340.m_HorizontalBearingY = i1341[3]
-  i1340.m_HorizontalAdvance = i1341[4]
-  return i1340
+  var i2848 = root || request.c( 'UnityEngine.TextCore.GlyphMetrics' )
+  var i2849 = data
+  i2848.m_Width = i2849[0]
+  i2848.m_Height = i2849[1]
+  i2848.m_HorizontalBearingX = i2849[2]
+  i2848.m_HorizontalBearingY = i2849[3]
+  i2848.m_HorizontalAdvance = i2849[4]
+  return i2848
 }
 
 Deserializers["UnityEngine.TextCore.GlyphRect"] = function (request, data, root) {
-  var i1342 = root || request.c( 'UnityEngine.TextCore.GlyphRect' )
-  var i1343 = data
-  i1342.m_X = i1343[0]
-  i1342.m_Y = i1343[1]
-  i1342.m_Width = i1343[2]
-  i1342.m_Height = i1343[3]
-  return i1342
+  var i2850 = root || request.c( 'UnityEngine.TextCore.GlyphRect' )
+  var i2851 = data
+  i2850.m_X = i2851[0]
+  i2850.m_Y = i2851[1]
+  i2850.m_Width = i2851[2]
+  i2850.m_Height = i2851[3]
+  return i2850
 }
 
 Deserializers["TMPro.TMP_Character"] = function (request, data, root) {
-  var i1346 = root || request.c( 'TMPro.TMP_Character' )
-  var i1347 = data
-  i1346.m_ElementType = i1347[0]
-  i1346.m_Unicode = i1347[1]
-  i1346.m_GlyphIndex = i1347[2]
-  i1346.m_Scale = i1347[3]
-  return i1346
+  var i2854 = root || request.c( 'TMPro.TMP_Character' )
+  var i2855 = data
+  i2854.m_ElementType = i2855[0]
+  i2854.m_Unicode = i2855[1]
+  i2854.m_GlyphIndex = i2855[2]
+  i2854.m_Scale = i2855[3]
+  return i2854
 }
 
 Deserializers["TMPro.FaceInfo_Legacy"] = function (request, data, root) {
-  var i1352 = root || request.c( 'TMPro.FaceInfo_Legacy' )
-  var i1353 = data
-  i1352.Name = i1353[0]
-  i1352.PointSize = i1353[1]
-  i1352.Scale = i1353[2]
-  i1352.CharacterCount = i1353[3]
-  i1352.LineHeight = i1353[4]
-  i1352.Baseline = i1353[5]
-  i1352.Ascender = i1353[6]
-  i1352.CapHeight = i1353[7]
-  i1352.Descender = i1353[8]
-  i1352.CenterLine = i1353[9]
-  i1352.SuperscriptOffset = i1353[10]
-  i1352.SubscriptOffset = i1353[11]
-  i1352.SubSize = i1353[12]
-  i1352.Underline = i1353[13]
-  i1352.UnderlineThickness = i1353[14]
-  i1352.strikethrough = i1353[15]
-  i1352.strikethroughThickness = i1353[16]
-  i1352.TabWidth = i1353[17]
-  i1352.Padding = i1353[18]
-  i1352.AtlasWidth = i1353[19]
-  i1352.AtlasHeight = i1353[20]
-  return i1352
+  var i2860 = root || request.c( 'TMPro.FaceInfo_Legacy' )
+  var i2861 = data
+  i2860.Name = i2861[0]
+  i2860.PointSize = i2861[1]
+  i2860.Scale = i2861[2]
+  i2860.CharacterCount = i2861[3]
+  i2860.LineHeight = i2861[4]
+  i2860.Baseline = i2861[5]
+  i2860.Ascender = i2861[6]
+  i2860.CapHeight = i2861[7]
+  i2860.Descender = i2861[8]
+  i2860.CenterLine = i2861[9]
+  i2860.SuperscriptOffset = i2861[10]
+  i2860.SubscriptOffset = i2861[11]
+  i2860.SubSize = i2861[12]
+  i2860.Underline = i2861[13]
+  i2860.UnderlineThickness = i2861[14]
+  i2860.strikethrough = i2861[15]
+  i2860.strikethroughThickness = i2861[16]
+  i2860.TabWidth = i2861[17]
+  i2860.Padding = i2861[18]
+  i2860.AtlasWidth = i2861[19]
+  i2860.AtlasHeight = i2861[20]
+  return i2860
 }
 
 Deserializers["TMPro.TMP_Glyph"] = function (request, data, root) {
-  var i1356 = root || request.c( 'TMPro.TMP_Glyph' )
-  var i1357 = data
-  i1356.id = i1357[0]
-  i1356.x = i1357[1]
-  i1356.y = i1357[2]
-  i1356.width = i1357[3]
-  i1356.height = i1357[4]
-  i1356.xOffset = i1357[5]
-  i1356.yOffset = i1357[6]
-  i1356.xAdvance = i1357[7]
-  i1356.scale = i1357[8]
-  return i1356
+  var i2864 = root || request.c( 'TMPro.TMP_Glyph' )
+  var i2865 = data
+  i2864.id = i2865[0]
+  i2864.x = i2865[1]
+  i2864.y = i2865[2]
+  i2864.width = i2865[3]
+  i2864.height = i2865[4]
+  i2864.xOffset = i2865[5]
+  i2864.yOffset = i2865[6]
+  i2864.xAdvance = i2865[7]
+  i2864.scale = i2865[8]
+  return i2864
 }
 
 Deserializers["TMPro.KerningTable"] = function (request, data, root) {
-  var i1358 = root || request.c( 'TMPro.KerningTable' )
-  var i1359 = data
-  var i1361 = i1359[0]
-  var i1360 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.KerningPair')))
-  for(var i = 0; i < i1361.length; i += 1) {
-    i1360.add(request.d('TMPro.KerningPair', i1361[i + 0]));
+  var i2866 = root || request.c( 'TMPro.KerningTable' )
+  var i2867 = data
+  var i2869 = i2867[0]
+  var i2868 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.KerningPair')))
+  for(var i = 0; i < i2869.length; i += 1) {
+    i2868.add(request.d('TMPro.KerningPair', i2869[i + 0]));
   }
-  i1358.kerningPairs = i1360
-  return i1358
+  i2866.kerningPairs = i2868
+  return i2866
 }
 
 Deserializers["TMPro.KerningPair"] = function (request, data, root) {
-  var i1364 = root || request.c( 'TMPro.KerningPair' )
-  var i1365 = data
-  i1364.xOffset = i1365[0]
-  i1364.m_FirstGlyph = i1365[1]
-  i1364.m_FirstGlyphAdjustments = request.d('TMPro.GlyphValueRecord_Legacy', i1365[2], i1364.m_FirstGlyphAdjustments)
-  i1364.m_SecondGlyph = i1365[3]
-  i1364.m_SecondGlyphAdjustments = request.d('TMPro.GlyphValueRecord_Legacy', i1365[4], i1364.m_SecondGlyphAdjustments)
-  i1364.m_IgnoreSpacingAdjustments = !!i1365[5]
-  return i1364
+  var i2872 = root || request.c( 'TMPro.KerningPair' )
+  var i2873 = data
+  i2872.xOffset = i2873[0]
+  i2872.m_FirstGlyph = i2873[1]
+  i2872.m_FirstGlyphAdjustments = request.d('TMPro.GlyphValueRecord_Legacy', i2873[2], i2872.m_FirstGlyphAdjustments)
+  i2872.m_SecondGlyph = i2873[3]
+  i2872.m_SecondGlyphAdjustments = request.d('TMPro.GlyphValueRecord_Legacy', i2873[4], i2872.m_SecondGlyphAdjustments)
+  i2872.m_IgnoreSpacingAdjustments = !!i2873[5]
+  return i2872
 }
 
 Deserializers["TMPro.TMP_FontFeatureTable"] = function (request, data, root) {
-  var i1366 = root || request.c( 'TMPro.TMP_FontFeatureTable' )
-  var i1367 = data
-  var i1369 = i1367[0]
-  var i1368 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_GlyphPairAdjustmentRecord')))
-  for(var i = 0; i < i1369.length; i += 1) {
-    i1368.add(request.d('TMPro.TMP_GlyphPairAdjustmentRecord', i1369[i + 0]));
+  var i2874 = root || request.c( 'TMPro.TMP_FontFeatureTable' )
+  var i2875 = data
+  var i2877 = i2875[0]
+  var i2876 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_GlyphPairAdjustmentRecord')))
+  for(var i = 0; i < i2877.length; i += 1) {
+    i2876.add(request.d('TMPro.TMP_GlyphPairAdjustmentRecord', i2877[i + 0]));
   }
-  i1366.m_GlyphPairAdjustmentRecords = i1368
-  return i1366
+  i2874.m_GlyphPairAdjustmentRecords = i2876
+  return i2874
 }
 
 Deserializers["TMPro.TMP_GlyphPairAdjustmentRecord"] = function (request, data, root) {
-  var i1372 = root || request.c( 'TMPro.TMP_GlyphPairAdjustmentRecord' )
-  var i1373 = data
-  i1372.m_FirstAdjustmentRecord = request.d('TMPro.TMP_GlyphAdjustmentRecord', i1373[0], i1372.m_FirstAdjustmentRecord)
-  i1372.m_SecondAdjustmentRecord = request.d('TMPro.TMP_GlyphAdjustmentRecord', i1373[1], i1372.m_SecondAdjustmentRecord)
-  i1372.m_FeatureLookupFlags = i1373[2]
-  return i1372
+  var i2880 = root || request.c( 'TMPro.TMP_GlyphPairAdjustmentRecord' )
+  var i2881 = data
+  i2880.m_FirstAdjustmentRecord = request.d('TMPro.TMP_GlyphAdjustmentRecord', i2881[0], i2880.m_FirstAdjustmentRecord)
+  i2880.m_SecondAdjustmentRecord = request.d('TMPro.TMP_GlyphAdjustmentRecord', i2881[1], i2880.m_SecondAdjustmentRecord)
+  i2880.m_FeatureLookupFlags = i2881[2]
+  return i2880
 }
 
 Deserializers["TMPro.FontAssetCreationSettings"] = function (request, data, root) {
-  var i1376 = root || request.c( 'TMPro.FontAssetCreationSettings' )
-  var i1377 = data
-  i1376.sourceFontFileName = i1377[0]
-  i1376.sourceFontFileGUID = i1377[1]
-  i1376.pointSizeSamplingMode = i1377[2]
-  i1376.pointSize = i1377[3]
-  i1376.padding = i1377[4]
-  i1376.packingMode = i1377[5]
-  i1376.atlasWidth = i1377[6]
-  i1376.atlasHeight = i1377[7]
-  i1376.characterSetSelectionMode = i1377[8]
-  i1376.characterSequence = i1377[9]
-  i1376.referencedFontAssetGUID = i1377[10]
-  i1376.referencedTextAssetGUID = i1377[11]
-  i1376.fontStyle = i1377[12]
-  i1376.fontStyleModifier = i1377[13]
-  i1376.renderMode = i1377[14]
-  i1376.includeFontFeatures = !!i1377[15]
-  return i1376
+  var i2884 = root || request.c( 'TMPro.FontAssetCreationSettings' )
+  var i2885 = data
+  i2884.sourceFontFileName = i2885[0]
+  i2884.sourceFontFileGUID = i2885[1]
+  i2884.pointSizeSamplingMode = i2885[2]
+  i2884.pointSize = i2885[3]
+  i2884.padding = i2885[4]
+  i2884.packingMode = i2885[5]
+  i2884.atlasWidth = i2885[6]
+  i2884.atlasHeight = i2885[7]
+  i2884.characterSetSelectionMode = i2885[8]
+  i2884.characterSequence = i2885[9]
+  i2884.referencedFontAssetGUID = i2885[10]
+  i2884.referencedTextAssetGUID = i2885[11]
+  i2884.fontStyle = i2885[12]
+  i2884.fontStyleModifier = i2885[13]
+  i2884.renderMode = i2885[14]
+  i2884.includeFontFeatures = !!i2885[15]
+  return i2884
 }
 
 Deserializers["TMPro.TMP_FontWeightPair"] = function (request, data, root) {
-  var i1380 = root || request.c( 'TMPro.TMP_FontWeightPair' )
-  var i1381 = data
-  request.r(i1381[0], i1381[1], 0, i1380, 'regularTypeface')
-  request.r(i1381[2], i1381[3], 0, i1380, 'italicTypeface')
-  return i1380
+  var i2888 = root || request.c( 'TMPro.TMP_FontWeightPair' )
+  var i2889 = data
+  request.r(i2889[0], i2889[1], 0, i2888, 'regularTypeface')
+  request.r(i2889[2], i2889[3], 0, i2888, 'italicTypeface')
+  return i2888
 }
 
 Deserializers["ItemData"] = function (request, data, root) {
-  var i1382 = root || request.c( 'ItemData' )
-  var i1383 = data
-  i1382.itemName = i1383[0]
-  request.r(i1383[1], i1383[2], 0, i1382, 'itemIcon')
-  i1382.ItemCount = i1383[3]
-  request.r(i1383[4], i1383[5], 0, i1382, 'collectItemSprite')
-  i1382.color = i1383[6]
-  request.r(i1383[7], i1383[8], 0, i1382, 'DecorationSprite')
-  return i1382
+  var i2890 = root || request.c( 'ItemData' )
+  var i2891 = data
+  i2890.itemName = i2891[0]
+  request.r(i2891[1], i2891[2], 0, i2890, 'itemIcon')
+  i2890.ItemCount = i2891[3]
+  request.r(i2891[4], i2891[5], 0, i2890, 'collectItemSprite')
+  i2890.color = i2891[6]
+  request.r(i2891[7], i2891[8], 0, i2890, 'DecorationSprite')
+  return i2890
 }
 
 Deserializers["TileData"] = function (request, data, root) {
-  var i1384 = root || request.c( 'TileData' )
-  var i1385 = data
-  i1384.tileName = i1385[0]
-  request.r(i1385[1], i1385[2], 0, i1384, 'tileSprite')
-  i1384.isPowerup = !!i1385[3]
-  i1384.isBreakable = !!i1385[4]
-  i1384.isSwappable = !!i1385[5]
-  i1384.isSpecialBreakable = !!i1385[6]
-  return i1384
+  var i2892 = root || request.c( 'TileData' )
+  var i2893 = data
+  i2892.tileName = i2893[0]
+  request.r(i2893[1], i2893[2], 0, i2892, 'tileSprite')
+  i2892.isPowerup = !!i2893[3]
+  i2892.isBreakable = !!i2893[4]
+  i2892.isSwappable = !!i2893[5]
+  i2892.isSpecialBreakable = !!i2893[6]
+  return i2892
 }
 
 Deserializers["Spine.Unity.SkeletonDataAsset"] = function (request, data, root) {
-  var i1386 = root || request.c( 'Spine.Unity.SkeletonDataAsset' )
-  var i1387 = data
-  var i1389 = i1387[0]
-  var i1388 = []
-  for(var i = 0; i < i1389.length; i += 2) {
-  request.r(i1389[i + 0], i1389[i + 1], 2, i1388, '')
+  var i2894 = root || request.c( 'Spine.Unity.SkeletonDataAsset' )
+  var i2895 = data
+  var i2897 = i2895[0]
+  var i2896 = []
+  for(var i = 0; i < i2897.length; i += 2) {
+  request.r(i2897[i + 0], i2897[i + 1], 2, i2896, '')
   }
-  i1386.atlasAssets = i1388
-  i1386.scale = i1387[1]
-  request.r(i1387[2], i1387[3], 0, i1386, 'skeletonJSON')
-  i1386.isUpgradingBlendModeMaterials = !!i1387[4]
-  i1386.blendModeMaterials = request.d('Spine.Unity.BlendModeMaterials', i1387[5], i1386.blendModeMaterials)
-  var i1391 = i1387[6]
-  var i1390 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.SkeletonDataModifierAsset')))
-  for(var i = 0; i < i1391.length; i += 2) {
-  request.r(i1391[i + 0], i1391[i + 1], 1, i1390, '')
+  i2894.atlasAssets = i2896
+  i2894.scale = i2895[1]
+  request.r(i2895[2], i2895[3], 0, i2894, 'skeletonJSON')
+  i2894.isUpgradingBlendModeMaterials = !!i2895[4]
+  i2894.blendModeMaterials = request.d('Spine.Unity.BlendModeMaterials', i2895[5], i2894.blendModeMaterials)
+  var i2899 = i2895[6]
+  var i2898 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.SkeletonDataModifierAsset')))
+  for(var i = 0; i < i2899.length; i += 2) {
+  request.r(i2899[i + 0], i2899[i + 1], 1, i2898, '')
   }
-  i1386.skeletonDataModifiers = i1390
-  var i1393 = i1387[7]
-  var i1392 = []
-  for(var i = 0; i < i1393.length; i += 1) {
-    i1392.push( i1393[i + 0] );
+  i2894.skeletonDataModifiers = i2898
+  var i2901 = i2895[7]
+  var i2900 = []
+  for(var i = 0; i < i2901.length; i += 1) {
+    i2900.push( i2901[i + 0] );
   }
-  i1386.fromAnimation = i1392
-  var i1395 = i1387[8]
-  var i1394 = []
-  for(var i = 0; i < i1395.length; i += 1) {
-    i1394.push( i1395[i + 0] );
+  i2894.fromAnimation = i2900
+  var i2903 = i2895[8]
+  var i2902 = []
+  for(var i = 0; i < i2903.length; i += 1) {
+    i2902.push( i2903[i + 0] );
   }
-  i1386.toAnimation = i1394
-  i1386.duration = i1387[9]
-  i1386.defaultMix = i1387[10]
-  request.r(i1387[11], i1387[12], 0, i1386, 'controller')
-  return i1386
+  i2894.toAnimation = i2902
+  i2894.duration = i2895[9]
+  i2894.defaultMix = i2895[10]
+  request.r(i2895[11], i2895[12], 0, i2894, 'controller')
+  return i2894
 }
 
 Deserializers["Spine.Unity.BlendModeMaterials"] = function (request, data, root) {
-  var i1398 = root || request.c( 'Spine.Unity.BlendModeMaterials' )
-  var i1399 = data
-  i1398.applyAdditiveMaterial = !!i1399[0]
-  var i1401 = i1399[1]
-  var i1400 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.BlendModeMaterials+ReplacementMaterial')))
-  for(var i = 0; i < i1401.length; i += 1) {
-    i1400.add(request.d('Spine.Unity.BlendModeMaterials+ReplacementMaterial', i1401[i + 0]));
+  var i2906 = root || request.c( 'Spine.Unity.BlendModeMaterials' )
+  var i2907 = data
+  i2906.applyAdditiveMaterial = !!i2907[0]
+  var i2909 = i2907[1]
+  var i2908 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.BlendModeMaterials+ReplacementMaterial')))
+  for(var i = 0; i < i2909.length; i += 1) {
+    i2908.add(request.d('Spine.Unity.BlendModeMaterials+ReplacementMaterial', i2909[i + 0]));
   }
-  i1398.additiveMaterials = i1400
-  var i1403 = i1399[2]
-  var i1402 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.BlendModeMaterials+ReplacementMaterial')))
-  for(var i = 0; i < i1403.length; i += 1) {
-    i1402.add(request.d('Spine.Unity.BlendModeMaterials+ReplacementMaterial', i1403[i + 0]));
+  i2906.additiveMaterials = i2908
+  var i2911 = i2907[2]
+  var i2910 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.BlendModeMaterials+ReplacementMaterial')))
+  for(var i = 0; i < i2911.length; i += 1) {
+    i2910.add(request.d('Spine.Unity.BlendModeMaterials+ReplacementMaterial', i2911[i + 0]));
   }
-  i1398.multiplyMaterials = i1402
-  var i1405 = i1399[3]
-  var i1404 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.BlendModeMaterials+ReplacementMaterial')))
-  for(var i = 0; i < i1405.length; i += 1) {
-    i1404.add(request.d('Spine.Unity.BlendModeMaterials+ReplacementMaterial', i1405[i + 0]));
+  i2906.multiplyMaterials = i2910
+  var i2913 = i2907[3]
+  var i2912 = new (System.Collections.Generic.List$1(Bridge.ns('Spine.Unity.BlendModeMaterials+ReplacementMaterial')))
+  for(var i = 0; i < i2913.length; i += 1) {
+    i2912.add(request.d('Spine.Unity.BlendModeMaterials+ReplacementMaterial', i2913[i + 0]));
   }
-  i1398.screenMaterials = i1404
-  i1398.requiresBlendModeMaterials = !!i1399[4]
-  return i1398
+  i2906.screenMaterials = i2912
+  i2906.requiresBlendModeMaterials = !!i2907[4]
+  return i2906
 }
 
 Deserializers["Spine.Unity.BlendModeMaterials+ReplacementMaterial"] = function (request, data, root) {
-  var i1408 = root || request.c( 'Spine.Unity.BlendModeMaterials+ReplacementMaterial' )
-  var i1409 = data
-  i1408.pageName = i1409[0]
-  request.r(i1409[1], i1409[2], 0, i1408, 'material')
-  return i1408
+  var i2916 = root || request.c( 'Spine.Unity.BlendModeMaterials+ReplacementMaterial' )
+  var i2917 = data
+  i2916.pageName = i2917[0]
+  request.r(i2917[1], i2917[2], 0, i2916, 'material')
+  return i2916
 }
 
 Deserializers["Spine.Unity.SpineAtlasAsset"] = function (request, data, root) {
-  var i1412 = root || request.c( 'Spine.Unity.SpineAtlasAsset' )
-  var i1413 = data
-  request.r(i1413[0], i1413[1], 0, i1412, 'atlasFile')
-  var i1415 = i1413[2]
-  var i1414 = []
-  for(var i = 0; i < i1415.length; i += 2) {
-  request.r(i1415[i + 0], i1415[i + 1], 2, i1414, '')
+  var i2920 = root || request.c( 'Spine.Unity.SpineAtlasAsset' )
+  var i2921 = data
+  request.r(i2921[0], i2921[1], 0, i2920, 'atlasFile')
+  var i2923 = i2921[2]
+  var i2922 = []
+  for(var i = 0; i < i2923.length; i += 2) {
+  request.r(i2923[i + 0], i2923[i + 1], 2, i2922, '')
   }
-  i1412.materials = i1414
-  i1412.textureLoadingMode = i1413[3]
-  request.r(i1413[4], i1413[5], 0, i1412, 'onDemandTextureLoader')
-  return i1412
+  i2920.materials = i2922
+  i2920.textureLoadingMode = i2921[3]
+  request.r(i2921[4], i2921[5], 0, i2920, 'onDemandTextureLoader')
+  return i2920
 }
 
 Deserializers["DynamitePowerup"] = function (request, data, root) {
-  var i1416 = root || request.c( 'DynamitePowerup' )
-  var i1417 = data
-  i1416.explosionRadius = i1417[0]
-  i1416.tileName = i1417[1]
-  request.r(i1417[2], i1417[3], 0, i1416, 'tileSprite')
-  i1416.isPowerup = !!i1417[4]
-  i1416.isBreakable = !!i1417[5]
-  i1416.isSwappable = !!i1417[6]
-  i1416.isSpecialBreakable = !!i1417[7]
-  return i1416
+  var i2924 = root || request.c( 'DynamitePowerup' )
+  var i2925 = data
+  i2924.explosionRadius = i2925[0]
+  i2924.tileName = i2925[1]
+  request.r(i2925[2], i2925[3], 0, i2924, 'tileSprite')
+  i2924.isPowerup = !!i2925[4]
+  i2924.isBreakable = !!i2925[5]
+  i2924.isSwappable = !!i2925[6]
+  i2924.isSpecialBreakable = !!i2925[7]
+  return i2924
 }
 
 Deserializers["AudioLibrary"] = function (request, data, root) {
-  var i1418 = root || request.c( 'AudioLibrary' )
-  var i1419 = data
-  var i1421 = i1419[0]
-  var i1420 = new (System.Collections.Generic.List$1(Bridge.ns('AudioLibrary+ClipEntry')))
-  for(var i = 0; i < i1421.length; i += 1) {
-    i1420.add(request.d('AudioLibrary+ClipEntry', i1421[i + 0]));
+  var i2926 = root || request.c( 'AudioLibrary' )
+  var i2927 = data
+  var i2929 = i2927[0]
+  var i2928 = new (System.Collections.Generic.List$1(Bridge.ns('AudioLibrary+ClipEntry')))
+  for(var i = 0; i < i2929.length; i += 1) {
+    i2928.add(request.d('AudioLibrary+ClipEntry', i2929[i + 0]));
   }
-  i1418.clips = i1420
-  return i1418
+  i2926.clips = i2928
+  return i2926
 }
 
 Deserializers["AudioLibrary+ClipEntry"] = function (request, data, root) {
-  var i1424 = root || request.c( 'AudioLibrary+ClipEntry' )
-  var i1425 = data
-  i1424.key = i1425[0]
-  i1424.channel = i1425[1]
-  request.r(i1425[2], i1425[3], 0, i1424, 'clip')
-  i1424.volume = i1425[4]
-  i1424.loop = !!i1425[5]
-  return i1424
+  var i2932 = root || request.c( 'AudioLibrary+ClipEntry' )
+  var i2933 = data
+  i2932.key = i2933[0]
+  i2932.channel = i2933[1]
+  request.r(i2933[2], i2933[3], 0, i2932, 'clip')
+  i2932.volume = i2933[4]
+  i2932.loop = !!i2933[5]
+  return i2932
 }
 
 Deserializers["TMPro.TMP_Settings"] = function (request, data, root) {
-  var i1426 = root || request.c( 'TMPro.TMP_Settings' )
-  var i1427 = data
-  i1426.m_enableWordWrapping = !!i1427[0]
-  i1426.m_enableKerning = !!i1427[1]
-  i1426.m_enableExtraPadding = !!i1427[2]
-  i1426.m_enableTintAllSprites = !!i1427[3]
-  i1426.m_enableParseEscapeCharacters = !!i1427[4]
-  i1426.m_EnableRaycastTarget = !!i1427[5]
-  i1426.m_GetFontFeaturesAtRuntime = !!i1427[6]
-  i1426.m_missingGlyphCharacter = i1427[7]
-  i1426.m_warningsDisabled = !!i1427[8]
-  request.r(i1427[9], i1427[10], 0, i1426, 'm_defaultFontAsset')
-  i1426.m_defaultFontAssetPath = i1427[11]
-  i1426.m_defaultFontSize = i1427[12]
-  i1426.m_defaultAutoSizeMinRatio = i1427[13]
-  i1426.m_defaultAutoSizeMaxRatio = i1427[14]
-  i1426.m_defaultTextMeshProTextContainerSize = new pc.Vec2( i1427[15], i1427[16] )
-  i1426.m_defaultTextMeshProUITextContainerSize = new pc.Vec2( i1427[17], i1427[18] )
-  i1426.m_autoSizeTextContainer = !!i1427[19]
-  i1426.m_IsTextObjectScaleStatic = !!i1427[20]
-  var i1429 = i1427[21]
-  var i1428 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_FontAsset')))
-  for(var i = 0; i < i1429.length; i += 2) {
-  request.r(i1429[i + 0], i1429[i + 1], 1, i1428, '')
+  var i2934 = root || request.c( 'TMPro.TMP_Settings' )
+  var i2935 = data
+  i2934.m_enableWordWrapping = !!i2935[0]
+  i2934.m_enableKerning = !!i2935[1]
+  i2934.m_enableExtraPadding = !!i2935[2]
+  i2934.m_enableTintAllSprites = !!i2935[3]
+  i2934.m_enableParseEscapeCharacters = !!i2935[4]
+  i2934.m_EnableRaycastTarget = !!i2935[5]
+  i2934.m_GetFontFeaturesAtRuntime = !!i2935[6]
+  i2934.m_missingGlyphCharacter = i2935[7]
+  i2934.m_warningsDisabled = !!i2935[8]
+  request.r(i2935[9], i2935[10], 0, i2934, 'm_defaultFontAsset')
+  i2934.m_defaultFontAssetPath = i2935[11]
+  i2934.m_defaultFontSize = i2935[12]
+  i2934.m_defaultAutoSizeMinRatio = i2935[13]
+  i2934.m_defaultAutoSizeMaxRatio = i2935[14]
+  i2934.m_defaultTextMeshProTextContainerSize = new pc.Vec2( i2935[15], i2935[16] )
+  i2934.m_defaultTextMeshProUITextContainerSize = new pc.Vec2( i2935[17], i2935[18] )
+  i2934.m_autoSizeTextContainer = !!i2935[19]
+  i2934.m_IsTextObjectScaleStatic = !!i2935[20]
+  var i2937 = i2935[21]
+  var i2936 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_FontAsset')))
+  for(var i = 0; i < i2937.length; i += 2) {
+  request.r(i2937[i + 0], i2937[i + 1], 1, i2936, '')
   }
-  i1426.m_fallbackFontAssets = i1428
-  i1426.m_matchMaterialPreset = !!i1427[22]
-  request.r(i1427[23], i1427[24], 0, i1426, 'm_defaultSpriteAsset')
-  i1426.m_defaultSpriteAssetPath = i1427[25]
-  i1426.m_enableEmojiSupport = !!i1427[26]
-  i1426.m_MissingCharacterSpriteUnicode = i1427[27]
-  i1426.m_defaultColorGradientPresetsPath = i1427[28]
-  request.r(i1427[29], i1427[30], 0, i1426, 'm_defaultStyleSheet')
-  i1426.m_StyleSheetsResourcePath = i1427[31]
-  request.r(i1427[32], i1427[33], 0, i1426, 'm_leadingCharacters')
-  request.r(i1427[34], i1427[35], 0, i1426, 'm_followingCharacters')
-  i1426.m_UseModernHangulLineBreakingRules = !!i1427[36]
-  return i1426
+  i2934.m_fallbackFontAssets = i2936
+  i2934.m_matchMaterialPreset = !!i2935[22]
+  request.r(i2935[23], i2935[24], 0, i2934, 'm_defaultSpriteAsset')
+  i2934.m_defaultSpriteAssetPath = i2935[25]
+  i2934.m_enableEmojiSupport = !!i2935[26]
+  i2934.m_MissingCharacterSpriteUnicode = i2935[27]
+  i2934.m_defaultColorGradientPresetsPath = i2935[28]
+  request.r(i2935[29], i2935[30], 0, i2934, 'm_defaultStyleSheet')
+  i2934.m_StyleSheetsResourcePath = i2935[31]
+  request.r(i2935[32], i2935[33], 0, i2934, 'm_leadingCharacters')
+  request.r(i2935[34], i2935[35], 0, i2934, 'm_followingCharacters')
+  i2934.m_UseModernHangulLineBreakingRules = !!i2935[36]
+  return i2934
 }
 
 Deserializers["TMPro.TMP_SpriteAsset"] = function (request, data, root) {
-  var i1430 = root || request.c( 'TMPro.TMP_SpriteAsset' )
-  var i1431 = data
-  i1430.hashCode = i1431[0]
-  request.r(i1431[1], i1431[2], 0, i1430, 'material')
-  i1430.materialHashCode = i1431[3]
-  request.r(i1431[4], i1431[5], 0, i1430, 'spriteSheet')
-  var i1433 = i1431[6]
-  var i1432 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Sprite')))
-  for(var i = 0; i < i1433.length; i += 1) {
-    i1432.add(request.d('TMPro.TMP_Sprite', i1433[i + 0]));
+  var i2938 = root || request.c( 'TMPro.TMP_SpriteAsset' )
+  var i2939 = data
+  i2938.hashCode = i2939[0]
+  request.r(i2939[1], i2939[2], 0, i2938, 'material')
+  i2938.materialHashCode = i2939[3]
+  request.r(i2939[4], i2939[5], 0, i2938, 'spriteSheet')
+  var i2941 = i2939[6]
+  var i2940 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Sprite')))
+  for(var i = 0; i < i2941.length; i += 1) {
+    i2940.add(request.d('TMPro.TMP_Sprite', i2941[i + 0]));
   }
-  i1430.spriteInfoList = i1432
-  var i1435 = i1431[7]
-  var i1434 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_SpriteAsset')))
-  for(var i = 0; i < i1435.length; i += 2) {
-  request.r(i1435[i + 0], i1435[i + 1], 1, i1434, '')
+  i2938.spriteInfoList = i2940
+  var i2943 = i2939[7]
+  var i2942 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_SpriteAsset')))
+  for(var i = 0; i < i2943.length; i += 2) {
+  request.r(i2943[i + 0], i2943[i + 1], 1, i2942, '')
   }
-  i1430.fallbackSpriteAssets = i1434
-  i1430.m_Version = i1431[8]
-  i1430.m_FaceInfo = request.d('UnityEngine.TextCore.FaceInfo', i1431[9], i1430.m_FaceInfo)
-  var i1437 = i1431[10]
-  var i1436 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_SpriteCharacter')))
-  for(var i = 0; i < i1437.length; i += 1) {
-    i1436.add(request.d('TMPro.TMP_SpriteCharacter', i1437[i + 0]));
+  i2938.fallbackSpriteAssets = i2942
+  i2938.m_Version = i2939[8]
+  i2938.m_FaceInfo = request.d('UnityEngine.TextCore.FaceInfo', i2939[9], i2938.m_FaceInfo)
+  var i2945 = i2939[10]
+  var i2944 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_SpriteCharacter')))
+  for(var i = 0; i < i2945.length; i += 1) {
+    i2944.add(request.d('TMPro.TMP_SpriteCharacter', i2945[i + 0]));
   }
-  i1430.m_SpriteCharacterTable = i1436
-  var i1439 = i1431[11]
-  var i1438 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_SpriteGlyph')))
-  for(var i = 0; i < i1439.length; i += 1) {
-    i1438.add(request.d('TMPro.TMP_SpriteGlyph', i1439[i + 0]));
+  i2938.m_SpriteCharacterTable = i2944
+  var i2947 = i2939[11]
+  var i2946 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_SpriteGlyph')))
+  for(var i = 0; i < i2947.length; i += 1) {
+    i2946.add(request.d('TMPro.TMP_SpriteGlyph', i2947[i + 0]));
   }
-  i1430.m_SpriteGlyphTable = i1438
-  return i1430
+  i2938.m_SpriteGlyphTable = i2946
+  return i2938
 }
 
 Deserializers["TMPro.TMP_Sprite"] = function (request, data, root) {
-  var i1442 = root || request.c( 'TMPro.TMP_Sprite' )
-  var i1443 = data
-  i1442.name = i1443[0]
-  i1442.hashCode = i1443[1]
-  i1442.unicode = i1443[2]
-  i1442.pivot = new pc.Vec2( i1443[3], i1443[4] )
-  request.r(i1443[5], i1443[6], 0, i1442, 'sprite')
-  i1442.id = i1443[7]
-  i1442.x = i1443[8]
-  i1442.y = i1443[9]
-  i1442.width = i1443[10]
-  i1442.height = i1443[11]
-  i1442.xOffset = i1443[12]
-  i1442.yOffset = i1443[13]
-  i1442.xAdvance = i1443[14]
-  i1442.scale = i1443[15]
-  return i1442
+  var i2950 = root || request.c( 'TMPro.TMP_Sprite' )
+  var i2951 = data
+  i2950.name = i2951[0]
+  i2950.hashCode = i2951[1]
+  i2950.unicode = i2951[2]
+  i2950.pivot = new pc.Vec2( i2951[3], i2951[4] )
+  request.r(i2951[5], i2951[6], 0, i2950, 'sprite')
+  i2950.id = i2951[7]
+  i2950.x = i2951[8]
+  i2950.y = i2951[9]
+  i2950.width = i2951[10]
+  i2950.height = i2951[11]
+  i2950.xOffset = i2951[12]
+  i2950.yOffset = i2951[13]
+  i2950.xAdvance = i2951[14]
+  i2950.scale = i2951[15]
+  return i2950
 }
 
 Deserializers["TMPro.TMP_SpriteCharacter"] = function (request, data, root) {
-  var i1448 = root || request.c( 'TMPro.TMP_SpriteCharacter' )
-  var i1449 = data
-  i1448.m_Name = i1449[0]
-  i1448.m_HashCode = i1449[1]
-  i1448.m_ElementType = i1449[2]
-  i1448.m_Unicode = i1449[3]
-  i1448.m_GlyphIndex = i1449[4]
-  i1448.m_Scale = i1449[5]
-  return i1448
+  var i2956 = root || request.c( 'TMPro.TMP_SpriteCharacter' )
+  var i2957 = data
+  i2956.m_Name = i2957[0]
+  i2956.m_HashCode = i2957[1]
+  i2956.m_ElementType = i2957[2]
+  i2956.m_Unicode = i2957[3]
+  i2956.m_GlyphIndex = i2957[4]
+  i2956.m_Scale = i2957[5]
+  return i2956
 }
 
 Deserializers["TMPro.TMP_SpriteGlyph"] = function (request, data, root) {
-  var i1452 = root || request.c( 'TMPro.TMP_SpriteGlyph' )
-  var i1453 = data
-  request.r(i1453[0], i1453[1], 0, i1452, 'sprite')
-  i1452.m_Index = i1453[2]
-  i1452.m_Metrics = request.d('UnityEngine.TextCore.GlyphMetrics', i1453[3], i1452.m_Metrics)
-  i1452.m_GlyphRect = request.d('UnityEngine.TextCore.GlyphRect', i1453[4], i1452.m_GlyphRect)
-  i1452.m_Scale = i1453[5]
-  i1452.m_AtlasIndex = i1453[6]
-  i1452.m_ClassDefinitionType = i1453[7]
-  return i1452
+  var i2960 = root || request.c( 'TMPro.TMP_SpriteGlyph' )
+  var i2961 = data
+  request.r(i2961[0], i2961[1], 0, i2960, 'sprite')
+  i2960.m_Index = i2961[2]
+  i2960.m_Metrics = request.d('UnityEngine.TextCore.GlyphMetrics', i2961[3], i2960.m_Metrics)
+  i2960.m_GlyphRect = request.d('UnityEngine.TextCore.GlyphRect', i2961[4], i2960.m_GlyphRect)
+  i2960.m_Scale = i2961[5]
+  i2960.m_AtlasIndex = i2961[6]
+  i2960.m_ClassDefinitionType = i2961[7]
+  return i2960
 }
 
 Deserializers["TMPro.TMP_StyleSheet"] = function (request, data, root) {
-  var i1454 = root || request.c( 'TMPro.TMP_StyleSheet' )
-  var i1455 = data
-  var i1457 = i1455[0]
-  var i1456 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Style')))
-  for(var i = 0; i < i1457.length; i += 1) {
-    i1456.add(request.d('TMPro.TMP_Style', i1457[i + 0]));
+  var i2962 = root || request.c( 'TMPro.TMP_StyleSheet' )
+  var i2963 = data
+  var i2965 = i2963[0]
+  var i2964 = new (System.Collections.Generic.List$1(Bridge.ns('TMPro.TMP_Style')))
+  for(var i = 0; i < i2965.length; i += 1) {
+    i2964.add(request.d('TMPro.TMP_Style', i2965[i + 0]));
   }
-  i1454.m_StyleList = i1456
-  return i1454
+  i2962.m_StyleList = i2964
+  return i2962
 }
 
 Deserializers["TMPro.TMP_Style"] = function (request, data, root) {
-  var i1460 = root || request.c( 'TMPro.TMP_Style' )
-  var i1461 = data
-  i1460.m_Name = i1461[0]
-  i1460.m_HashCode = i1461[1]
-  i1460.m_OpeningDefinition = i1461[2]
-  i1460.m_ClosingDefinition = i1461[3]
-  i1460.m_OpeningTagArray = i1461[4]
-  i1460.m_ClosingTagArray = i1461[5]
-  i1460.m_OpeningTagUnicodeArray = i1461[6]
-  i1460.m_ClosingTagUnicodeArray = i1461[7]
-  return i1460
+  var i2968 = root || request.c( 'TMPro.TMP_Style' )
+  var i2969 = data
+  i2968.m_Name = i2969[0]
+  i2968.m_HashCode = i2969[1]
+  i2968.m_OpeningDefinition = i2969[2]
+  i2968.m_ClosingDefinition = i2969[3]
+  i2968.m_OpeningTagArray = i2969[4]
+  i2968.m_ClosingTagArray = i2969[5]
+  i2968.m_OpeningTagUnicodeArray = i2969[6]
+  i2968.m_ClosingTagUnicodeArray = i2969[7]
+  return i2968
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Resources"] = function (request, data, root) {
-  var i1462 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Resources' )
-  var i1463 = data
-  var i1465 = i1463[0]
-  var i1464 = []
-  for(var i = 0; i < i1465.length; i += 1) {
-    i1464.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Resources+File', i1465[i + 0]) );
+  var i2970 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Resources' )
+  var i2971 = data
+  var i2973 = i2971[0]
+  var i2972 = []
+  for(var i = 0; i < i2973.length; i += 1) {
+    i2972.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.Resources+File', i2973[i + 0]) );
   }
-  i1462.files = i1464
-  i1462.componentToPrefabIds = i1463[1]
-  return i1462
+  i2970.files = i2972
+  i2970.componentToPrefabIds = i2971[1]
+  return i2970
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Resources+File"] = function (request, data, root) {
-  var i1468 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Resources+File' )
-  var i1469 = data
-  i1468.path = i1469[0]
-  request.r(i1469[1], i1469[2], 0, i1468, 'unityObject')
-  return i1468
+  var i2976 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Resources+File' )
+  var i2977 = data
+  i2976.path = i2977[0]
+  request.r(i2977[1], i2977[2], 0, i2976, 'unityObject')
+  return i2976
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings"] = function (request, data, root) {
-  var i1470 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings' )
-  var i1471 = data
-  var i1473 = i1471[0]
-  var i1472 = []
-  for(var i = 0; i < i1473.length; i += 1) {
-    i1472.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+ScriptsExecutionOrder', i1473[i + 0]) );
+  var i2978 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings' )
+  var i2979 = data
+  var i2981 = i2979[0]
+  var i2980 = []
+  for(var i = 0; i < i2981.length; i += 1) {
+    i2980.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+ScriptsExecutionOrder', i2981[i + 0]) );
   }
-  i1470.scriptsExecutionOrder = i1472
-  var i1475 = i1471[1]
-  var i1474 = []
-  for(var i = 0; i < i1475.length; i += 1) {
-    i1474.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+SortingLayer', i1475[i + 0]) );
+  i2978.scriptsExecutionOrder = i2980
+  var i2983 = i2979[1]
+  var i2982 = []
+  for(var i = 0; i < i2983.length; i += 1) {
+    i2982.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+SortingLayer', i2983[i + 0]) );
   }
-  i1470.sortingLayers = i1474
-  var i1477 = i1471[2]
-  var i1476 = []
-  for(var i = 0; i < i1477.length; i += 1) {
-    i1476.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+CullingLayer', i1477[i + 0]) );
+  i2978.sortingLayers = i2982
+  var i2985 = i2979[2]
+  var i2984 = []
+  for(var i = 0; i < i2985.length; i += 1) {
+    i2984.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+CullingLayer', i2985[i + 0]) );
   }
-  i1470.cullingLayers = i1476
-  i1470.timeSettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+TimeSettings', i1471[3], i1470.timeSettings)
-  i1470.physicsSettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings', i1471[4], i1470.physicsSettings)
-  i1470.physics2DSettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings', i1471[5], i1470.physics2DSettings)
-  i1470.qualitySettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.QualitySettings', i1471[6], i1470.qualitySettings)
-  i1470.enableRealtimeShadows = !!i1471[7]
-  i1470.enableAutoInstancing = !!i1471[8]
-  i1470.enableDynamicBatching = !!i1471[9]
-  i1470.lightmapEncodingQuality = i1471[10]
-  i1470.desiredColorSpace = i1471[11]
-  var i1479 = i1471[12]
-  var i1478 = []
-  for(var i = 0; i < i1479.length; i += 1) {
-    i1478.push( i1479[i + 0] );
+  i2978.cullingLayers = i2984
+  i2978.timeSettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+TimeSettings', i2979[3], i2978.timeSettings)
+  i2978.physicsSettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings', i2979[4], i2978.physicsSettings)
+  i2978.physics2DSettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings', i2979[5], i2978.physics2DSettings)
+  i2978.qualitySettings = request.d('Luna.Unity.DTO.UnityEngine.Assets.QualitySettings', i2979[6], i2978.qualitySettings)
+  i2978.enableRealtimeShadows = !!i2979[7]
+  i2978.enableAutoInstancing = !!i2979[8]
+  i2978.enableDynamicBatching = !!i2979[9]
+  i2978.lightmapEncodingQuality = i2979[10]
+  i2978.desiredColorSpace = i2979[11]
+  var i2987 = i2979[12]
+  var i2986 = []
+  for(var i = 0; i < i2987.length; i += 1) {
+    i2986.push( i2987[i + 0] );
   }
-  i1470.allTags = i1478
-  return i1470
+  i2978.allTags = i2986
+  return i2978
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+ScriptsExecutionOrder"] = function (request, data, root) {
-  var i1482 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+ScriptsExecutionOrder' )
-  var i1483 = data
-  i1482.name = i1483[0]
-  i1482.value = i1483[1]
-  return i1482
+  var i2990 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+ScriptsExecutionOrder' )
+  var i2991 = data
+  i2990.name = i2991[0]
+  i2990.value = i2991[1]
+  return i2990
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+SortingLayer"] = function (request, data, root) {
-  var i1486 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+SortingLayer' )
-  var i1487 = data
-  i1486.id = i1487[0]
-  i1486.name = i1487[1]
-  i1486.value = i1487[2]
-  return i1486
+  var i2994 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+SortingLayer' )
+  var i2995 = data
+  i2994.id = i2995[0]
+  i2994.name = i2995[1]
+  i2994.value = i2995[2]
+  return i2994
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+CullingLayer"] = function (request, data, root) {
-  var i1490 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+CullingLayer' )
-  var i1491 = data
-  i1490.id = i1491[0]
-  i1490.name = i1491[1]
-  return i1490
+  var i2998 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+CullingLayer' )
+  var i2999 = data
+  i2998.id = i2999[0]
+  i2998.name = i2999[1]
+  return i2998
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+TimeSettings"] = function (request, data, root) {
-  var i1492 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+TimeSettings' )
-  var i1493 = data
-  i1492.fixedDeltaTime = i1493[0]
-  i1492.maximumDeltaTime = i1493[1]
-  i1492.timeScale = i1493[2]
-  i1492.maximumParticleTimestep = i1493[3]
-  return i1492
+  var i3000 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+TimeSettings' )
+  var i3001 = data
+  i3000.fixedDeltaTime = i3001[0]
+  i3000.maximumDeltaTime = i3001[1]
+  i3000.timeScale = i3001[2]
+  i3000.maximumParticleTimestep = i3001[3]
+  return i3000
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings"] = function (request, data, root) {
-  var i1494 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings' )
-  var i1495 = data
-  i1494.gravity = new pc.Vec3( i1495[0], i1495[1], i1495[2] )
-  i1494.defaultSolverIterations = i1495[3]
-  i1494.bounceThreshold = i1495[4]
-  i1494.autoSyncTransforms = !!i1495[5]
-  i1494.autoSimulation = !!i1495[6]
-  var i1497 = i1495[7]
-  var i1496 = []
-  for(var i = 0; i < i1497.length; i += 1) {
-    i1496.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings+CollisionMask', i1497[i + 0]) );
+  var i3002 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings' )
+  var i3003 = data
+  i3002.gravity = new pc.Vec3( i3003[0], i3003[1], i3003[2] )
+  i3002.defaultSolverIterations = i3003[3]
+  i3002.bounceThreshold = i3003[4]
+  i3002.autoSyncTransforms = !!i3003[5]
+  i3002.autoSimulation = !!i3003[6]
+  var i3005 = i3003[7]
+  var i3004 = []
+  for(var i = 0; i < i3005.length; i += 1) {
+    i3004.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings+CollisionMask', i3005[i + 0]) );
   }
-  i1494.collisionMatrix = i1496
-  return i1494
+  i3002.collisionMatrix = i3004
+  return i3002
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings+CollisionMask"] = function (request, data, root) {
-  var i1500 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings+CollisionMask' )
-  var i1501 = data
-  i1500.enabled = !!i1501[0]
-  i1500.layerId = i1501[1]
-  i1500.otherLayerId = i1501[2]
-  return i1500
+  var i3008 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings+CollisionMask' )
+  var i3009 = data
+  i3008.enabled = !!i3009[0]
+  i3008.layerId = i3009[1]
+  i3008.otherLayerId = i3009[2]
+  return i3008
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings"] = function (request, data, root) {
-  var i1502 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings' )
-  var i1503 = data
-  request.r(i1503[0], i1503[1], 0, i1502, 'material')
-  i1502.gravity = new pc.Vec2( i1503[2], i1503[3] )
-  i1502.positionIterations = i1503[4]
-  i1502.velocityIterations = i1503[5]
-  i1502.velocityThreshold = i1503[6]
-  i1502.maxLinearCorrection = i1503[7]
-  i1502.maxAngularCorrection = i1503[8]
-  i1502.maxTranslationSpeed = i1503[9]
-  i1502.maxRotationSpeed = i1503[10]
-  i1502.baumgarteScale = i1503[11]
-  i1502.baumgarteTOIScale = i1503[12]
-  i1502.timeToSleep = i1503[13]
-  i1502.linearSleepTolerance = i1503[14]
-  i1502.angularSleepTolerance = i1503[15]
-  i1502.defaultContactOffset = i1503[16]
-  i1502.autoSimulation = !!i1503[17]
-  i1502.queriesHitTriggers = !!i1503[18]
-  i1502.queriesStartInColliders = !!i1503[19]
-  i1502.callbacksOnDisable = !!i1503[20]
-  i1502.reuseCollisionCallbacks = !!i1503[21]
-  i1502.autoSyncTransforms = !!i1503[22]
-  var i1505 = i1503[23]
-  var i1504 = []
-  for(var i = 0; i < i1505.length; i += 1) {
-    i1504.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings+CollisionMask', i1505[i + 0]) );
+  var i3010 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings' )
+  var i3011 = data
+  request.r(i3011[0], i3011[1], 0, i3010, 'material')
+  i3010.gravity = new pc.Vec2( i3011[2], i3011[3] )
+  i3010.positionIterations = i3011[4]
+  i3010.velocityIterations = i3011[5]
+  i3010.velocityThreshold = i3011[6]
+  i3010.maxLinearCorrection = i3011[7]
+  i3010.maxAngularCorrection = i3011[8]
+  i3010.maxTranslationSpeed = i3011[9]
+  i3010.maxRotationSpeed = i3011[10]
+  i3010.baumgarteScale = i3011[11]
+  i3010.baumgarteTOIScale = i3011[12]
+  i3010.timeToSleep = i3011[13]
+  i3010.linearSleepTolerance = i3011[14]
+  i3010.angularSleepTolerance = i3011[15]
+  i3010.defaultContactOffset = i3011[16]
+  i3010.autoSimulation = !!i3011[17]
+  i3010.queriesHitTriggers = !!i3011[18]
+  i3010.queriesStartInColliders = !!i3011[19]
+  i3010.callbacksOnDisable = !!i3011[20]
+  i3010.reuseCollisionCallbacks = !!i3011[21]
+  i3010.autoSyncTransforms = !!i3011[22]
+  var i3013 = i3011[23]
+  var i3012 = []
+  for(var i = 0; i < i3013.length; i += 1) {
+    i3012.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings+CollisionMask', i3013[i + 0]) );
   }
-  i1502.collisionMatrix = i1504
-  return i1502
+  i3010.collisionMatrix = i3012
+  return i3010
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings+CollisionMask"] = function (request, data, root) {
-  var i1508 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings+CollisionMask' )
-  var i1509 = data
-  i1508.enabled = !!i1509[0]
-  i1508.layerId = i1509[1]
-  i1508.otherLayerId = i1509[2]
-  return i1508
+  var i3016 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings+CollisionMask' )
+  var i3017 = data
+  i3016.enabled = !!i3017[0]
+  i3016.layerId = i3017[1]
+  i3016.otherLayerId = i3017[2]
+  return i3016
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.QualitySettings"] = function (request, data, root) {
-  var i1510 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.QualitySettings' )
-  var i1511 = data
-  var i1513 = i1511[0]
-  var i1512 = []
-  for(var i = 0; i < i1513.length; i += 1) {
-    i1512.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.QualitySettings', i1513[i + 0]) );
+  var i3018 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.QualitySettings' )
+  var i3019 = data
+  var i3021 = i3019[0]
+  var i3020 = []
+  for(var i = 0; i < i3021.length; i += 1) {
+    i3020.push( request.d('Luna.Unity.DTO.UnityEngine.Assets.QualitySettings', i3021[i + 0]) );
   }
-  i1510.qualityLevels = i1512
-  var i1515 = i1511[1]
-  var i1514 = []
-  for(var i = 0; i < i1515.length; i += 1) {
-    i1514.push( i1515[i + 0] );
+  i3018.qualityLevels = i3020
+  var i3023 = i3019[1]
+  var i3022 = []
+  for(var i = 0; i < i3023.length; i += 1) {
+    i3022.push( i3023[i + 0] );
   }
-  i1510.names = i1514
-  i1510.shadows = i1511[2]
-  i1510.anisotropicFiltering = i1511[3]
-  i1510.antiAliasing = i1511[4]
-  i1510.lodBias = i1511[5]
-  i1510.shadowCascades = i1511[6]
-  i1510.shadowDistance = i1511[7]
-  i1510.shadowmaskMode = i1511[8]
-  i1510.shadowProjection = i1511[9]
-  i1510.shadowResolution = i1511[10]
-  i1510.softParticles = !!i1511[11]
-  i1510.softVegetation = !!i1511[12]
-  i1510.activeColorSpace = i1511[13]
-  i1510.desiredColorSpace = i1511[14]
-  i1510.masterTextureLimit = i1511[15]
-  i1510.maxQueuedFrames = i1511[16]
-  i1510.particleRaycastBudget = i1511[17]
-  i1510.pixelLightCount = i1511[18]
-  i1510.realtimeReflectionProbes = !!i1511[19]
-  i1510.shadowCascade2Split = i1511[20]
-  i1510.shadowCascade4Split = new pc.Vec3( i1511[21], i1511[22], i1511[23] )
-  i1510.streamingMipmapsActive = !!i1511[24]
-  i1510.vSyncCount = i1511[25]
-  i1510.asyncUploadBufferSize = i1511[26]
-  i1510.asyncUploadTimeSlice = i1511[27]
-  i1510.billboardsFaceCameraPosition = !!i1511[28]
-  i1510.shadowNearPlaneOffset = i1511[29]
-  i1510.streamingMipmapsMemoryBudget = i1511[30]
-  i1510.maximumLODLevel = i1511[31]
-  i1510.streamingMipmapsAddAllCameras = !!i1511[32]
-  i1510.streamingMipmapsMaxLevelReduction = i1511[33]
-  i1510.streamingMipmapsRenderersPerFrame = i1511[34]
-  i1510.resolutionScalingFixedDPIFactor = i1511[35]
-  i1510.streamingMipmapsMaxFileIORequests = i1511[36]
-  i1510.currentQualityLevel = i1511[37]
-  return i1510
+  i3018.names = i3022
+  i3018.shadows = i3019[2]
+  i3018.anisotropicFiltering = i3019[3]
+  i3018.antiAliasing = i3019[4]
+  i3018.lodBias = i3019[5]
+  i3018.shadowCascades = i3019[6]
+  i3018.shadowDistance = i3019[7]
+  i3018.shadowmaskMode = i3019[8]
+  i3018.shadowProjection = i3019[9]
+  i3018.shadowResolution = i3019[10]
+  i3018.softParticles = !!i3019[11]
+  i3018.softVegetation = !!i3019[12]
+  i3018.activeColorSpace = i3019[13]
+  i3018.desiredColorSpace = i3019[14]
+  i3018.masterTextureLimit = i3019[15]
+  i3018.maxQueuedFrames = i3019[16]
+  i3018.particleRaycastBudget = i3019[17]
+  i3018.pixelLightCount = i3019[18]
+  i3018.realtimeReflectionProbes = !!i3019[19]
+  i3018.shadowCascade2Split = i3019[20]
+  i3018.shadowCascade4Split = new pc.Vec3( i3019[21], i3019[22], i3019[23] )
+  i3018.streamingMipmapsActive = !!i3019[24]
+  i3018.vSyncCount = i3019[25]
+  i3018.asyncUploadBufferSize = i3019[26]
+  i3018.asyncUploadTimeSlice = i3019[27]
+  i3018.billboardsFaceCameraPosition = !!i3019[28]
+  i3018.shadowNearPlaneOffset = i3019[29]
+  i3018.streamingMipmapsMemoryBudget = i3019[30]
+  i3018.maximumLODLevel = i3019[31]
+  i3018.streamingMipmapsAddAllCameras = !!i3019[32]
+  i3018.streamingMipmapsMaxLevelReduction = i3019[33]
+  i3018.streamingMipmapsRenderersPerFrame = i3019[34]
+  i3018.resolutionScalingFixedDPIFactor = i3019[35]
+  i3018.streamingMipmapsMaxFileIORequests = i3019[36]
+  i3018.currentQualityLevel = i3019[37]
+  return i3018
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShapeFrame"] = function (request, data, root) {
-  var i1520 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShapeFrame' )
-  var i1521 = data
-  i1520.weight = i1521[0]
-  i1520.vertices = i1521[1]
-  i1520.normals = i1521[2]
-  i1520.tangents = i1521[3]
-  return i1520
+  var i3028 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShapeFrame' )
+  var i3029 = data
+  i3028.weight = i3029[0]
+  i3028.vertices = i3029[1]
+  i3028.normals = i3029[2]
+  i3028.tangents = i3029[3]
+  return i3028
 }
 
 Deserializers["Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition"] = function (request, data, root) {
-  var i1524 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition' )
-  var i1525 = data
-  i1524.mode = i1525[0]
-  i1524.parameter = i1525[1]
-  i1524.threshold = i1525[2]
-  return i1524
+  var i3032 = root || request.c( 'Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition' )
+  var i3033 = data
+  i3032.mode = i3033[0]
+  i3032.parameter = i3033[1]
+  i3032.threshold = i3033[2]
+  return i3032
 }
 
 Deserializers["TMPro.GlyphValueRecord_Legacy"] = function (request, data, root) {
-  var i1526 = root || request.c( 'TMPro.GlyphValueRecord_Legacy' )
-  var i1527 = data
-  i1526.xPlacement = i1527[0]
-  i1526.yPlacement = i1527[1]
-  i1526.xAdvance = i1527[2]
-  i1526.yAdvance = i1527[3]
-  return i1526
+  var i3034 = root || request.c( 'TMPro.GlyphValueRecord_Legacy' )
+  var i3035 = data
+  i3034.xPlacement = i3035[0]
+  i3034.yPlacement = i3035[1]
+  i3034.xAdvance = i3035[2]
+  i3034.yAdvance = i3035[3]
+  return i3034
 }
 
 Deserializers["TMPro.TMP_GlyphAdjustmentRecord"] = function (request, data, root) {
-  var i1528 = root || request.c( 'TMPro.TMP_GlyphAdjustmentRecord' )
-  var i1529 = data
-  i1528.m_GlyphIndex = i1529[0]
-  i1528.m_GlyphValueRecord = request.d('TMPro.TMP_GlyphValueRecord', i1529[1], i1528.m_GlyphValueRecord)
-  return i1528
+  var i3036 = root || request.c( 'TMPro.TMP_GlyphAdjustmentRecord' )
+  var i3037 = data
+  i3036.m_GlyphIndex = i3037[0]
+  i3036.m_GlyphValueRecord = request.d('TMPro.TMP_GlyphValueRecord', i3037[1], i3036.m_GlyphValueRecord)
+  return i3036
 }
 
 Deserializers["TMPro.TMP_GlyphValueRecord"] = function (request, data, root) {
-  var i1530 = root || request.c( 'TMPro.TMP_GlyphValueRecord' )
-  var i1531 = data
-  i1530.m_XPlacement = i1531[0]
-  i1530.m_YPlacement = i1531[1]
-  i1530.m_XAdvance = i1531[2]
-  i1530.m_YAdvance = i1531[3]
-  return i1530
+  var i3038 = root || request.c( 'TMPro.TMP_GlyphValueRecord' )
+  var i3039 = data
+  i3038.m_XPlacement = i3039[0]
+  i3038.m_YPlacement = i3039[1]
+  i3038.m_XAdvance = i3039[2]
+  i3038.m_YAdvance = i3039[3]
+  return i3038
 }
 
 Deserializers.fields = {"Luna.Unity.DTO.UnityEngine.Textures.Texture2D":{"name":0,"width":1,"height":2,"mipmapCount":3,"anisoLevel":4,"filterMode":5,"hdr":6,"format":7,"wrapMode":8,"alphaIsTransparency":9,"alphaSource":10,"graphicsFormat":11,"sRGBTexture":12,"desiredColorSpace":13,"wrapU":14,"wrapV":15},"Luna.Unity.DTO.UnityEngine.Components.RectTransform":{"pivot":0,"anchorMin":2,"anchorMax":4,"sizeDelta":6,"anchoredPosition3D":8,"rotation":11,"scale":15},"Luna.Unity.DTO.UnityEngine.Components.CanvasRenderer":{"cullTransparentMesh":0},"Luna.Unity.DTO.UnityEngine.Scene.GameObject":{"name":0,"tagId":1,"enabled":2,"isStatic":3,"layer":4},"Luna.Unity.DTO.UnityEngine.Assets.Material":{"name":0,"shader":1,"renderQueue":3,"enableInstancing":4,"floatParameters":5,"colorParameters":6,"vectorParameters":7,"textureParameters":8,"materialFlags":9},"Luna.Unity.DTO.UnityEngine.Assets.Material+FloatParameter":{"name":0,"value":1},"Luna.Unity.DTO.UnityEngine.Assets.Material+ColorParameter":{"name":0,"value":1},"Luna.Unity.DTO.UnityEngine.Assets.Material+VectorParameter":{"name":0,"value":1},"Luna.Unity.DTO.UnityEngine.Assets.Material+TextureParameter":{"name":0,"value":1},"Luna.Unity.DTO.UnityEngine.Assets.Material+MaterialFlag":{"name":0,"enabled":1},"Luna.Unity.DTO.UnityEngine.Components.Transform":{"position":0,"scale":3,"rotation":6},"Luna.Unity.DTO.UnityEngine.Components.ParticleSystem":{"main":0,"colorBySpeed":1,"colorOverLifetime":2,"emission":3,"rotationBySpeed":4,"rotationOverLifetime":5,"shape":6,"sizeBySpeed":7,"sizeOverLifetime":8,"textureSheetAnimation":9,"velocityOverLifetime":10,"noise":11,"inheritVelocity":12,"forceOverLifetime":13,"limitVelocityOverLifetime":14,"useAutoRandomSeed":15,"randomSeed":16},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.MainModule":{"duration":0,"loop":1,"prewarm":2,"startDelay":3,"startLifetime":4,"startSpeed":5,"startSize3D":6,"startSizeX":7,"startSizeY":8,"startSizeZ":9,"startRotation3D":10,"startRotationX":11,"startRotationY":12,"startRotationZ":13,"startColor":14,"gravityModifier":15,"simulationSpace":16,"customSimulationSpace":17,"simulationSpeed":19,"useUnscaledTime":20,"scalingMode":21,"playOnAwake":22,"maxParticles":23,"emitterVelocityMode":24,"stopAction":25},"Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxCurve":{"mode":0,"curveMin":1,"curveMax":2,"curveMultiplier":3,"constantMin":4,"constantMax":5},"Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.MinMaxGradient":{"mode":0,"gradientMin":1,"gradientMax":2,"colorMin":3,"colorMax":7},"Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Gradient":{"mode":0,"colorKeys":1,"alphaKeys":2},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorBySpeedModule":{"enabled":0,"color":1,"range":2},"Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientColorKey":{"color":0,"time":4},"Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Data.GradientAlphaKey":{"alpha":0,"time":1},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ColorOverLifetimeModule":{"enabled":0,"color":1},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.EmissionModule":{"enabled":0,"rateOverTime":1,"rateOverDistance":2,"bursts":3},"Luna.Unity.DTO.UnityEngine.ParticleSystemTypes.Burst":{"count":0,"cycleCount":1,"minCount":2,"maxCount":3,"repeatInterval":4,"time":5},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationBySpeedModule":{"enabled":0,"x":1,"y":2,"z":3,"separateAxes":4,"range":5},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.RotationOverLifetimeModule":{"enabled":0,"x":1,"y":2,"z":3,"separateAxes":4},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ShapeModule":{"enabled":0,"shapeType":1,"randomDirectionAmount":2,"sphericalDirectionAmount":3,"randomPositionAmount":4,"alignToDirection":5,"radius":6,"radiusMode":7,"radiusSpread":8,"radiusSpeed":9,"radiusThickness":10,"angle":11,"length":12,"boxThickness":13,"meshShapeType":16,"mesh":17,"meshRenderer":19,"skinnedMeshRenderer":21,"useMeshMaterialIndex":23,"meshMaterialIndex":24,"useMeshColors":25,"normalOffset":26,"arc":27,"arcMode":28,"arcSpread":29,"arcSpeed":30,"donutRadius":31,"position":32,"rotation":35,"scale":38},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeBySpeedModule":{"enabled":0,"x":1,"y":2,"z":3,"separateAxes":4,"range":5},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.SizeOverLifetimeModule":{"enabled":0,"x":1,"y":2,"z":3,"separateAxes":4},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.TextureSheetAnimationModule":{"enabled":0,"mode":1,"animation":2,"numTilesX":3,"numTilesY":4,"useRandomRow":5,"frameOverTime":6,"startFrame":7,"cycleCount":8,"rowIndex":9,"flipU":10,"flipV":11,"spriteCount":12,"sprites":13},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.VelocityOverLifetimeModule":{"enabled":0,"x":1,"y":2,"z":3,"radial":4,"speedModifier":5,"space":6,"orbitalX":7,"orbitalY":8,"orbitalZ":9,"orbitalOffsetX":10,"orbitalOffsetY":11,"orbitalOffsetZ":12},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.NoiseModule":{"enabled":0,"separateAxes":1,"strengthX":2,"strengthY":3,"strengthZ":4,"frequency":5,"damping":6,"octaveCount":7,"octaveMultiplier":8,"octaveScale":9,"quality":10,"scrollSpeed":11,"scrollSpeedMultiplier":12,"remapEnabled":13,"remapX":14,"remapY":15,"remapZ":16,"positionAmount":17,"rotationAmount":18,"sizeAmount":19},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.InheritVelocityModule":{"enabled":0,"mode":1,"curve":2},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.ForceOverLifetimeModule":{"enabled":0,"x":1,"y":2,"z":3,"space":4,"randomized":5},"Luna.Unity.DTO.UnityEngine.ParticleSystemModules.LimitVelocityOverLifetimeModule":{"enabled":0,"limit":1,"limitX":2,"limitY":3,"limitZ":4,"dampen":5,"separateAxes":6,"space":7,"drag":8,"multiplyDragByParticleSize":9,"multiplyDragByParticleVelocity":10},"Luna.Unity.DTO.UnityEngine.Components.ParticleSystemRenderer":{"enabled":0,"sharedMaterial":1,"sharedMaterials":3,"receiveShadows":4,"shadowCastingMode":5,"sortingLayerID":6,"sortingOrder":7,"lightmapIndex":8,"lightmapSceneIndex":9,"lightmapScaleOffset":10,"lightProbeUsage":14,"reflectionProbeUsage":15,"mesh":16,"meshCount":18,"activeVertexStreamsCount":19,"alignment":20,"renderMode":21,"sortMode":22,"lengthScale":23,"velocityScale":24,"cameraVelocityScale":25,"normalDirection":26,"sortingFudge":27,"minParticleSize":28,"maxParticleSize":29,"pivot":30,"trailMaterial":33},"Luna.Unity.DTO.UnityEngine.Components.Light":{"enabled":0,"type":1,"color":2,"cullingMask":6,"intensity":7,"range":8,"spotAngle":9,"shadows":10,"shadowNormalBias":11,"shadowBias":12,"shadowStrength":13,"shadowResolution":14,"lightmapBakeType":15,"renderMode":16,"cookie":17,"cookieSize":19},"Luna.Unity.DTO.UnityEngine.Assets.Mesh":{"name":0,"halfPrecision":1,"useUInt32IndexFormat":2,"vertexCount":3,"aabb":4,"streams":5,"vertices":6,"subMeshes":7,"bindposes":8,"blendShapes":9},"Luna.Unity.DTO.UnityEngine.Assets.Mesh+SubMesh":{"triangles":0},"Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShape":{"name":0,"frames":1},"Luna.Unity.DTO.UnityEngine.Components.TrailRenderer":{"enabled":0,"sharedMaterial":1,"sharedMaterials":3,"receiveShadows":4,"shadowCastingMode":5,"sortingLayerID":6,"sortingOrder":7,"lightmapIndex":8,"lightmapSceneIndex":9,"lightmapScaleOffset":10,"lightProbeUsage":14,"reflectionProbeUsage":15,"positions":16,"positionCount":17,"time":18,"startWidth":19,"endWidth":20,"widthMultiplier":21,"autodestruct":22,"emitting":23,"numCornerVertices":24,"numCapVertices":25,"minVertexDistance":26,"colorGradient":27,"startColor":28,"endColor":32,"generateLightingData":36,"textureMode":37,"alignment":38,"widthCurve":39},"Luna.Unity.DTO.UnityEngine.Scene.Scene":{"name":0,"index":1,"startup":2},"Luna.Unity.DTO.UnityEngine.Components.Camera":{"enabled":0,"aspect":1,"orthographic":2,"orthographicSize":3,"backgroundColor":4,"nearClipPlane":8,"farClipPlane":9,"fieldOfView":10,"depth":11,"clearFlags":12,"cullingMask":13,"rect":14,"targetTexture":15,"usePhysicalProperties":17,"focalLength":18,"sensorSize":19,"lensShift":21,"gateFit":23,"commandBufferCount":24,"cameraType":25},"Luna.Unity.DTO.UnityEngine.Components.Canvas":{"enabled":0,"planeDistance":1,"referencePixelsPerUnit":2,"isFallbackOverlay":3,"renderMode":4,"renderOrder":5,"sortingLayerName":6,"sortingOrder":7,"scaleFactor":8,"worldCamera":9,"overrideSorting":11,"pixelPerfect":12,"targetDisplay":13,"overridePixelPerfect":14},"Luna.Unity.DTO.UnityEngine.Components.CanvasGroup":{"m_Alpha":0,"m_Interactable":1,"m_BlocksRaycasts":2,"m_IgnoreParentGroups":3,"enabled":4},"Luna.Unity.DTO.UnityEngine.Components.SpriteRenderer":{"enabled":0,"sharedMaterial":1,"sharedMaterials":3,"receiveShadows":4,"shadowCastingMode":5,"sortingLayerID":6,"sortingOrder":7,"lightmapIndex":8,"lightmapSceneIndex":9,"lightmapScaleOffset":10,"lightProbeUsage":14,"reflectionProbeUsage":15,"color":16,"sprite":20,"flipX":22,"flipY":23,"drawMode":24,"size":25,"tileMode":27,"adaptiveModeThreshold":28,"maskInteraction":29,"spriteSortPoint":30},"Luna.Unity.DTO.UnityEngine.Components.Animator":{"animatorController":0,"avatar":2,"updateMode":4,"hasTransformHierarchy":5,"applyRootMotion":6,"humanBones":7,"enabled":8},"Luna.Unity.DTO.UnityEngine.Assets.RenderSettings":{"ambientIntensity":0,"reflectionIntensity":1,"ambientMode":2,"ambientLight":3,"ambientSkyColor":7,"ambientGroundColor":11,"ambientEquatorColor":15,"fogColor":19,"fogEndDistance":23,"fogStartDistance":24,"fogDensity":25,"fog":26,"skybox":27,"fogMode":29,"lightmaps":30,"lightProbes":31,"lightmapsMode":32,"mixedBakeMode":33,"environmentLightingMode":34,"ambientProbe":35,"referenceAmbientProbe":36,"useReferenceAmbientProbe":37,"customReflection":38,"defaultReflection":40,"defaultReflectionMode":42,"defaultReflectionResolution":43,"sunLightObjectId":44,"pixelLightCount":45,"defaultReflectionHDR":46,"hasLightDataAsset":47,"hasManualGenerate":48},"Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+Lightmap":{"lightmapColor":0,"lightmapDirection":2},"Luna.Unity.DTO.UnityEngine.Assets.RenderSettings+LightProbes":{"bakedProbes":0,"positions":1,"hullRays":2,"tetrahedra":3,"neighbours":4,"matrices":5},"Luna.Unity.DTO.UnityEngine.Assets.Shader":{"ShaderCompilationErrors":0,"name":1,"guid":2,"shaderDefinedKeywords":3,"passes":4,"usePasses":5,"defaultParameterValues":6,"unityFallbackShader":7,"readDepth":9,"isCreatedByShaderGraph":10,"compiled":11},"Luna.Unity.DTO.UnityEngine.Assets.Shader+ShaderCompilationError":{"shaderName":0,"errorMessage":1},"Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass":{"id":0,"subShaderIndex":1,"name":2,"passType":3,"grabPassTextureName":4,"usePass":5,"zTest":6,"zWrite":7,"culling":8,"blending":9,"alphaBlending":10,"colorWriteMask":11,"offsetUnits":12,"offsetFactor":13,"stencilRef":14,"stencilReadMask":15,"stencilWriteMask":16,"stencilOp":17,"stencilOpFront":18,"stencilOpBack":19,"tags":20,"passDefinedKeywords":21,"passDefinedKeywordGroups":22,"variants":23,"excludedVariants":24,"hasDepthReader":25},"Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Value":{"val":0,"name":1},"Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Blending":{"src":0,"dst":1,"op":2},"Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+StencilOp":{"pass":0,"fail":1,"zFail":2,"comp":3},"Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Tag":{"name":0,"value":1},"Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+KeywordGroup":{"keywords":0,"hasDiscard":1},"Luna.Unity.DTO.UnityEngine.Assets.Shader+Pass+Variant":{"passId":0,"subShaderIndex":1,"keywords":2,"vertexProgram":3,"fragmentProgram":4,"exportedForWebGl2":5,"readDepth":6},"Luna.Unity.DTO.UnityEngine.Assets.Shader+UsePass":{"shader":0,"pass":2},"Luna.Unity.DTO.UnityEngine.Assets.Shader+DefaultParameterValue":{"name":0,"type":1,"value":2,"textureValue":6,"shaderPropertyFlag":7},"Luna.Unity.DTO.UnityEngine.Textures.Sprite":{"name":0,"texture":1,"aabb":3,"vertices":4,"triangles":5,"textureRect":6,"packedRect":10,"border":14,"transparency":18,"bounds":19,"pixelsPerUnit":20,"textureWidth":21,"textureHeight":22,"nativeSize":23,"pivot":25,"textureRectOffset":27},"Luna.Unity.DTO.UnityEngine.Assets.AudioClip":{"name":0},"Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip":{"name":0,"wrapMode":1,"isLooping":2,"length":3,"curves":4,"events":5,"halfPrecision":6,"_frameRate":7,"localBounds":8,"hasMuscleCurves":9,"clipMuscleConstant":10,"clipBindingConstant":11},"Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve":{"path":0,"hash":1,"componentType":2,"property":3,"keys":4,"objectReferenceKeys":5},"Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationCurve+ObjectReferenceKey":{"time":0,"value":1},"Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationEvent":{"functionName":0,"floatParameter":1,"intParameter":2,"stringParameter":3,"objectReferenceParameter":4,"time":6},"Luna.Unity.DTO.UnityEngine.Animation.Data.Bounds":{"center":0,"extends":3},"Luna.Unity.DTO.UnityEngine.Animation.Data.AnimationClip+AnimationClipBindingConstant":{"genericBindings":0,"pptrCurveMapping":1},"Luna.Unity.DTO.UnityEngine.Assets.Font":{"name":0,"ascent":1,"originalLineHeight":2,"fontSize":3,"characterInfo":4,"texture":5,"originalFontSize":7},"Luna.Unity.DTO.UnityEngine.Assets.Font+CharacterInfo":{"index":0,"advance":1,"bearing":2,"glyphWidth":3,"glyphHeight":4,"minX":5,"maxX":6,"minY":7,"maxY":8,"uvBottomLeftX":9,"uvBottomLeftY":10,"uvBottomRightX":11,"uvBottomRightY":12,"uvTopLeftX":13,"uvTopLeftY":14,"uvTopRightX":15,"uvTopRightY":16},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorController":{"name":0,"layers":1,"parameters":2,"animationClips":3,"avatarUnsupported":4},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerLayer":{"name":0,"defaultWeight":1,"blendingMode":2,"avatarMask":3,"syncedLayerIndex":4,"syncedLayerAffectsTiming":5,"syncedLayers":6,"stateMachine":7},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateMachine":{"id":0,"name":1,"path":2,"states":3,"machines":4,"entryStateTransitions":5,"exitStateTransitions":6,"anyStateTransitions":7,"defaultStateId":8},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorState":{"id":0,"name":1,"cycleOffset":2,"cycleOffsetParameter":3,"cycleOffsetParameterActive":4,"mirror":5,"mirrorParameter":6,"mirrorParameterActive":7,"motionId":8,"nameHash":9,"fullPathHash":10,"speed":11,"speedParameter":12,"speedParameterActive":13,"tag":14,"tagHash":15,"writeDefaultValues":16,"behaviours":17,"transitions":18},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorStateTransition":{"fullPath":0,"canTransitionToSelf":1,"duration":2,"exitTime":3,"hasExitTime":4,"hasFixedDuration":5,"interruptionSource":6,"offset":7,"orderedInterruption":8,"destinationStateId":9,"isExit":10,"mute":11,"solo":12,"conditions":13},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorTransition":{"destinationStateId":0,"isExit":1,"mute":2,"solo":3,"conditions":4},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorControllerParameter":{"defaultBool":0,"defaultFloat":1,"defaultInt":2,"name":3,"nameHash":4,"type":5},"Luna.Unity.DTO.UnityEngine.Assets.TextAsset":{"name":0,"bytes64":1,"data":2},"Luna.Unity.DTO.UnityEngine.Assets.Resources":{"files":0,"componentToPrefabIds":1},"Luna.Unity.DTO.UnityEngine.Assets.Resources+File":{"path":0,"unityObject":1},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings":{"scriptsExecutionOrder":0,"sortingLayers":1,"cullingLayers":2,"timeSettings":3,"physicsSettings":4,"physics2DSettings":5,"qualitySettings":6,"enableRealtimeShadows":7,"enableAutoInstancing":8,"enableDynamicBatching":9,"lightmapEncodingQuality":10,"desiredColorSpace":11,"allTags":12},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+ScriptsExecutionOrder":{"name":0,"value":1},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+SortingLayer":{"id":0,"name":1,"value":2},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+CullingLayer":{"id":0,"name":1},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+TimeSettings":{"fixedDeltaTime":0,"maximumDeltaTime":1,"timeScale":2,"maximumParticleTimestep":3},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings":{"gravity":0,"defaultSolverIterations":3,"bounceThreshold":4,"autoSyncTransforms":5,"autoSimulation":6,"collisionMatrix":7},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+PhysicsSettings+CollisionMask":{"enabled":0,"layerId":1,"otherLayerId":2},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings":{"material":0,"gravity":2,"positionIterations":4,"velocityIterations":5,"velocityThreshold":6,"maxLinearCorrection":7,"maxAngularCorrection":8,"maxTranslationSpeed":9,"maxRotationSpeed":10,"baumgarteScale":11,"baumgarteTOIScale":12,"timeToSleep":13,"linearSleepTolerance":14,"angularSleepTolerance":15,"defaultContactOffset":16,"autoSimulation":17,"queriesHitTriggers":18,"queriesStartInColliders":19,"callbacksOnDisable":20,"reuseCollisionCallbacks":21,"autoSyncTransforms":22,"collisionMatrix":23},"Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings+Physics2DSettings+CollisionMask":{"enabled":0,"layerId":1,"otherLayerId":2},"Luna.Unity.DTO.UnityEngine.Assets.QualitySettings":{"qualityLevels":0,"names":1,"shadows":2,"anisotropicFiltering":3,"antiAliasing":4,"lodBias":5,"shadowCascades":6,"shadowDistance":7,"shadowmaskMode":8,"shadowProjection":9,"shadowResolution":10,"softParticles":11,"softVegetation":12,"activeColorSpace":13,"desiredColorSpace":14,"masterTextureLimit":15,"maxQueuedFrames":16,"particleRaycastBudget":17,"pixelLightCount":18,"realtimeReflectionProbes":19,"shadowCascade2Split":20,"shadowCascade4Split":21,"streamingMipmapsActive":24,"vSyncCount":25,"asyncUploadBufferSize":26,"asyncUploadTimeSlice":27,"billboardsFaceCameraPosition":28,"shadowNearPlaneOffset":29,"streamingMipmapsMemoryBudget":30,"maximumLODLevel":31,"streamingMipmapsAddAllCameras":32,"streamingMipmapsMaxLevelReduction":33,"streamingMipmapsRenderersPerFrame":34,"resolutionScalingFixedDPIFactor":35,"streamingMipmapsMaxFileIORequests":36,"currentQualityLevel":37},"Luna.Unity.DTO.UnityEngine.Assets.Mesh+BlendShapeFrame":{"weight":0,"vertices":1,"normals":2,"tangents":3},"Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AnimatorCondition":{"mode":0,"parameter":1,"threshold":2}}
 
-Deserializers.requiredComponents = {"66":[67],"68":[67],"69":[67],"70":[67],"71":[67],"72":[67],"73":[74],"75":[27],"76":[77],"78":[77],"79":[77],"80":[77],"81":[77],"82":[77],"83":[77],"84":[85],"86":[85],"87":[85],"88":[85],"89":[85],"90":[85],"91":[85],"92":[85],"93":[85],"94":[85],"95":[85],"96":[85],"97":[85],"98":[27],"99":[100],"101":[102],"103":[102],"29":[0],"20":[17],"104":[17],"105":[17],"106":[27],"107":[108],"109":[0],"110":[1,0],"111":[100],"43":[1,0],"112":[51,100],"113":[100],"114":[100,115],"116":[77],"117":[85],"118":[108],"119":[120],"121":[50],"122":[27],"123":[124],"125":[0],"126":[100,0],"5":[0,1],"127":[0],"128":[1,0],"129":[100],"130":[1,0],"131":[0],"132":[133],"134":[133],"135":[133],"136":[0],"137":[0],"31":[29],"4":[1,0],"138":[0],"30":[29],"139":[0],"46":[0],"44":[0],"140":[0],"141":[0],"142":[0],"143":[0],"47":[0],"144":[0],"145":[1,0],"146":[0],"147":[0],"148":[0],"149":[0],"150":[1,0],"151":[0],"152":[55],"153":[55],"56":[55],"154":[55],"155":[27],"156":[27]}
+Deserializers.requiredComponents = {"65":[66],"67":[66],"68":[66],"69":[66],"70":[66],"71":[66],"72":[73],"74":[27],"75":[76],"77":[76],"78":[76],"79":[76],"80":[76],"81":[76],"82":[76],"83":[84],"85":[84],"86":[84],"87":[84],"88":[84],"89":[84],"90":[84],"91":[84],"92":[84],"93":[84],"94":[84],"95":[84],"96":[84],"97":[27],"98":[99],"100":[101],"102":[101],"29":[0],"20":[17],"103":[17],"104":[17],"105":[27],"106":[107],"108":[0],"109":[1,0],"110":[99],"43":[1,0],"111":[51,99],"112":[99],"113":[99,114],"115":[76],"116":[84],"117":[107],"118":[119],"120":[50],"121":[27],"122":[123],"124":[0],"125":[99,0],"5":[0,1],"126":[0],"127":[1,0],"128":[99],"129":[1,0],"130":[0],"131":[132],"133":[132],"134":[132],"135":[0],"136":[0],"31":[29],"4":[1,0],"137":[0],"30":[29],"138":[0],"46":[0],"44":[0],"139":[0],"140":[0],"141":[0],"142":[0],"47":[0],"143":[0],"144":[1,0],"145":[0],"146":[0],"147":[0],"148":[0],"149":[1,0],"150":[0],"151":[54],"152":[54],"55":[54],"153":[54],"154":[27],"155":[27]}
 
-Deserializers.types = ["UnityEngine.RectTransform","UnityEngine.CanvasRenderer","UnityEngine.MonoBehaviour","Item","UnityEngine.UI.Image","TMPro.TextMeshProUGUI","UnityEngine.Sprite","ItemData","UnityEngine.EventSystems.UIBehaviour","TMPro.TMP_FontAsset","UnityEngine.Material","UnityEngine.Shader","UnityEngine.Texture2D","TileCell","TileData","Tile","UnityEngine.Transform","UnityEngine.ParticleSystem","UnityEngine.ParticleSystemRenderer","UnityEngine.Mesh","CartoonFX.CFXR_Effect","UnityEngine.Light","AnimatedTile","UnityEngine.GameObject","UnityEngine.TrailRenderer","StateEvents","PositionTracking","UnityEngine.Camera","UnityEngine.AudioListener","UnityEngine.Canvas","UnityEngine.UI.CanvasScaler","UnityEngine.UI.GraphicRaycaster","BasicFade","UnityEngine.CanvasGroup","AppearAnimation","PlayerGuide","UnityEngine.UI.Button","GameManager","RectAnimator","TileManager","DynamitePowerup","DynamiteEffect","SpecialTileManager","Spine.Unity.SkeletonGraphic","UnityEngine.UI.HorizontalLayoutGroup","UIMoveTo","UnityEngine.UI.GridLayoutGroup","UnityEngine.UI.Mask","Spine.Unity.SkeletonDataAsset","AnimatedTileSpawner","UnityEngine.SpriteRenderer","UnityEngine.Animator","UnityEditor.Animations.AnimatorController","MergeHands","PNGSequencer","UnityEngine.EventSystems.EventSystem","UnityEngine.EventSystems.StandaloneInputModule","AudioManager","AudioLibrary","UnityEngine.Font","Spine.Unity.SpineAtlasAsset","UnityEngine.TextAsset","UnityEngine.AudioClip","TMPro.TMP_Settings","TMPro.TMP_SpriteAsset","TMPro.TMP_StyleSheet","UnityEngine.AudioLowPassFilter","UnityEngine.AudioBehaviour","UnityEngine.AudioHighPassFilter","UnityEngine.AudioReverbFilter","UnityEngine.AudioDistortionFilter","UnityEngine.AudioEchoFilter","UnityEngine.AudioChorusFilter","UnityEngine.Cloth","UnityEngine.SkinnedMeshRenderer","UnityEngine.FlareLayer","UnityEngine.ConstantForce","UnityEngine.Rigidbody","UnityEngine.Joint","UnityEngine.HingeJoint","UnityEngine.SpringJoint","UnityEngine.FixedJoint","UnityEngine.CharacterJoint","UnityEngine.ConfigurableJoint","UnityEngine.CompositeCollider2D","UnityEngine.Rigidbody2D","UnityEngine.Joint2D","UnityEngine.AnchoredJoint2D","UnityEngine.SpringJoint2D","UnityEngine.DistanceJoint2D","UnityEngine.FrictionJoint2D","UnityEngine.HingeJoint2D","UnityEngine.RelativeJoint2D","UnityEngine.SliderJoint2D","UnityEngine.TargetJoint2D","UnityEngine.FixedJoint2D","UnityEngine.WheelJoint2D","UnityEngine.ConstantForce2D","UnityEngine.StreamingController","UnityEngine.TextMesh","UnityEngine.MeshRenderer","UnityEngine.Tilemaps.TilemapRenderer","UnityEngine.Tilemaps.Tilemap","UnityEngine.Tilemaps.TilemapCollider2D","CartoonFX.CFXR_EmissionBySurface","CartoonFX.CFXR_ParticleText","Kino.Bloom","Spine.Unity.EditorSkeletonPlayer","Spine.Unity.ISkeletonAnimation","Spine.Unity.BoneFollowerGraphic","Spine.Unity.SkeletonSubmeshGraphic","Spine.Unity.SkeletonAnimation","Spine.Unity.SkeletonMecanim","Spine.Unity.SkeletonRenderer","Spine.Unity.SkeletonPartsRenderer","UnityEngine.MeshFilter","Spine.Unity.FollowLocationRigidbody","Spine.Unity.FollowLocationRigidbody2D","Spine.Unity.SkeletonUtility","Spine.Unity.SkeletonUtilityConstraint","Spine.Unity.SkeletonUtilityBone","UnityEngine.U2D.Animation.SpriteSkin","UnityEngine.U2D.PixelPerfectCamera","UnityEngine.U2D.SpriteShapeController","UnityEngine.U2D.SpriteShapeRenderer","TMPro.TextContainer","TMPro.TextMeshPro","TMPro.TMP_Dropdown","TMPro.TMP_SelectionCaret","TMPro.TMP_SubMesh","TMPro.TMP_SubMeshUI","TMPro.TMP_Text","Unity.VisualScripting.SceneVariables","Unity.VisualScripting.Variables","Unity.VisualScripting.ScriptMachine","Unity.VisualScripting.StateMachine","UnityEngine.UI.Dropdown","UnityEngine.UI.Graphic","UnityEngine.UI.AspectRatioFitter","UnityEngine.UI.ContentSizeFitter","UnityEngine.UI.HorizontalOrVerticalLayoutGroup","UnityEngine.UI.LayoutElement","UnityEngine.UI.LayoutGroup","UnityEngine.UI.VerticalLayoutGroup","UnityEngine.UI.MaskableGraphic","UnityEngine.UI.RawImage","UnityEngine.UI.RectMask2D","UnityEngine.UI.Scrollbar","UnityEngine.UI.ScrollRect","UnityEngine.UI.Slider","UnityEngine.UI.Text","UnityEngine.UI.Toggle","UnityEngine.EventSystems.BaseInputModule","UnityEngine.EventSystems.PointerInputModule","UnityEngine.EventSystems.TouchInputModule","UnityEngine.EventSystems.Physics2DRaycaster","UnityEngine.EventSystems.PhysicsRaycaster"]
+Deserializers.types = ["UnityEngine.RectTransform","UnityEngine.CanvasRenderer","UnityEngine.MonoBehaviour","Item","UnityEngine.UI.Image","TMPro.TextMeshProUGUI","UnityEngine.Sprite","ItemData","UnityEngine.EventSystems.UIBehaviour","TMPro.TMP_FontAsset","UnityEngine.Material","UnityEngine.Shader","UnityEngine.Texture2D","TileCell","TileData","Tile","UnityEngine.Transform","UnityEngine.ParticleSystem","UnityEngine.ParticleSystemRenderer","UnityEngine.Mesh","CartoonFX.CFXR_Effect","UnityEngine.Light","AnimatedTile","UnityEngine.GameObject","UnityEngine.TrailRenderer","StateEvents","PositionTracking","UnityEngine.Camera","UnityEngine.AudioListener","UnityEngine.Canvas","UnityEngine.UI.CanvasScaler","UnityEngine.UI.GraphicRaycaster","BasicFade","UnityEngine.CanvasGroup","UnityEngine.UI.Button","AppearAnimation","PlayerGuide","GameManager","RectAnimator","TileManager","DynamitePowerup","DynamiteEffect","SpecialTileManager","Spine.Unity.SkeletonGraphic","UnityEngine.UI.HorizontalLayoutGroup","UIMoveTo","UnityEngine.UI.GridLayoutGroup","UnityEngine.UI.Mask","Spine.Unity.SkeletonDataAsset","AnimatedTileSpawner","UnityEngine.SpriteRenderer","UnityEngine.Animator","UnityEditor.Animations.AnimatorController","MergeHands","UnityEngine.EventSystems.EventSystem","UnityEngine.EventSystems.StandaloneInputModule","AudioManager","AudioLibrary","UnityEngine.Font","Spine.Unity.SpineAtlasAsset","UnityEngine.TextAsset","UnityEngine.AudioClip","TMPro.TMP_Settings","TMPro.TMP_SpriteAsset","TMPro.TMP_StyleSheet","UnityEngine.AudioLowPassFilter","UnityEngine.AudioBehaviour","UnityEngine.AudioHighPassFilter","UnityEngine.AudioReverbFilter","UnityEngine.AudioDistortionFilter","UnityEngine.AudioEchoFilter","UnityEngine.AudioChorusFilter","UnityEngine.Cloth","UnityEngine.SkinnedMeshRenderer","UnityEngine.FlareLayer","UnityEngine.ConstantForce","UnityEngine.Rigidbody","UnityEngine.Joint","UnityEngine.HingeJoint","UnityEngine.SpringJoint","UnityEngine.FixedJoint","UnityEngine.CharacterJoint","UnityEngine.ConfigurableJoint","UnityEngine.CompositeCollider2D","UnityEngine.Rigidbody2D","UnityEngine.Joint2D","UnityEngine.AnchoredJoint2D","UnityEngine.SpringJoint2D","UnityEngine.DistanceJoint2D","UnityEngine.FrictionJoint2D","UnityEngine.HingeJoint2D","UnityEngine.RelativeJoint2D","UnityEngine.SliderJoint2D","UnityEngine.TargetJoint2D","UnityEngine.FixedJoint2D","UnityEngine.WheelJoint2D","UnityEngine.ConstantForce2D","UnityEngine.StreamingController","UnityEngine.TextMesh","UnityEngine.MeshRenderer","UnityEngine.Tilemaps.TilemapRenderer","UnityEngine.Tilemaps.Tilemap","UnityEngine.Tilemaps.TilemapCollider2D","CartoonFX.CFXR_EmissionBySurface","CartoonFX.CFXR_ParticleText","Kino.Bloom","Spine.Unity.EditorSkeletonPlayer","Spine.Unity.ISkeletonAnimation","Spine.Unity.BoneFollowerGraphic","Spine.Unity.SkeletonSubmeshGraphic","Spine.Unity.SkeletonAnimation","Spine.Unity.SkeletonMecanim","Spine.Unity.SkeletonRenderer","Spine.Unity.SkeletonPartsRenderer","UnityEngine.MeshFilter","Spine.Unity.FollowLocationRigidbody","Spine.Unity.FollowLocationRigidbody2D","Spine.Unity.SkeletonUtility","Spine.Unity.SkeletonUtilityConstraint","Spine.Unity.SkeletonUtilityBone","UnityEngine.U2D.Animation.SpriteSkin","UnityEngine.U2D.PixelPerfectCamera","UnityEngine.U2D.SpriteShapeController","UnityEngine.U2D.SpriteShapeRenderer","TMPro.TextContainer","TMPro.TextMeshPro","TMPro.TMP_Dropdown","TMPro.TMP_SelectionCaret","TMPro.TMP_SubMesh","TMPro.TMP_SubMeshUI","TMPro.TMP_Text","Unity.VisualScripting.SceneVariables","Unity.VisualScripting.Variables","Unity.VisualScripting.ScriptMachine","Unity.VisualScripting.StateMachine","UnityEngine.UI.Dropdown","UnityEngine.UI.Graphic","UnityEngine.UI.AspectRatioFitter","UnityEngine.UI.ContentSizeFitter","UnityEngine.UI.HorizontalOrVerticalLayoutGroup","UnityEngine.UI.LayoutElement","UnityEngine.UI.LayoutGroup","UnityEngine.UI.VerticalLayoutGroup","UnityEngine.UI.MaskableGraphic","UnityEngine.UI.RawImage","UnityEngine.UI.RectMask2D","UnityEngine.UI.Scrollbar","UnityEngine.UI.ScrollRect","UnityEngine.UI.Slider","UnityEngine.UI.Text","UnityEngine.UI.Toggle","UnityEngine.EventSystems.BaseInputModule","UnityEngine.EventSystems.PointerInputModule","UnityEngine.EventSystems.TouchInputModule","UnityEngine.EventSystems.Physics2DRaycaster","UnityEngine.EventSystems.PhysicsRaycaster"]
 
 Deserializers.unityVersion = "2023.1.0f1";
 
@@ -3180,7 +3161,7 @@ Deserializers.isRuntimeAnalysisEnabledForCode = "False";
 
 Deserializers.runtimeAnalysisExcludedClassesCount = "1936";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "5475";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "5477";
 
 Deserializers.runtimeAnalysisExcludedModules = "physics3d, physics2d, prefabs";
 
@@ -3204,7 +3185,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "3cc887d2-5a57-4af0-a3f3-d1d5ad7bebb3";
+Deserializers.buildID = "7ba814f1-3d4b-4ad0-8849-07ca41e48556";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"]],[],[["Spine","Unity","AttachmentTools","AtlasUtilities","Init"]]];
 

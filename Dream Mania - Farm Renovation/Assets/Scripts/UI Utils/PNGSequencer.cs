@@ -5,21 +5,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening.Core;
+using System.Threading.Tasks;
+
+[System.Serializable]
+public class Animations
+{
+    public string name;
+    public bool isLooping = true;
+    public float frameRate = 24f;
+    public List<Sprite> frames = new List<Sprite>();
+    public bool transitionToNextAnimation = false;
+    [HideIf(nameof(transitionToNextAnimation))]
+    public string nextAnimationName;
+}
 
 public class PNGSequencer : MonoBehaviour
 {
     [Header("Sequence Settings")]
     [SerializeField] private float frameRate = 24f;
-    [SerializeField] private List<Sprite> frames = new List<Sprite>();
+    [SerializeField] private List<Animations> animations = new List<Animations>();
     [SerializeField] private bool loop = true;
     [SerializeField] private bool playOnStart = true;
-    [SerializeField] private bool autoDestroy = false;
     [Header("Components")]
     [SerializeField] private bool isUIElement = false;
     [ShowIf(nameof(isUIElement))]
     [SerializeField] private Image targetImage;
     [HideIf(nameof(isUIElement))]
     [SerializeField] private SpriteRenderer targetRenderer;
+
+    private Animations currentAnimation;
+    private List<Sprite> frames = new List<Sprite>();
+    private Dictionary<string, Animations> animationDict = new Dictionary<string, Animations>();
 
     private Sequence animationSequence;
 
@@ -32,6 +48,23 @@ public class PNGSequencer : MonoBehaviour
         else if(!isUIElement && targetRenderer == null)
         {
             targetRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        foreach(Animations anim in animations)
+        {
+            if(!animationDict.ContainsKey(anim.name))
+            {
+                animationDict.Add(anim.name, anim);
+            }
+        }
+
+        if(frames.Count == 0 && animations.Count > 0)
+        {
+            //first element is the default animation
+            frames = animations[0].frames;
+            loop = animations[0].isLooping;
+            frameRate = animations[0].frameRate;
+            currentAnimation = animations[0];
         }
     }
 
@@ -52,6 +85,22 @@ public class PNGSequencer : MonoBehaviour
         else
         {
             SpriteAnimation();
+        }
+    }
+
+    public void PlayAnimation(string name)
+    {
+        if(animationDict.ContainsKey(name))
+        {
+            frames = animationDict[name].frames;
+            loop = animationDict[name].isLooping;
+            frameRate = animationDict[name].frameRate;
+            currentAnimation = animationDict[name];
+            Play();
+        }
+        else
+        {
+            Debug.LogWarning($"Animation with name {name} not found!");
         }
     }
 
@@ -77,9 +126,9 @@ public class PNGSequencer : MonoBehaviour
 
         animationSequence.OnComplete(() =>
         {
-            if (autoDestroy)
+            if(currentAnimation.transitionToNextAnimation)
             {
-                Destroy(gameObject);
+                PlayAnimation(currentAnimation.nextAnimationName);
             }
         });
     }
@@ -99,9 +148,9 @@ public class PNGSequencer : MonoBehaviour
 
         animationSequence.OnComplete(() =>
         {
-            if (autoDestroy)
+            if (currentAnimation.transitionToNextAnimation)
             {
-                Destroy(gameObject);
+                PlayAnimation(currentAnimation.nextAnimationName);
             }
         });
     }
