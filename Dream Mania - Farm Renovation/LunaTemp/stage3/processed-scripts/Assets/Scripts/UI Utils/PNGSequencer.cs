@@ -5,15 +5,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening.Core;
+using System.Threading.Tasks;
+
+[System.Serializable]
+public class Animations
+{
+    public string name;
+    public bool isLooping = true;
+    public float frameRate = 24f;
+    public List<Sprite> frames = new List<Sprite>();
+    public bool transitionToNextAnimation = false;
+    [HideIf(nameof(transitionToNextAnimation))]
+    public string nextAnimationName;
+}
 
 public class PNGSequencer : MonoBehaviour
 {
     [Header("Sequence Settings")]
     [SerializeField] private float frameRate = 24f;
-    [SerializeField] private List<Sprite> frames = new List<Sprite>();
+    [SerializeField] private List<Animations> animations = new List<Animations>();
     [SerializeField] private bool loop = true;
     [SerializeField] private bool playOnStart = true;
-    [SerializeField] private bool autoDestroy = false;
     [Header("Components")]
     [SerializeField] private bool isUIElement = false;
     [ShowIf(nameof(isUIElement))]
@@ -21,7 +33,30 @@ public class PNGSequencer : MonoBehaviour
     [HideIf(nameof(isUIElement))]
     [SerializeField] private SpriteRenderer targetRenderer;
 
+    private Animations currentAnimation;
+    private List<Sprite> frames = new List<Sprite>();
+    private Dictionary<string, Animations> animationDict = new Dictionary<string, Animations>();
+
     private Sequence animationSequence;
+
+    /*private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            PlayAnimation("disco");
+            Debug.Log("Playing disco animation");
+        }
+        else if(Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            PlayAnimation("fan1");
+            Debug.Log("Playing fan1 animation");
+        }
+        else if(Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            PlayAnimation("fan2");
+            Debug.Log("Playing fan2 animation");
+        }
+    }*/
 
     private void Awake()
     {
@@ -32,6 +67,23 @@ public class PNGSequencer : MonoBehaviour
         else if(!isUIElement && targetRenderer == null)
         {
             targetRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        foreach(Animations anim in animations)
+        {
+            if(!animationDict.ContainsKey(anim.name))
+            {
+                animationDict.Add(anim.name, anim);
+            }
+        }
+
+        if(frames.Count == 0 && animations.Count > 0)
+        {
+            //first element is the default animation
+            frames = animations[0].frames;
+            loop = animations[0].isLooping;
+            frameRate = animations[0].frameRate;
+            currentAnimation = animations[0];
         }
     }
 
@@ -55,6 +107,22 @@ public class PNGSequencer : MonoBehaviour
         }
     }
 
+    public void PlayAnimation(string name)
+    {
+        if(animationDict.ContainsKey(name))
+        {
+            frames = animationDict[name].frames;
+            loop = animationDict[name].isLooping;
+            frameRate = animationDict[name].frameRate;
+            currentAnimation = animationDict[name];
+            Play();
+        }
+        else
+        {
+            Debug.LogWarning($"Animation with name {name} not found!");
+        }
+    }
+
     public void Stop()
     {
         animationSequence.Kill(true);
@@ -62,7 +130,7 @@ public class PNGSequencer : MonoBehaviour
 
     private void UIAnimation()
     {
-        animationSequence?.Kill(true);
+        animationSequence?.Kill(false);
 
         animationSequence = DOTween.Sequence();
         float frameDuration = 1f / frameRate;
@@ -77,16 +145,16 @@ public class PNGSequencer : MonoBehaviour
 
         animationSequence.OnComplete(() =>
         {
-            if (autoDestroy)
+            if(currentAnimation.transitionToNextAnimation)
             {
-                Destroy(gameObject);
+                PlayAnimation(currentAnimation.nextAnimationName);
             }
         });
     }
 
     private void SpriteAnimation()
     {
-        animationSequence?.Kill(true);
+        animationSequence?.Kill(false);
 
         animationSequence = DOTween.Sequence();
         float frameDuration = 1f / frameRate;
@@ -99,9 +167,9 @@ public class PNGSequencer : MonoBehaviour
 
         animationSequence.OnComplete(() =>
         {
-            if (autoDestroy)
+            if (currentAnimation.transitionToNextAnimation)
             {
-                Destroy(gameObject);
+                PlayAnimation(currentAnimation.nextAnimationName);
             }
         });
     }

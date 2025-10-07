@@ -17,4 +17,4 @@ MonoBehaviour:
   ItemCount: 15
   collectItemSprite: {fileID: 21300000, guid: c05f3a9bb5ac0e84cbbb05a6f7c832c8, type: 3}
   color: yellow
-  DecorationSprite: {fileID: 21300000, guid: b3a7fbcc0ff11b247800fbd65a232c00, type: 3}
+  DecorationSprite: {fileID: 21300000, guid: 33b1bf2d0045fde45a886a8a77ee68f4, type: 3}

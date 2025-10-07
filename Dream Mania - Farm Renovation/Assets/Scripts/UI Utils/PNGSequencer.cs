@@ -39,6 +39,25 @@ public class PNGSequencer : MonoBehaviour
 
     private Sequence animationSequence;
 
+    /*private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            PlayAnimation("disco");
+            Debug.Log("Playing disco animation");
+        }
+        else if(Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            PlayAnimation("fan1");
+            Debug.Log("Playing fan1 animation");
+        }
+        else if(Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            PlayAnimation("fan2");
+            Debug.Log("Playing fan2 animation");
+        }
+    }*/
+
     private void Awake()
     {
         if(isUIElement && targetImage == null)
@@ -111,7 +130,7 @@ public class PNGSequencer : MonoBehaviour
 
     private void UIAnimation()
     {
-        animationSequence?.Kill(true);
+        animationSequence?.Kill(false);
 
         animationSequence = DOTween.Sequence();
         float frameDuration = 1f / frameRate;
@@ -135,7 +154,7 @@ public class PNGSequencer : MonoBehaviour
 
     private void SpriteAnimation()
     {
-        animationSequence?.Kill(true);
+        animationSequence?.Kill(false);
 
         animationSequence = DOTween.Sequence();
         float frameDuration = 1f / frameRate;

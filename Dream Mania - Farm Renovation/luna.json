@@ -9651,6 +9651,14 @@
             {
                 "name": "NaughtyAttributes.IDropdownList",
                 "excluded": false
+            },
+            {
+                "name": "Animations",
+                "excluded": true
+            },
+            {
+                "name": "PNGSequencer",
+                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -33859,6 +33867,10 @@
                     {
                         "name": "Tick",
                         "excluded": false
+                    },
+                    {
+                        "name": "Tick\",this)}this.c$-=t;if(this.c$<=0){pc.Application.getApplication().events.off(\"update",
+                        "excluded": false
                     }
                 ]
             },
@@ -42599,40 +42611,6 @@
                         "excluded": true
                     }
                 ]
-            },
-            {
-                "className": "PNGSequencer",
-                "staticMethods": [],
-                "instanceMethods": [
-                    {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Awake",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnEnable",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Play",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Stop",
-                        "excluded": true
-                    },
-                    {
-                        "name": "UIAnimation",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SpriteAnimation",
-                        "excluded": true
-                    }
-                ]
             }
         ],
         "stubberDataList": [],
@@ -42795,7 +42773,7 @@
                         "maxHeight": 1024,
                         "format": "png32",
                         "compression": "quantSize",
-                        "quality": 65,
+                        "quality": 75,
                         "script": "",
                         "ext": "",
                         "name": "Assets/Sprites/Dream Mania - Sprites/end card/Layer 49.png"
@@ -42835,7 +42813,7 @@
                         "maxHeight": 1024,
                         "format": "png32",
                         "compression": "quantSize",
-                        "quality": 65,
+                        "quality": 75,
                         "script": "",
                         "ext": "",
                         "name": "Assets/Sprites/Dream Mania - Sprites/end card/ui_loading_logo2 (1).png"
@@ -42855,7 +42833,7 @@
                         "maxHeight": 2048,
                         "format": "jpeg",
                         "compression": "quantSize",
-                        "quality": 65,
+                        "quality": 90,
                         "script": "",
                         "ext": "",
                         "name": "Assets/Sprites/Dream Mania Renovate Farm/background.png"
