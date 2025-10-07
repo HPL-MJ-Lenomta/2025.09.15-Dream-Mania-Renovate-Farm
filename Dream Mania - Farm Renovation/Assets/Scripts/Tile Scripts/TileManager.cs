@@ -239,11 +239,17 @@ public class TileManager : MonoBehaviour
 
     public IEnumerator BreakTiles(List<List<TileCell>> cells)
     {
+        if (GameManager.Instance.IsDoneCollecting)
+        {
+            yield break;
+        }
+
         yield return StartCoroutine(Break(cells));
 
         yield return StartCoroutine(FallingTiles());
 
         yield return StartCoroutine(CheckCompletedItem());
+
         if (!GameManager.Instance.IsDoneCollecting)
         {
             yield return StartCoroutine(CheckAndHandleMatchesAfterFall());
@@ -307,8 +313,8 @@ public class TileManager : MonoBehaviour
                     if (cell.Count > 4 && !anyPowerup)// && cell.Any(c => c.GetTile()?.GetTileData()?.isPowerup == true))
                     {
                         //powerup?
-                        c.GetTile().SetData(powerupDataPool[Random.Range(0, powerupDataPool.Count)]);
                         c.OnTileBreak.Invoke(c);
+                        c.GetTile().SetData(powerupDataPool[Random.Range(0, powerupDataPool.Count)]);
                     }
                     /*else if(!anyPowerup)
                     {
@@ -333,6 +339,7 @@ public class TileManager : MonoBehaviour
                     {
                         c.OnTileBreak.Invoke(c);
                         c.GetTile().Break();
+                        Debug.LogError("Normal Tile Break");
                     }
                     //c.GetTile().GetTileData().GetAffectedCells(this, c.coordinate);
 
@@ -526,7 +533,7 @@ public class TileManager : MonoBehaviour
 
     public TileCell GetCellBelow(TileCell cell)
     {
-        var lowerCell = new TileCell();
+        var lowerCell = null as TileCell;
         var coord = cell.coordinate * new Vector2Int(1, -1); // Reverse the movement because the y coordinates are positive
 
         if (coord.y < cellHeight - 1)

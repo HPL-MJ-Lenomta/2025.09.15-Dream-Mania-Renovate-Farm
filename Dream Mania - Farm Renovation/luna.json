@@ -8617,14 +8617,6 @@
                 "excluded": true
             },
             {
-                "name": "Spine.DrawOrderTimeline",
-                "excluded": true
-            },
-            {
-                "name": "Spine.EventTimeline",
-                "excluded": true
-            },
-            {
                 "name": "Spine.InheritTimeline",
                 "excluded": true
             },
@@ -8721,14 +8713,6 @@
                 "excluded": true
             },
             {
-                "name": "Spine.ClippingAttachment",
-                "excluded": true
-            },
-            {
-                "name": "Spine.DeformTimeline",
-                "excluded": true
-            },
-            {
                 "name": "Spine.IkConstraintTimeline",
                 "excluded": true
             },
@@ -8786,10 +8770,6 @@
             },
             {
                 "name": "Spine.PhysicsConstraintTimeline",
-                "excluded": true
-            },
-            {
-                "name": "Spine.ScaleTimeline",
                 "excluded": true
             },
             {
@@ -10226,7 +10206,7 @@
                     },
                     {
                         "name": "sign",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mul",
@@ -20072,7 +20052,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
@@ -20154,7 +20134,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ParentMaskStateChanged",
@@ -30804,7 +30784,7 @@
                     },
                     {
                         "name": "DOLocalMoveY",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DOLocalMoveZ",
@@ -34150,7 +34130,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -34572,7 +34552,7 @@
                     },
                     {
                         "name": "Free",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Clear",
@@ -34580,7 +34560,7 @@
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -35192,15 +35172,15 @@
                     },
                     {
                         "name": "OnInterrupt",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnd",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDispose",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnComplete",
@@ -35212,7 +35192,7 @@
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetMixDuration",
@@ -36006,7 +35986,7 @@
                     },
                     {
                         "name": "AnimationState#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PhysicsPositionInheritanceFactor#get",
@@ -36098,7 +36078,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
@@ -36548,7 +36528,7 @@
                     },
                     {
                         "name": "FrameEntries#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FrameCount#get",
@@ -36598,7 +36578,7 @@
                     },
                     {
                         "name": "HasTimeline",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Apply",
@@ -36620,7 +36600,7 @@
                     },
                     {
                         "name": "ApplyRotateTimeline",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TimeScale#get",
@@ -36652,15 +36632,15 @@
                     },
                     {
                         "name": "OnInterrupt",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnd",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDispose",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnComplete",
@@ -36684,7 +36664,7 @@
                     },
                     {
                         "name": "UpdateMixingFrom",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Apply",
@@ -36696,7 +36676,7 @@
                     },
                     {
                         "name": "ApplyMixingFrom",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ApplyMixingFromEventTimelinesOnly",
@@ -36728,7 +36708,7 @@
                     },
                     {
                         "name": "SetAnimation$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetAnimation",
@@ -36764,7 +36744,7 @@
                     },
                     {
                         "name": "ClearNext",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AnimationsChanged",
@@ -36822,7 +36802,7 @@
                     },
                     {
                         "name": "GetMix",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -37082,11 +37062,11 @@
                     },
                     {
                         "name": "Interrupt",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "End",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Dispose",
@@ -37680,7 +37660,7 @@
                     },
                     {
                         "name": "FindSlot",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FindSkin",
@@ -37840,7 +37820,7 @@
                 "instanceMethods": [
                     {
                         "name": "Index#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Name#get",
@@ -38572,7 +38552,7 @@
                     },
                     {
                         "name": "Id#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Bones#get",
@@ -38600,7 +38580,7 @@
                     },
                     {
                         "name": "TimelineAttachment#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TimelineAttachment#set",
@@ -40104,7 +40084,7 @@
                 "instanceMethods": [
                     {
                         "name": "BoneIndex#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -42485,6 +42465,174 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "Spine.ClippingAttachment",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "EndSlot#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EndSlot#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Copy",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Spine.DeformTimeline",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SlotIndex#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Attachment#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Vertices#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrame",
+                        "excluded": false
+                    },
+                    {
+                        "name": "setBezier",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetCurvePercent",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Apply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Spine.ScaleTimeline",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "BoneIndex#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Apply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Spine.DrawOrderTimeline",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DrawOrders#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrame",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Apply",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Spine.EventTimeline",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Events#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrame",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Apply",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "PNGSequencer",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Play",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Stop",
+                        "excluded": true
+                    },
+                    {
+                        "name": "UIAnimation",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SpriteAnimation",
+                        "excluded": true
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -42705,7 +42853,7 @@
                     {
                         "maxWidth": 2048,
                         "maxHeight": 2048,
-                        "format": "png32",
+                        "format": "jpeg",
                         "compression": "quantSize",
                         "quality": 65,
                         "script": "",
@@ -42731,6 +42879,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/Sprites/Dream Mania Renovate Farm/pig_export_file/"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "jpeg",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania Renovate Farm/dreammania-renovatefarm-landscape-portrait/end card character.png"
                     }
                 ]
             },

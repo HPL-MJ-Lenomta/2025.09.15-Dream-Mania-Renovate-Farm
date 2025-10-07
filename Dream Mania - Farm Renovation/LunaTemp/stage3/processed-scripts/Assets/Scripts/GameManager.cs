@@ -343,8 +343,6 @@ public class GameManager : MonoBehaviour
         indexExceptions.Add(key);
         canGoNextLevel = false;
 
-        Debug.LogError("Current Furniture Index: " + currentFurnitureIndex);
-
         DisableAllButtons();
     }
 

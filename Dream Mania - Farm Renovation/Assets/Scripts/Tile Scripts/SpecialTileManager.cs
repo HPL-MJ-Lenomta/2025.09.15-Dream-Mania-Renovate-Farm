@@ -39,8 +39,9 @@ public class SpecialTileManager : MonoBehaviour
             {
                 if (neighbor.GetTile().GetTileData() == null) continue;
 
-                neighbor.GetTile().SpecialBreak();
                 neighbor.TileBreakEvent.Invoke();
+
+                neighbor.GetTile().SpecialBreak();
             }
             else if (neighbor != null && neighbor.GetTile().GetTileData().tileName == "p1")
             {
@@ -52,14 +53,15 @@ public class SpecialTileManager : MonoBehaviour
 
                 if(lowerCell.GetTile().GetTileData().isSpecialBreakable)
                 {
+                    lowerCell.TileBreakEvent.Invoke();
+
                     specialTileTargetPos = lowerCell.GetTile().GetTileData().name == "Chicken" ? chickenPos : pigPos;
 
                     lowerCell.GetTile().SpecialBreak();
-                    lowerCell.TileBreakEvent.Invoke();
 
                     SpecialTiles[lowerCell.coordinate.x].gameObject.transform.SetParent(lowerCell.transform, true);
                     SpecialTiles[lowerCell.coordinate.x].AnimationState.SetAnimation(0, "eating", false);
-                    SpecialTiles[lowerCell.coordinate.x].gameObject.transform.DOLocalMoveY(specialTileTargetPos, 0.25f).SetDelay(0.25f).OnComplete(()=>
+                    SpecialTiles[lowerCell.coordinate.x].gameObject.transform.DOLocalMoveY(specialTileTargetPos, 0.25f).SetDelay(0f).OnComplete(()=>
                     { 
                         SpecialTiles[lowerCell.coordinate.x].AnimationState.SetAnimation(0, "idle", false);
                     });

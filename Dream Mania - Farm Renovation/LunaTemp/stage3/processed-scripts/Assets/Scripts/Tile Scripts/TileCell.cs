@@ -43,6 +43,8 @@ public class TileCell : MonoBehaviour, IDragHandler, IPointerClickHandler
     {
         if (!tileManager.canvasGroup.interactable) return;
 
+        if (GameManager.Instance.IsDoneCollecting) return;
+
         if (UIComponentChecker.CheckForComponent(out TileCell otherCell, true))
         {
             if (!otherCell.GetTile().GetTileData().isSwappable || !GetTile().GetTileData().isSwappable) return;

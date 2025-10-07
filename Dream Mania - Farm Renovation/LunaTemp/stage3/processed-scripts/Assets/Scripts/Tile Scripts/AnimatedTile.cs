@@ -67,7 +67,7 @@ public class AnimatedTile : MonoBehaviour
         image.sprite = data.tileSprite;
         int index = targets.IndexOf(data.tileName);
 
-        AudioManager.Instance.PlaySFX("pop1");
+        //AudioManager.Instance.PlaySFX("pop1");
 
         //vfxs
         var main = circleTrailVFXPrefab.main;
