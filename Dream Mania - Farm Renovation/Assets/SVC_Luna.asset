@@ -841,7 +841,7 @@ MonoBehaviour:
     keywords: []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 3398
+  version: 3437
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -8882,7 +8882,7 @@ MonoBehaviour:
   _modifiedShaders: []
   invalidShaders: 0
   _sceneLightData:
-    PointLightCount: 17
+    PointLightCount: 19
     SpotLightCount: 0
     DirectionalLightCount: 0
     LightmapOn: 0
