@@ -15,14 +15,22 @@ public class AnimatedTileSpawner : MonoBehaviour
     #endregion
 
     [SerializeField] private List<AnimatedTile> tiles = new List<AnimatedTile>();
+    [SerializeField] private List<GameObject> cornVFX = new List<GameObject>();
     private Queue<AnimatedTile> tileQueue;
+    private Queue<GameObject> cornVFXQueue;
 
     public void Start()
     {
         tileQueue = new Queue<AnimatedTile>();
+        cornVFXQueue = new Queue<GameObject>();
         foreach (var tile in tiles) 
         {
             tileQueue.Enqueue(tile);
+        }
+
+        foreach (var vfx in cornVFX)
+        {
+            cornVFXQueue.Enqueue(vfx);
         }
     }
 
@@ -50,6 +58,21 @@ public class AnimatedTileSpawner : MonoBehaviour
                 tileObject.MoveToTarget(data, position, delay, value);
             }
         });
+    }
+
+    public void SpawnCornVFX([Bridge.Ref] Vector3 position)
+    {
+        GameObject vfxObject = cornVFXQueue.Dequeue();
+        if (vfxObject != null)
+        {
+            vfxObject.SetActive(true);
+            vfxObject.transform.position = position;
+            DOVirtual.DelayedCall(1.0f, () =>
+            {
+                vfxObject.SetActive(false);
+                cornVFXQueue.Enqueue(vfxObject);
+            });
+        }
     }
 
     public void ReQueue(AnimatedTile tile)

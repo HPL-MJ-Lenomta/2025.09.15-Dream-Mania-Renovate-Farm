@@ -2,7 +2,7 @@
     "version": "6.3.0",
     "projectId": "bab41f24a77b7a944b71277894eff5d3",
     "applicationID": 32752,
-    "creativeName": "Farm-Renovation",
+    "creativeName": "Farm-Renovation-ChangedBackground",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -9651,14 +9651,6 @@
             {
                 "name": "NaughtyAttributes.IDropdownList",
                 "excluded": false
-            },
-            {
-                "name": "Animations",
-                "excluded": true
-            },
-            {
-                "name": "PNGSequencer",
-                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -31939,6 +31931,10 @@
                     {
                         "name": "Spawn$1",
                         "excluded": false
+                    },
+                    {
+                        "name": "SpawnCornVFX",
+                        "excluded": true
                     }
                 ]
             },
@@ -33866,10 +33862,6 @@
                     },
                     {
                         "name": "Tick",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Tick\",this)}this.c$-=t;if(this.c$<=0){pc.Application.getApplication().events.off(\"update",
                         "excluded": false
                     }
                 ]
@@ -42611,6 +42603,54 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "Animations",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "PNGSequencer",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Play",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayAnimation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Stop",
+                        "excluded": true
+                    },
+                    {
+                        "name": "UIAnimation",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SpriteAnimation",
+                        "excluded": true
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -42867,6 +42907,96 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/Sprites/Dream Mania Renovate Farm/dreammania-renovatefarm-landscape-portrait/end card character.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania - Sprites/cursor.png"
+                    },
+                    {
+                        "maxWidth": 256,
+                        "maxHeight": 256,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania - Sprites/"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Animation/yellow particles/"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania - Sprites/end card/ui_loading_logo2 (1) 1.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania Renovate Farm/dreammania-renovatefarm-landscape-portrait/Tap To Upgrade!.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania - Sprites/Tap To Upgrade!.png"
+                    },
+                    {
+                        "maxWidth": 512,
+                        "maxHeight": 512,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania Renovate Farm/dreammania-renovatefarm-landscape/tap to upgrade.png"
+                    },
+                    {
+                        "maxWidth": 2048,
+                        "maxHeight": 2048,
+                        "format": "png32",
+                        "compression": "quantSize",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania Renovate Farm/background_upscayl_2x_digital-art-4x copy.jpg"
+                    },
+                    {
+                        "maxWidth": 2048,
+                        "maxHeight": 2048,
+                        "format": "jpeg",
+                        "compression": "quantSize",
+                        "quality": 90,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Sprites/Dream Mania Renovate Farm/background_upscayl_2x_digital-art-4x copy (1).jpg"
                     }
                 ]
             },
@@ -42956,7 +43086,7 @@
                         "startTime": "00:00.000",
                         "endTime": "00:30.000",
                         "lengthInSeconds": 30.0,
-                        "bitrate": 128,
+                        "bitrate": 64,
                         "script": "",
                         "ext": "",
                         "name": "Assets/Audio/Clips/audio_music_gameplay.mp3"
@@ -42974,8 +43104,8 @@
                     {
                         "channels": 1,
                         "startTime": "00:00.000",
-                        "endTime": "00:00.000",
-                        "lengthInSeconds": 0.0,
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
                         "bitrate": 128,
                         "script": "",
                         "ext": "",
@@ -42984,12 +43114,42 @@
                     {
                         "channels": 1,
                         "startTime": "00:00.000",
-                        "endTime": "00:00.000",
-                        "lengthInSeconds": 0.0,
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
                         "bitrate": 128,
                         "script": "",
                         "ext": "",
                         "name": "Assets/Audio/Clips/Audio_Match_TNTMonsterRelease_DiDi.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Audio/Clips/Great 1.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Audio/excellent1.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Audio/great1.mp3"
                     },
                     {
                         "channels": 1,
@@ -42999,7 +43159,7 @@
                         "bitrate": 128,
                         "script": "",
                         "ext": "",
-                        "name": "Assets/Audio/Clips/Great 1.mp3"
+                        "name": "Assets/Audio/good1.mp3"
                     }
                 ]
             },

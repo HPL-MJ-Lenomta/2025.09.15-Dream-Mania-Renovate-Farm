@@ -2,6 +2,7 @@ using DG.Tweening;
 using Spine.Unity;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 
 public class SpecialTileManager : MonoBehaviour
@@ -57,13 +58,21 @@ public class SpecialTileManager : MonoBehaviour
 
                     specialTileTargetPos = lowerCell.GetTile().GetTileData().name == "Chicken" ? chickenPos : pigPos;
 
+                    string audioKey = neighbor.GetTile().GetTileData().name;
+
+                    Debug.Log("Special Break: " + audioKey);
+
                     lowerCell.GetTile().SpecialBreak();
+
+                    AnimatedTileSpawner.Instance.SpawnCornVFX(lowerCell.transform.position);
+
+                    AudioManager.Instance.PlaySFX(audioKey);
 
                     SpecialTiles[lowerCell.coordinate.x].gameObject.transform.SetParent(lowerCell.transform, true);
                     SpecialTiles[lowerCell.coordinate.x].AnimationState.SetAnimation(0, "eating", false);
                     SpecialTiles[lowerCell.coordinate.x].gameObject.transform.DOLocalMoveY(specialTileTargetPos, 0.25f).SetDelay(0f).OnComplete(()=>
                     { 
-                        SpecialTiles[lowerCell.coordinate.x].AnimationState.SetAnimation(0, "idle", false);
+                        SpecialTiles[lowerCell.coordinate.x].AnimationState.SetAnimation(0, "idle", true);
                     });
                 }
             }

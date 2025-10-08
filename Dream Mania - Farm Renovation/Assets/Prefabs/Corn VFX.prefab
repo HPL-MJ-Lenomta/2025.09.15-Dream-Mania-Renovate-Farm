@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5480091756518083154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8825880675367717685}
+  - component: {fileID: 1645511314232776524}
+  - component: {fileID: 7288162340675733121}
+  - component: {fileID: 8471804966602289627}
+  m_Layer: 5
+  m_Name: Corn VFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8825880675367717685
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480091756518083154}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 382.2095, y: -375.67728}
+  m_SizeDelta: {x: 2160, y: 2160}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1645511314232776524
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480091756518083154}
+  m_CullTransparentMesh: 1
+--- !u!114 &7288162340675733121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480091756518083154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1408305286759478890, guid: f8946ee905e1b244f935d5ddcf4b35d4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8471804966602289627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480091756518083154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36450e945ec8ce34e8e33b1080661627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 24
+  animations:
+  - name: corn
+    isLooping: 1
+    frameRate: 24
+    frames:
+    - {fileID: 1408305286759478890, guid: f8946ee905e1b244f935d5ddcf4b35d4, type: 3}
+    - {fileID: 21300000, guid: 40e06e1927d7ef440b9152f9153a6659, type: 3}
+    - {fileID: 21300000, guid: 6e26f39e6988bf7419023f5bb0e8b9f0, type: 3}
+    - {fileID: 21300000, guid: 8520b1e98484db14fa4664ecc004f428, type: 3}
+    - {fileID: 21300000, guid: 5b2ec7aef85d6b84dbd28584225f898f, type: 3}
+    - {fileID: 21300000, guid: ee7c7cd573e3b7e478ee00865ef12371, type: 3}
+    - {fileID: 21300000, guid: deca1610e41abb94bb39f540e829bb9a, type: 3}
+    - {fileID: 21300000, guid: 8a1157e17265a0848b0363d721f1a52f, type: 3}
+    - {fileID: 21300000, guid: 5d48f82239a62b7489729c29fc529e41, type: 3}
+    - {fileID: 21300000, guid: ffd6ad00588aa3f45bcff9037ba99e0c, type: 3}
+    - {fileID: 21300000, guid: fac5c406a4400704d95bcac1306ef3d7, type: 3}
+    - {fileID: 21300000, guid: 7e6e49e0bcf4abe45baebdb6b7f97dff, type: 3}
+    - {fileID: 21300000, guid: cfad7da443ce2f447a4ff08ee8269c07, type: 3}
+    - {fileID: 21300000, guid: 20df5ca5bbc48e945b5da95fd95f6dc3, type: 3}
+    - {fileID: 21300000, guid: 1db2af33de1062446b43695948c0642a, type: 3}
+    - {fileID: 21300000, guid: bf0a73506e245e24eb83947882f96d55, type: 3}
+    - {fileID: 21300000, guid: d5aaabf68df2890458965a20ade54774, type: 3}
+    - {fileID: 21300000, guid: 17eb4aaabd3290c4f8de801b2d75d505, type: 3}
+    - {fileID: 21300000, guid: 88f1ceb945c68b64cb218683d4b2d045, type: 3}
+    - {fileID: 21300000, guid: 798638000f539704b817dbd66c51567c, type: 3}
+    - {fileID: 21300000, guid: 8ab0978d0d0d1414ca32e82316fe9967, type: 3}
+    - {fileID: 21300000, guid: b5e848914eff2314a867c53d1135b232, type: 3}
+    - {fileID: 21300000, guid: 258bd21e4a1782b4ab8e97860b742755, type: 3}
+    - {fileID: 21300000, guid: 8ebd2c6b19f291d47855632924305491, type: 3}
+    - {fileID: 21300000, guid: 363eb0ee633bfa149816fc817ae77db6, type: 3}
+    - {fileID: 21300000, guid: 1627bc7caa78926458bd68191643494b, type: 3}
+    - {fileID: 21300000, guid: 4802d1511a402524290b38a33e6f722f, type: 3}
+    - {fileID: 21300000, guid: 86effb68765e59043b4c321f23274563, type: 3}
+    - {fileID: 1408305286759478890, guid: f8946ee905e1b244f935d5ddcf4b35d4, type: 3}
+    transitionToNextAnimation: 0
+    nextAnimationName: 
+  loop: 1
+  playOnStart: 1
+  isUIElement: 1
+  targetImage: {fileID: 0}
+  targetRenderer: {fileID: 0}

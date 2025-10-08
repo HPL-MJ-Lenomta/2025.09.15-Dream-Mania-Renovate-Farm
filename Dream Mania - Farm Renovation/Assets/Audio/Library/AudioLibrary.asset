@@ -63,3 +63,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 0ee4c144f72488e4086d32859d9a1d6a, type: 3}
     volume: 0.75
     loop: 0
+  - key: Chicken
+    channel: 1
+    clip: {fileID: 8300000, guid: aa9e93cdff900244b87431e6c19c11a8, type: 3}
+    volume: 0.5
+    loop: 0
+  - key: Pig
+    channel: 1
+    clip: {fileID: 8300000, guid: bf895f98e976f8446a446ea528eceb41, type: 3}
+    volume: 0.5
+    loop: 0
